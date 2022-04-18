@@ -1,0 +1,213 @@
+/* top left building purchase (start) */
+* {box-sizing: border-box}
+.tab {
+float: left;
+border: 3px solid #1e1e1e;
+background-color: #1e1e1e;
+width: 6%;
+}
+
+.tab button {
+display: block;
+background-color: rgb(139, 135, 135);
+color: black;
+padding: 2px 2px;
+width: 100%;
+border: 1px solid rgb(0, 0, 0);
+outline: none;
+text-align: left;
+cursor: pointer;
+transition: 0.5s;
+font-size: 17px;
+}
+
+.tabcontent {
+float: left;
+padding: 0px 3px;
+border: 1px solid rgb(0, 0, 0);
+width: 25%;
+height: 22.5%;
+}
+
+.tab button:hover {
+background-color: #E11D1D;
+}
+
+.tab button.active {
+background-color: #F06060;
+}
+
+.tab2 {
+float: right;
+border: 3px solid #1e1e1e;
+background-color: #1e1e1e;
+width: 6%;
+}
+
+.tab2 button {
+display: block;
+background-color: rgb(139, 135, 135);
+color: black;
+padding: 2px 2px;
+width: 100%;
+border: 1px solid rgb(0, 0, 0);
+outline: none;
+text-align: left;
+cursor: pointer;
+transition: 0.5s;
+font-size: 17px;
+}
+    
+.tabcontent2 {
+float: right;
+padding: 0px 3px;
+border: 1px solid rgb(0, 0, 0);
+width: 40%;
+height: 38%;
+}
+    
+.tab2 button:hover {
+background-color: #E11D1D;
+}
+    
+.tab2 button.active {
+background-color: #F06060;
+}
+/* top left building purchase (end) */
+
+
+/* Hoverable Text (Start)*/
+.tooltip {
+position: relative;
+display: inline-block;
+border-bottom: 1px dotted #ff4747;
+}
+  
+.tooltip .tooltiptext {
+visibility: hidden;
+width: 120px;
+background-color: black;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+opacity: 75%;
+  
+/* Position the tooltip */
+position: absolute;
+z-index: 1;
+}
+  
+.tooltip:hover .tooltiptext {
+visibility: visible;
+}
+/* Hoverable Text (End)*/
+
+/* purchase building button */
+#building_purchase {
+position: absolute;
+top: 16%;
+left: 6.7%;
+}
+
+/* Building Cost Text */
+#building_cost_text {
+position: fixed;
+top: 19.5%;
+left: 11%
+}
+
+/* "CPS:" in the building menus */
+#CPS_words {
+position: absolute;
+top: 19.5%;
+left: 28%;
+}
+
+/* Total buildings (bottom left) */
+#totalbuildings {
+position: fixed;
+bottom: 1%;
+left: 0.5%;
+color: #ff4747;
+font-size: 13px;
+}
+
+/* Changing building price (next to "Cost:") */
+#orangecost {
+color: #e67c2c;
+font-size: 14px;
+}
+
+/* Cash Per Second (Orange Number) */
+#CPS_NUMBER {
+color: #e67c2c;
+font-size: 14px;
+top: 0%;
+left: 105%;
+position: absolute; 
+}
+
+/* BUILD REPUTATION button middle */
+#BUILD_REPUTATION {
+background-color: rgb(139, 135, 135);
+position: fixed;
+bottom: 48%;
+left: 45%;
+}
+
+/* Total CPS middle of screen */
+#totalCPS {
+position: fixed;
+left: 44.8%;
+bottom: 50.5%;
+}
+
+/* Buy Upgrades Buttons */
+#purchaseUpgrade {
+width: 30%;
+height: 7%;
+text-align: center;
+}
+
+/* Save Button */
+#settings_button {
+width: 10%;
+height: 8%;
+bottom: 100px;
+right: 5px;
+}
+
+h1 {
+font-size: 35px;
+font-family: 'Monaco';
+color: #ff4747;
+position: fixed;
+left: 45%;
+bottom: 50%;
+}
+
+h3 {
+color: #FF5677;
+}
+
+p {
+font-size: 14px;
+color: #B958A5;
+}
+
+small {
+font-size: 14px;
+font-family: 'Monaco';
+color: #9a9a9c;
+position: relative;
+}
+
+button {
+background-color: rgb(139, 135, 135);
+}
+
+body {
+    background-color: #1e1e1e;
+    font-family: 'Monaco';
+}
