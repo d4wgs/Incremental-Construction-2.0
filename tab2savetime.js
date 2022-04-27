@@ -26,6 +26,11 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " active2";
   }
 
+function loadGame() {
+  var savedGame = JSON.parse(localStorage.getItem("gameSave"));
+  if (typeof savedGame.Cash !== "udnefined") score = savedGame.Cash;
+}
+
 function saveGame() {
   var gameSave = {
     Cash: Cash,
@@ -101,6 +106,10 @@ function saveGame() {
   };
   localStorage.setItem("gameSave", JSON.stringify(gameSave));
 }
+
+window.onload = function() {
+  loadGame();
+};
 
 setInterval(function() {
     saveGame();
