@@ -1,0 +1,133 @@
+/* top left building purchase (start) */
+* {box-sizing: border-box}
+.tab {
+float: left;
+border: 0.2vw solid #1e1e1e;
+background-color: #1e1e1e;
+width: 6.2vw;
+}
+
+.tab button {
+display: block;
+background-color: rgb(139, 135, 135);
+color: black;
+padding: 0.13vw 0.15vw;
+width: 6vw;
+border: 0.05vw solid rgb(0, 0, 0);
+outline: none;
+text-align: left;
+cursor: pointer;
+transition: 0.5s;
+font-size: 1vw;
+font-family: 'Times New Roman', serif;
+}
+
+.tabcontent {
+float: left;
+padding: 0.1vw 0.5vw;
+border: 0.13vw solid rgb(0, 0, 0);
+width: 25vw;
+height: 12.5vw;
+}
+
+.tab button:hover {
+background-color: #E11D1D;
+}
+
+.tab button.active {
+background-color: #F06060;
+}
+
+.tab2 {
+float: right;
+border: 0.2vw solid #1e1e1e;
+background-color: #1e1e1e;
+width: 6.2vw;
+}
+
+.tab2 button {
+display: block;
+background-color: rgb(139, 135, 135);
+color: black;
+padding: 0.13vw 0.15vw;
+width: 6vw;
+border: 0.05vw solid rgb(0, 0, 0);
+outline: none;
+text-align: left;
+cursor: pointer;
+transition: 0.5s;
+font-size: 1vw;
+}
+    
+.tabcontent2 {
+float: right;
+padding: 0.13vw 0.15vw;
+border: 0.13vw solid rgb(0, 0, 0);
+width: 40vw;
+height: 21.5vw;
+}
+    
+.tab2 button:hover {
+background-color: #E11D1D;
+}
+    
+.tab2 button.active {
+background-color: #F06060;
+}
+/* top left building purchase (end) */
+
+
+/* Hoverable Text (Start)*/
+.tooltip {
+position: relative;
+display: inline-block;
+border-bottom: 0.1vw dotted #ff4747;
+}
+  
+/* Tooltip for "Cost Per*:" text */
+.tooltip .tooltiptext {
+visibility: hidden;
+width: 9vw;
+background-color: black;
+color: #fff;
+text-align: center;
+border-radius: 0.5vw;
+padding: 0.1vw 0vw;
+opacity: 75%;
+/* Position the tooltip */
+position: absolute;
+z-index: 1;
+top: 0.9vw;
+}
+  
+.tooltip:hover .tooltiptext {
+visibility: visible;
+}
+/* Hoverable Text (End)*/
+
+/* Hoverable Text2 (Start)*/
+.tooltip2 {
+position: relative;
+display: inline-block;
+}
+  
+/* Tooltip for Reputation Buildings (Names) text */
+.tooltip2 .tooltiptext2 {
+visibility: hidden;
+width: 10vw;
+background-color: black;
+color: #fff;
+text-align: center;
+border-radius: 0.1vw;
+padding: 0.1vw 0vw;
+opacity: 75%;
+/* Position the tooltip */
+position: absolute;
+z-index: 1;
+top: 0.9vw;
+}
+  
+.tooltip2:hover .tooltiptext2 {
+visibility: visible;
+}
+/* Hoverable Text2 (End)*/
