@@ -68,10 +68,11 @@ position: fixed;
 
 /* Save Button */
 #settings_button {
-width: 10%;
-height: 8%;
-bottom: 100px;
-right: 5px;
+width: 5vw;
+height: 5vw;
+bottom: -2vw;
+right: 0.5vw;
+position: fixed;
 }
 
 .Bricks_bar {
