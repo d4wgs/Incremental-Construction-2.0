@@ -1,30 +1,30 @@
 function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
   }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
 
-  function openCity2(evt, cityName) {
-    var i, tabcontent2, tablinks;
-    tabcontent2 = document.getElementsByClassName("tabcontent2");
-    for (i = 0; i < tabcontent2.length; i++) {
-      tabcontent2[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active2", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active2";
+function openCity2(evt, cityName) {
+  var i, tabcontent2, tablinks;
+  tabcontent2 = document.getElementsByClassName("tabcontent2");
+  for (i = 0; i < tabcontent2.length; i++) {
+    tabcontent2[i].style.display = "none";
   }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active2", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active2";
+}
 
 function loadGame() {
   var savedGame = JSON.parse(localStorage.getItem("gameSave"));
@@ -34,6 +34,98 @@ function loadGame() {
 function saveGame() {
   var gameSave = {
     Cash: Cash,
+
+    ShackCost: ShackCost,
+    Shack: Shack,
+    ShackTot: ShackTot,
+    ShackTotCost1: ShackTotCost1,
+
+    ApartmentCost: ApartmentCost,
+    Apartment: Apartment,
+    ApartmentTot: ApartmentTot,
+    ApartmentTotCost1: ApartmentTotCost1,
+
+    HouseCost: HouseCost,
+    House: House,
+    HouseTot: HouseTot,
+    HouseTotCost1: HouseTotCost1,
+
+    MotelCost: MotelCost,
+    Motel: Motel,
+    MotelTot: MotelTot,
+    MotelTotCost1: MotelTotCost1,
+
+    ApartmentComplexCost: ApartmentComplexCost,
+    ApartmentComplex: ApartmentComplex,
+    ApartmentComplexTot: ApartmentComplexTot,
+    ApartmentComplexTotCost1: ApartmentComplexTotCost1,
+
+    TowerCost: TowerCost,
+    Tower: Tower,
+    TowerTot: TowerTot,
+    TowerTotCost1: TowerTotCost1,
+
+    SkyscraperCost: SkyscraperCost,
+    Skyscraper: Skyscraper,
+    SkyscraperTot: SkyscraperTot,
+    SkyscraperTotCost1: SkyscraperTotCost1,
+
+    Reputation: Reputation,
+    ReputationCost: ReputationCost,
+    ReputationTot: ReputationTot,
+
+    GDRepCost: GDRepCost,
+    GDRep: GDRep,
+    GDRepTot: GDRepTot,
+    GDRepTotCost1: GDRepTotCost1,
+
+    VSRepCost: VSRepCost,
+    VSRep: VSRep,
+    VSRepTot: VSRepTot,
+    VSRepTotCost1: VSRepTotCost1,
+
+    OTRepCost: OTRepCost,
+    OTRep: OTRep,
+    OTRepTot: OTRepTot,
+    OTRepTotCost1: OTRepTotCost1,
+
+    ETRepCost: ETRepCost,
+    ETRep: ETRep,
+    ETRepTot: ETRepTot,
+    ETRepTotCost1: ETRepTotCost1,
+
+    HCRepCost: HCRepCost,
+    HCRep: HCRep,
+    HCRepTot: HCRepTot,
+    HCRepTotCost1: HCRepTotCost1,
+
+    MSARepCost: MSARepCost,
+    MSARep: MSARep,
+    MSARepTot: MSARepTot,
+    MSARepTotCost1: MSARepTotCost1,
+
+    Bricks: Bricks,
+
+    ShackOut: 1,
+    ShackUpgradeCost: 1000,
+
+    ApartmentOut: 3,
+    ApartmentUpgradeCost: 6000,
+
+    HouseOut: 7,
+    HouseUpgradeCost: 20000,
+
+    MotelOut: 10,
+    MotelUpgradeCost: 200000,
+
+    ApartmentComplexOut: 12,
+    ApartmentComplexUpgradeCost: 1000000,
+
+    TowerOut: 15,
+    TowerUpgradeCost: 6000000,
+
+    SkyscraperOut: 25,
+    SkyscraperUpgradeCost: 20000000
   };
   localStorage.setItem("gameSave", JSON.stringify(gameSave));
 }
