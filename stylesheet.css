@@ -1,173 +1,69 @@
-/* top left building purchase (start) */
-* {box-sizing: border-box}
-.tab {
-float: left;
-border: 3px solid #1e1e1e;
-background-color: #1e1e1e;
-width: 6%;
-}
-
-.tab button {
-display: block;
-background-color: rgb(139, 135, 135);
-color: black;
-padding: 2px 2px;
-width: 100%;
-border: 1px solid rgb(0, 0, 0);
-outline: none;
-text-align: left;
-cursor: pointer;
-transition: 0.5s;
-font-size: 17px;
-}
-
-.tabcontent {
-float: left;
-padding: 0px 3px;
-border: 1px solid rgb(0, 0, 0);
-width: 25%;
-height: 22.5%;
-}
-
-.tab button:hover {
-background-color: #E11D1D;
-}
-
-.tab button.active {
-background-color: #F06060;
-}
-
-.tab2 {
-float: right;
-border: 3px solid #1e1e1e;
-background-color: #1e1e1e;
-width: 6%;
-}
-
-.tab2 button {
-display: block;
-background-color: rgb(139, 135, 135);
-color: black;
-padding: 2px 2px;
-width: 100%;
-border: 1px solid rgb(0, 0, 0);
-outline: none;
-text-align: left;
-cursor: pointer;
-transition: 0.5s;
-font-size: 17px;
-}
-    
-.tabcontent2 {
-float: right;
-padding: 0px 3px;
-border: 1px solid rgb(0, 0, 0);
-width: 40%;
-height: 38%;
-}
-    
-.tab2 button:hover {
-background-color: #E11D1D;
-}
-    
-.tab2 button.active {
-background-color: #F06060;
-}
-/* top left building purchase (end) */
-
-
-/* Hoverable Text (Start)*/
-.tooltip {
-position: relative;
-display: inline-block;
-border-bottom: 1px dotted #ff4747;
-}
-  
-.tooltip .tooltiptext {
-visibility: hidden;
-width: 120px;
-background-color: black;
-color: #fff;
-text-align: center;
-border-radius: 6px;
-padding: 5px 0;
-opacity: 75%;
-  
-/* Position the tooltip */
-position: absolute;
-z-index: 1;
-}
-  
-.tooltip:hover .tooltiptext {
-visibility: visible;
-}
-/* Hoverable Text (End)*/
-
 /* purchase building button */
 #building_purchase {
-position: absolute;
-top: 16%;
-left: 6.7%;
+position: fixed;
+width: 3.4vw;
+font-size: 0.85vw;
 }
 
 /* Building Cost Text */
 #building_cost_text {
 position: fixed;
-top: 19.5%;
-left: 11%
+top: 11.3vw;
+left: 11vw;
 }
 
 /* "CPS:" in the building menus */
 #CPS_words {
 position: absolute;
-top: 19.5%;
-left: 28%;
+top: 11.5vw;
+right: 69vw;
 }
 
 /* Total buildings (bottom left) */
 #totalbuildings {
 position: fixed;
-bottom: 1%;
-left: 0.5%;
+bottom: 0.5vw;
+left: 0.5vw;
 color: #ff4747;
-font-size: 13px;
+font-size: 0.75vw;
 }
 
-/* Changing building price (next to "Cost:") */
-#orangecost {
-color: #e67c2c;
-font-size: 14px;
-}
-
-/* Cash Per Second (Orange Number) */
-#CPS_NUMBER {
-color: #e67c2c;
-font-size: 14px;
-top: 0%;
-left: 105%;
-position: absolute; 
-}
-
-/* BUILD REPUTATION button middle */
-#BUILD_REPUTATION {
-background-color: rgb(139, 135, 135);
+/* Reputation Building Totals (GD1, VS2, OT3) */
+#RepBuildings1 {
 position: fixed;
-bottom: 48%;
-left: 45%;
+left: 53.7vw;
+top: 14.7vw;
 }
 
-/* Total CPS middle of screen */
-#totalCPS {
+/* Reputation Building Totals (ET4, HC5, MSA6) */
+#RepBuildings2 {
 position: fixed;
-left: 44.8%;
-bottom: 50.5%;
+left: 65vw;
+top: 18.5vw;
+}
+
+/* Reputation Building Information */
+#RepBuildings3 {
+position: fixed;
+left: 74.5vw;
+top: 19.3vw;
 }
 
 /* Buy Upgrades Buttons */
 #purchaseUpgrade {
-width: 30%;
-height: 7%;
+position: absolute;
+width: 12vw;
+height: 1.5vw;
 text-align: center;
+font-size:1vw;
+right:34vw;
+top:4.5vw;
+font-family: 'Times New Roman', serif;
+}
+
+/* Buy Upgrades Text */
+#purchaseUpgrade_text {
+position: fixed;
 }
 
 /* Save Button */
@@ -178,26 +74,44 @@ bottom: 100px;
 right: 5px;
 }
 
+.Bricks_bar {
+position: fixed;
+left: 42.9vw;
+bottom: 44%;
+width: 10vw;
+height: 2vw;
+background-color: #ff4747;
+color: #1e1e1e;
+}
+
+#Bricks_progress {
+position: relative;
+text-align: center;
+bottom: 0.85vw;
+color: #1e1e1e;
+}
+
 h1 {
-font-size: 35px;
+font-size: 2.5vw;
 font-family: 'Monaco';
 color: #ff4747;
 position: fixed;
-left: 45%;
-bottom: 50%;
+left: 43vw;
+bottom: 45%;
 }
 
 h3 {
 color: #FF5677;
+font-size: 1.2vw;
 }
 
 p {
-font-size: 14px;
+font-size: 0.85vw;
 color: #B958A5;
 }
 
 small {
-font-size: 14px;
+font-size: 0.85vw;
 font-family: 'Monaco';
 color: #9a9a9c;
 position: relative;
@@ -208,6 +122,15 @@ background-color: rgb(139, 135, 135);
 }
 
 body {
-    background-color: #1e1e1e;
-    font-family: 'Monaco';
+background-color: #1e1e1e;
+font-family: 'Monaco';
+}
+
+marquee {
+background-color: #1e1e1e;
+color: #FF5677;
+position: relative;
+width: 21.5vw;
+font-size: 1vw;
+font-family: 'Times New Roman', serif;
 }
