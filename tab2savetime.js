@@ -322,3 +322,10 @@ window.onload = function() {
 setInterval(function() {
     saveGame();
 }, 30000);
+
+document.addEventListener("keydown", function(event) {
+  if (event.ctrlKey && event.which == 83) { /* Control + S to manual save */
+      event.preventDefault();
+      saveGame();
+  }
+}, false);
