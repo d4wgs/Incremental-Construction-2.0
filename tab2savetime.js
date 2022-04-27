@@ -106,26 +106,26 @@ function saveGame() {
 
     Bricks: Bricks,
 
-    ShackOut: 1,
-    ShackUpgradeCost: 1000,
+    ShackOut: ShackOut,
+    ShackUpgradeCost: ShackUpgradeCost,
 
-    ApartmentOut: 3,
-    ApartmentUpgradeCost: 6000,
+    ApartmentOut: ApartmentOut,
+    ApartmentUpgradeCost: ApartmentUpgradeCost,
 
-    HouseOut: 7,
-    HouseUpgradeCost: 20000,
+    HouseOut: HouseOut,
+    HouseUpgradeCost: HouseUpgradeCost,
 
-    MotelOut: 10,
-    MotelUpgradeCost: 200000,
+    MotelOut: MotelOut,
+    MotelUpgradeCost: MotelUpgradeCost,
 
-    ApartmentComplexOut: 12,
-    ApartmentComplexUpgradeCost: 1000000,
+    ApartmentComplexOut: ApartmentComplexOut,
+    ApartmentComplexUpgradeCost: ApartmentComplexCost,
 
-    TowerOut: 15,
-    TowerUpgradeCost: 6000000,
+    TowerOut: TowerOut,
+    TowerUpgradeCost: TowerUpgradeCost,
 
-    SkyscraperOut: 25,
-    SkyscraperUpgradeCost: 20000000
+    SkyscraperOut: SkyscraperOut,
+    SkyscraperUpgradeCost: SkyscraperUpgradeCost
   };
   localStorage.setItem("gameSave", JSON.stringify(gameSave));
 }
