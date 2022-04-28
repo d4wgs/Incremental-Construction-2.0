@@ -319,17 +319,6 @@ window.onload = function() {
   document.getElementById("SkyscraperUpgradeCost").innerHTML = SkyscraperUpgradeCost;
 };
 
-setInterval(function() {
-    saveGame();
-}, 30000);
-
-document.addEventListener("keydown", function(event) {
-  if (event.ctrlKey && event.which == 83) { /* Control + S to manual save */
-      event.preventDefault();
-      saveGame();
-  }
-}, false);
-
 function resetGame() {
   if (confirm("Are you sure you want to reset your game data?")) {
     var gameSave = {};
