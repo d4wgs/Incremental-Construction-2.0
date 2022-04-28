@@ -21,7 +21,7 @@ right: 69vw;
 
 /* Total buildings (bottom left) */
 #totalbuildings {
-position: fixed;
+position: relative;
 bottom: 0.5vw;
 left: 0.5vw;
 color: #ff4747;
