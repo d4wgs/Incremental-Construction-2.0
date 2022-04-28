@@ -329,3 +329,11 @@ document.addEventListener("keydown", function(event) {
       saveGame();
   }
 }, false);
+
+function resetGame() {
+  if (confirm("Are you sure you want to reset your game data?")) {
+    var gameSave = {};
+    localStorage.setItem("gameSave", JSON.stringify(gameSave));
+    location.reload();
+  }
+}
