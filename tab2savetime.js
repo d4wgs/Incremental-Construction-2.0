@@ -226,10 +226,10 @@ window.onload = function() {
   loadGame();
   document.getElementById("Cash").innerHTML = Cash;
 
-  document.getElementById("ShackTotCost1").innerHTML = ShackTotCost1;
   document.getElementById("ShackCost").innerHTML = ShackCost;
   document.getElementById("Shack").innerHTML = Shack;
   document.getElementById("ShackTot").innerHTML = ShackTot;
+  document.getElementById("ShackTotCost1").innerHTML = ShackTotCost1;
 
   document.getElementById("ApartmentCost").innerHTML = ApartmentCost;
   document.getElementById("Apartment").innerHTML = Apartment;
