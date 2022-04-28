@@ -35,7 +35,7 @@ function loadGame() {
   if (typeof savedGame.ShackTot !== "undefined") ShackTot = savedGame.ShackTot;
   if (typeof savedGame.ShackTotCost1 !== "undefined") ShackTotCost1 = savedGame.ShackTotCost1;
 
-  if (typeof savedGame.ApartmentCost !== "undefined") ApartmentCost = savedGame.Apartment;
+  if (typeof savedGame.ApartmentCost !== "undefined") ApartmentCost = savedGame.ApartmentCost;
   if (typeof savedGame.Apartment !== "undefined") Apartment = savedGame.Apartment;
   if (typeof savedGame.ApartmentTot !== "undefined") ApartmentTot = savedGame.ApartmentTot;
   if (typeof savedGame.ApartmentTotCost1 !== "undefined") ApartmentTotCost1 = savedGame.ApartmentTotCost1;
