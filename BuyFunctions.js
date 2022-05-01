@@ -11,7 +11,7 @@ function buyShack() {
     }
   }
 function buyShack10() {
-    if (Cash >= ShackCost) {
+    if (Cash >= 10 * ShackCost) {
       Cash = Cash - (10 * ShackCost);
       Shack = Shack + 10;
       ShackCost = Math.round(0.96 * (ShackCost * (1.05 ** 10)));
@@ -25,7 +25,7 @@ function buyShack10() {
     }
   }
 function buyShack100() {
-   if (Cash >= ShackCost) {
+   if (Cash >= 100 * ShackCost) {
      Cash = Cash - (100 * ShackCost);
      Shack = Shack + 100;
      ShackCost = Math.round(0.9 * (ShackCost * (1.05 ** 100)));
@@ -51,7 +51,7 @@ function buyApartment() {
    }
  }
 function buyApartment10() {
-   if (Cash >= ApartmentCost) {
+   if (Cash >= 10 * ApartmentCost) {
      Cash = Cash - (10 * ApartmentCost);
      Apartment = Apartment + 10;
      ApartmentCost = Math.round(0.96 * (ApartmentCost * (1.05 ** 10)));
@@ -66,7 +66,7 @@ function buyApartment10() {
    }
  }
 function buyApartment100() {
-   if (Cash >= ApartmentCost) {
+   if (Cash >= 100 * ApartmentCost) {
      Cash = Cash - (100 * ApartmentCost);
      Apartment = Apartment + 100;
      ApartmentCost = Math.round(0.9 * (ApartmentCost * (1.05 ** 100)));
@@ -92,7 +92,7 @@ function buyHouse() {
    }
  }
 function buyHouse10() {
-   if (Cash >= HouseCost) {
+   if (Cash >= 10 * HouseCost) {
      Cash = Cash - (10 * HouseCost);
      House = House + 10;
      HouseCost = Math.round(0.96 * (HouseCost * (1.05 ** 10)));
@@ -106,7 +106,7 @@ function buyHouse10() {
    }
  }
 function buyHouse100() {
-   if (Cash >= HouseCost) {
+   if (Cash >= 100 * HouseCost) {
      Cash = Cash - (100 * HouseCost);
      House = House + 100;
      HouseCost = Math.round(0.9 * (HouseCost * (1.05 ** 100)));
@@ -132,7 +132,7 @@ function buyMotel() {
    }
  }
 function buyMotel10() {
-   if (Cash >= MotelCost) {
+   if (Cash >= 10 * MotelCost) {
      Cash = Cash - (10 * MotelCost);
      Motel = Motel + 10;
      MotelCost = Math.round(0.96 * (MotelCost * (1.05 ** 100)));
@@ -146,7 +146,7 @@ function buyMotel10() {
    }
  }
 function buyMotel100() {
-   if (Cash >= MotelCost) {
+   if (Cash >= 100 * MotelCost) {
      Cash = Cash - (100 * MotelCost);
      Motel = Motel + 100;
      MotelCost = Math.round(0.9 * (MotelCost * (1.05 ** 100)));
@@ -172,7 +172,7 @@ function buyMotel100() {
     }
   }
 function buyApartmentComplex10() {
-   if (Cash >= ApartmentComplexCost) {
+   if (Cash >= 10 * ApartmentComplexCost) {
      Cash = Cash - (10 * ApartmentComplexCost);
      ApartmentComplex = ApartmentComplex + 10;
      ApartmentComplexCost = Math.round(0.96 * (ApartmentComplexCost * (1.05 ** 10)));
@@ -186,7 +186,7 @@ function buyApartmentComplex10() {
    }
  }
 function buyApartmentComplex100() {
-   if (Cash >= ApartmentComplexCost) {
+   if (Cash >= 100 * ApartmentComplexCost) {
      Cash = Cash - (100 * ApartmentComplexCost);
      ApartmentComplex = ApartmentComplex + 100;
      ApartmentComplexCost = Math.round(0.9 * (ApartmentComplexCost * (1.05 ** 100)));
@@ -212,7 +212,7 @@ function buyTower() {
    }
  }
 function buyTower10() {
-   if (Cash >= TowerCost) {
+   if (Cash >= 10 * TowerCost) {
      Cash = Cash - (10 * TowerCost);
      Tower = Tower + 10;
      TowerCost = Math.round(0.96 * (TowerCost * (1.05 ** 10)));
@@ -226,7 +226,7 @@ function buyTower10() {
    }
  }
 function buyTower100() {
-   if (Cash >= TowerCost) {
+   if (Cash >= 100 * TowerCost) {
      Cash = Cash - (100 * TowerCost);
      Tower = Tower + 100;
      TowerCost = Math.round(0.9 * (TowerCost * (1.05 ** 100)));
@@ -252,7 +252,7 @@ function buySkyscraper() {
    }
  }
 function buySkyscraper10() {
-   if (Cash >= SkyscraperCost) {
+   if (Cash >= 10 * SkyscraperCost) {
      Cash = Cash - (100 * SkyscraperCost);
      Skyscraper = Skyscraper + 10;
      SkyscraperCost = Math.round(0.96 * (SkyscraperCost * (1.05 ** 10)));
@@ -266,7 +266,7 @@ function buySkyscraper10() {
    }
  }
 function buySkyscraper100() {
-   if (Cash >= SkyscraperCost) {
+   if (Cash >= 100 * SkyscraperCost) {
      Cash = Cash - (100 * SkyscraperCost);
      Skyscraper = Skyscraper + 100;
      SkyscraperCost = Math.round(0.9 * (SkyscraperCost * (1.05 ** 100)));
