@@ -1,4 +1,4 @@
-var Cash = 75;
+var Cash = 1000000000;
 
 var ShackCost = 50;
 var Shack = 0;
