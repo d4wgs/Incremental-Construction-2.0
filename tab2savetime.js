@@ -203,10 +203,8 @@ function saveGame() {
 window.onload = function() {
   loadGame();
   document.getElementById("Cash").innerHTML = Cash;
-
-  document.getElementById("Shack").innerHTML = Shack;
   document.getElementById("ShackCost").innerHTML = ShackCost;
-
+  document.getElementById("Shack").innerHTML = Shack;
   document.getElementById("ShackTot").innerHTML = ShackTot;
   document.getElementById("ShackTotCost1").innerHTML = ShackTotCost1;
 
