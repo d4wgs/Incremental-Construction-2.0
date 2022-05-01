@@ -29,96 +29,74 @@ function openCity2(evt, cityName) {
 function loadGame() {
   var savedGame = JSON.parse(localStorage.getItem("gameSave"));
   if (typeof savedGame.Cash !== "undefined") Cash = savedGame.Cash;
-
   if (typeof savedGame.ShackCost !== "undefined") ShackCost = savedGame.ShackCost;
   if (typeof savedGame.Shack !== "undefined") Shack = savedGame.Shack;
   if (typeof savedGame.ShackTot !== "undefined") ShackTot = savedGame.ShackTot;
   if (typeof savedGame.ShackTotCost1 !== "undefined") ShackTotCost1 = savedGame.ShackTotCost1;
-
   if (typeof savedGame.ApartmentCost !== "undefined") ApartmentCost = savedGame.ApartmentCost;
   if (typeof savedGame.Apartment !== "undefined") Apartment = savedGame.Apartment;
   if (typeof savedGame.ApartmentTot !== "undefined") ApartmentTot = savedGame.ApartmentTot;
   if (typeof savedGame.ApartmentTotCost1 !== "undefined") ApartmentTotCost1 = savedGame.ApartmentTotCost1;
-
   if (typeof savedGame.HouseCost !== "undefined") HouseCost = savedGame.HouseCost;
   if (typeof savedGame.House !== "undefined") House = savedGame.House;
   if (typeof savedGame.HouseTot !== "undefined") HouseTot = savedGame.HouseTot;
   if (typeof savedGame.HouseTotCost1 !== "undefined") HouseTotCost1 = savedGame.HouseTotCost1;
-
   if (typeof savedGame.MotelCost !== "undefined") MotelCost = savedGame.MotelCost;
   if (typeof savedGame.Motel !== "undefined") Motel = savedGame.Motel;
   if (typeof savedGame.MotelTot !== "undefined") MotelTot = savedGame.MotelTot;
   if (typeof savedGame.MotelTotCost1 !== "undefined") MotelTotCost1 = savedGame.MotelTotCost1;
-
   if (typeof savedGame.ApartmentComplexCost !== "undefined") ApartmentComplexCost = savedGame.ApartmentComplexCost;
   if (typeof savedGame.ApartmentComplex !== "undefined") ApartmentComplex = savedGame.ApartmentComplex;
   if (typeof savedGame.ApartmentComplexTot !== "undefined") ApartmentComplexTot = savedGame.ApartmentComplexTot;
   if (typeof savedGame.ApartmentComplexTotCost1 !== "undefined") ApartmentComplexTotCost1 = savedGame.ApartmentComplexTotCost1;
-
   if (typeof savedGame.TowerCost !== "undefined") TowerCost = savedGame.TowerCost;
   if (typeof savedGame.Tower !== "undefined") Tower = savedGame.Tower;
   if (typeof savedGame.TowerTot !== "undefined") TowerTot = savedGame.TowerTot;
   if (typeof savedGame.TowerTotCost1 !== "undefined") TowerTotCost1 = savedGame.TowerTotCost1;
-
   if (typeof savedGame.SkyscraperCost !== "undefined") SkyscraperCost = savedGame.SkyscraperCost;
   if (typeof savedGame.Skyscraper !== "undefined") Skyscraper = savedGame.Skyscraper;
   if (typeof savedGame.SkyscraperTot !== "undefined") SkyscraperTot = savedGame.SkyscraperTot;
   if (typeof savedGame.SkyscraperTotCost1 !== "undefined") SkyscraperTotCost1 = savedGame.SkyscraperTotCost1;
-
   if (typeof savedGame.Reputation !== "undefined") Reputation = savedGame.Reputation;
   if (typeof savedGame.ReputationCost !== "undefined") ReputationCost = savedGame.ReputationCost;
   if (typeof savedGame.ReputationTot !== "undefined") ReputationTot = savedGame.ReputationTot;
-
   if (typeof savedGame.GDRepCost !== "undefined") GDRepCost = savedGame.GDRepCost;
   if (typeof savedGame.GDRep !== "undefined") GDRep = savedGame.GDRep;
   if (typeof savedGame.GDRepTot !== "undefined") GDRepTot = savedGame.GDRepTot;
   if (typeof savedGame.GDRepTotCost1 !== "undefined") GDRepTotCost1 = savedGame.GDRepTotCost1;
-
   if (typeof savedGame.VSRepCost !== "undefined") VSRepCost = savedGame.VSRepCost;
   if (typeof savedGame.VSRep !== "undefined") VSRep = savedGame.VSRep;
   if (typeof savedGame.VSRepTot !== "undefined") VSRepTot = savedGame.VSRepTot;
   if (typeof savedGame.VSRepTotCost1 !== "undefined") VSRepTotCost1 = savedGame.VSRepTotCost1;
-
   if (typeof savedGame.OTRepCost !== "undefined") OTRepCost = savedGame.OTRepCost;
   if (typeof savedGame.OTRep !== "undefined") OTRep = savedGame.OTRep;
   if (typeof savedGame.OTRepTot !== "undefined") OTRepTot = savedGame.OTRepTot;
   if (typeof savedGame.OTRepTotCost1 !== "undefined") OTRepTotCost1 = savedGame.OTRepTotCost1;
-
   if (typeof savedGame.ETRepCost !== "undefined") ETRepCost = savedGame.ETRepCost;
   if (typeof savedGame.ETRep !== "undefined") ETRep = savedGame.ETRep;
   if (typeof savedGame.ETRepTot !== "undefined") ETRepTot = savedGame.ETRepTot;
   if (typeof savedGame.ETRepTotCost1 !== "undefined") ETRepTotCost1 = savedGame.ETRepTotCost1;
-
   if (typeof savedGame.HCRepCost !== "undefined") HCRepCost = savedGame.HCRepCost;
   if (typeof savedGame.HCRep !== "undefined") HCRep = savedGame.HCRep;
   if (typeof savedGame.HCRepTot !== "undefined") HCRepTot = savedGame.HCRepTot;
   if (typeof savedGame.HCRepTotCost1 !== "undefined") HCRepTotCost1 = savedGame.HCRepTotCost1;
-
   if (typeof savedGame.MSARepCost !== "undefined") MSARepCost = savedGame.MSARepCost;
   if (typeof savedGame.MSARep !== "undefined") MSARep = savedGame.MSARep;
   if (typeof savedGame.MSARepTot !== "undefined") MSARepTot = savedGame.MSARepTot;
   if (typeof savedGame.MSARepTotCost1 !== "undefined") MSARepTotCost1 = savedGame.MSARepTotCost1;
-
   if (typeof savedGame.Bricks !== "undefined") Bricks = savedGame.Bricks;
-
   if (typeof savedGame.ShackOut !== "undefined") ShackOut = savedGame.ShackOut;
   if (typeof savedGame.ShackUpgradeCost !== "undefined") ShackUpgradeCost = savedGame.ShackUpgradeCost;
-
   if (typeof savedGame.ApartmentOut !== "undefined") ApartmentOut = savedGame.ApartmentOut;
   if (typeof savedGame.ApartmentUpgradeCost !== "undefined") ApartmentUpgradeCost = savedGame.ApartmentUpgradeCost;
-
   if (typeof savedGame.HouseOut !== "undefined") HouseOut = savedGame.HouseOut;
   if (typeof savedGame.HouseUpgradeCost !== "undefined") HouseUpgradeCost = savedGame.HouseUpgradeCost;
-
   if (typeof savedGame.MotelOut !== "undefined") MotelOut = savedGame.MotelOut;
   if (typeof savedGame.MotelUpgradeCost !== "undefined") MotelUpgradeCost = savedGame.MotelUpgradeCost;
-
   if (typeof savedGame.ApartmentComplexOut !== "undefined") ApartmentComplexOut = savedGame.ApartmentOut;
   if (typeof savedGame.ApartmentComplexUpgradeCost !== "undefined") ApartmentComplexCost = savedGame.ApartmentUpgradeCost;
-
   if (typeof savedGame.TowerOut !== "undefined") TowerOut = savedGame.TowerOut;
   if (typeof savedGame.TowerUpgradeCost !== "undefined") TowerUpgradeCost = savedGame.TowerUpgradeCost;
-
   if (typeof savedGame.SkyscraperOut !== "undefined") SkyscraperOut = savedGame.SkyscraperOut;
   if (typeof savedGame.SkyscraperUpgradeCost !== "undefined") SkyscraperUpgradeCost = savedGame.SkyscraperUpgradeCost;
 }
@@ -226,8 +204,9 @@ window.onload = function() {
   loadGame();
   document.getElementById("Cash").innerHTML = Cash;
 
-  document.getElementById("ShackCost").innerHTML = ShackCost;
   document.getElementById("Shack").innerHTML = Shack;
+  document.getElementById("ShackCost").innerHTML = ShackCost;
+
   document.getElementById("ShackTot").innerHTML = ShackTot;
   document.getElementById("ShackTotCost1").innerHTML = ShackTotCost1;
 
