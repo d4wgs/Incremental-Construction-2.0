@@ -73,18 +73,25 @@ function loadGame() {
   if (typeof savedGame.MSARep !== undefined) MSARep = savedGame.MSARep;
 
   if (typeof savedGame.Bricks !== undefined) Bricks = savedGame.Bricks;
+
   if (typeof savedGame.ShackOut !== undefined) ShackOut = savedGame.ShackOut;
   if (typeof savedGame.ShackUpgradeCost !== undefined) ShackUpgradeCost = savedGame.ShackUpgradeCost;
+
   if (typeof savedGame.ApartmentOut !== undefined) ApartmentOut = savedGame.ApartmentOut;
   if (typeof savedGame.ApartmentUpgradeCost !== undefined) ApartmentUpgradeCost = savedGame.ApartmentUpgradeCost;
+
   if (typeof savedGame.HouseOut !== undefined) HouseOut = savedGame.HouseOut;
   if (typeof savedGame.HouseUpgradeCost !== undefined) HouseUpgradeCost = savedGame.HouseUpgradeCost;
+
   if (typeof savedGame.MotelOut !== undefined) MotelOut = savedGame.MotelOut;
   if (typeof savedGame.MotelUpgradeCost !== undefined) MotelUpgradeCost = savedGame.MotelUpgradeCost;
-  if (typeof savedGame.ApartmentComplexOut !== undefined) ApartmentComplexOut = savedGame.ApartmentOut;
-  if (typeof savedGame.ApartmentComplexUpgradeCost !== undefined) ApartmentComplexCost = savedGame.ApartmentUpgradeCost;
+
+  if (typeof savedGame.ApartmentComplexOut !== undefined) ApartmentComplexOut = savedGame.ApartmentComplexOut;
+  if (typeof savedGame.ApartmentComplexUpgradeCost !== undefined) ApartmentComplexCost = savedGame.ApartmentComplexUpgradeCost;
+
   if (typeof savedGame.TowerOut !== undefined) TowerOut = savedGame.TowerOut;
   if (typeof savedGame.TowerUpgradeCost !== undefined) TowerUpgradeCost = savedGame.TowerUpgradeCost;
+
   if (typeof savedGame.SkyscraperOut !== undefined) SkyscraperOut = savedGame.SkyscraperOut;
   if (typeof savedGame.SkyscraperUpgradeCost !== undefined) SkyscraperUpgradeCost = savedGame.SkyscraperUpgradeCost;
 }
