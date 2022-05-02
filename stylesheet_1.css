@@ -33,6 +33,7 @@ font-size: 0.75vw;
 position: fixed;
 left: 53.7vw;
 top: 14.7vw;
+color: #e67c2c;
 }
 
 /* Reputation Building Totals (ET4, HC5, MSA6) */
@@ -40,6 +41,7 @@ top: 14.7vw;
 position: fixed;
 left: 65vw;
 top: 18.5vw;
+color: #e67c2c;
 }
 
 /* Reputation Building Information */
@@ -129,9 +131,9 @@ font-family: 'Monaco';
 
 marquee {
 background-color: #1e1e1e;
-color: #ff4747;
+color: #FF5677;
 position: relative;
-width: 21vw;
+width: 21.5vw;
 font-size: 1vw;
 font-family: 'Times New Roman', serif;
 }
