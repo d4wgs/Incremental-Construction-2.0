@@ -34,6 +34,7 @@ position: fixed;
 left: 53.7vw;
 top: 14.7vw;
 color: #e67c2c;
+font-size: 0.75vw;
 }
 
 /* Reputation Building Totals (ET4, HC5, MSA6) */
@@ -42,6 +43,7 @@ position: fixed;
 left: 65vw;
 top: 18.5vw;
 color: #e67c2c;
+font-size: 0.75vw;
 }
 
 /* Reputation Building Information */
