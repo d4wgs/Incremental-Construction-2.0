@@ -2,9 +2,9 @@ function upgradeShack() {
     if (Cash >= ShackUpgradeCost) {
       Cash = Cash - ShackUpgradeCost;
       ShackOut = Math.round(ShackOut * 1.5);
+      ShackOut = ShackOut;
       ShackUpgradeCost = Math.round(ShackUpgradeCost * 3.5);
       ShackUpgradeCost = ShackUpgradeCost;
-      ShackOut = ShackOut;
 
       document.getElementById("Cash").innerHTML = Cash;
       document.getElementById("ShackOut").innerHTML = ShackOut;
@@ -89,24 +89,3 @@ function upgradeSkyscraper() {
       document.getElementById("SkyscraperUpgradeCost").innerHTML = SkyscraperUpgradeCost;
     }
   }
-
-var ShackOut = 1;
-var ShackUpgradeCost = 1000;
-
-var ApartmentOut = 3;
-var ApartmentUpgradeCost = 6000;
-
-var HouseOut = 7;
-var HouseUpgradeCost = 20000;
-
-var MotelOut = 10;
-var MotelUpgradeCost = 200000;
-
-var ApartmentComplexOut = 12;
-var ApartmentComplexUpgradeCost = 1000000;
-
-var TowerOut = 15;
-var TowerUpgradeCost = 6000000;
-
-var SkyscraperOut = 25;
-var SkyscraperUpgradeCost = 20000000;
