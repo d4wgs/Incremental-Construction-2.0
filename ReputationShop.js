@@ -4,8 +4,9 @@ function buyReputation() {
     Reputation = Reputation + 1;
     Reputation = Reputation;
 
-    document.getElementById("Reputation").innerHTML = Reputation;
     document.getElementById("Skyscraper").innerHTML = Skyscraper;
+    document.getElementById("Reputation").innerHTML = Reputation;
+    document.getElementById("ReputationCost").innerHTML = ReputationCost;
   }
 }
 function buyGDRep() {
@@ -13,12 +14,12 @@ function buyGDRep() {
     Reputation = Reputation - GDRepCost;
     GDRep = GDRep + 1;
     GDRepCost = Math.round(GDRepCost * 3.5);
-    GDRep = GDRep;
     GDRepCost = GDRepCost;
+    GDRep = GDRep;
 
     document.getElementById("Reputation").innerHTML = Reputation;
-    document.getElementById("GDRepCost").innerHTML = GDRepCost;
     document.getElementById("GDRep").innerHTML = GDRep;
+    document.getElementById("GDRepCost").innerHTML = GDRepCost;
   }
 }
 function buyVSRep() {
