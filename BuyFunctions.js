@@ -4,6 +4,7 @@ function buyShack() {
       Shack = Shack + 1;
       ShackCost = Math.round(ShackCost * 1.05);
       ShackCost = ShackCost;
+      Shack = Shack;
 
       document.getElementById("Cash").innerHTML = Cash;
       document.getElementById("ShackTot").innerHTML = Shack;
