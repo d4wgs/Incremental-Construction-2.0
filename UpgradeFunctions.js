@@ -2,9 +2,9 @@ function upgradeShack() {
     if (Cash >= ShackUpgradeCost) {
       Cash = Cash - ShackUpgradeCost;
       ShackOut = Math.round(ShackOut * 1.5);
+      ShackOut = ShackOut;
       ShackUpgradeCost = Math.round(ShackUpgradeCost * 3.5);
       ShackUpgradeCost = ShackUpgradeCost;
-      ShackOut = ShackOut;
 
       document.getElementById("Cash").innerHTML = Cash;
       document.getElementById("ShackOut").innerHTML = ShackOut;
