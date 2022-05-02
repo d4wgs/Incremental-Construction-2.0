@@ -64,6 +64,38 @@ setInterval(function() {
   Cash = Cash + ApartmentComplex * ApartmentComplexOut;
   Cash = Cash + Tower * TowerOut;
   Cash = Cash + Skyscraper * SkyscraperOut;
-  Cash = Cash + GDRep * 1000
+  Cash = Cash + GDRep * 1000;
   document.getElementById("Cash").innerHTML = Cash;
 }, 250);
+
+var ShackOut = 1;
+var ShackUpgradeCost = 1000;
+
+var ApartmentOut = 3;
+var ApartmentUpgradeCost = 6000;
+
+var HouseOut = 7;
+var HouseUpgradeCost = 20000;
+
+var MotelOut = 10;
+var MotelUpgradeCost = 200000;
+
+var ApartmentComplexOut = 12;
+var ApartmentComplexUpgradeCost = 1000000;
+
+var TowerOut = 15;
+var TowerUpgradeCost = 6000000;
+
+var SkyscraperOut = 25;
+var SkyscraperUpgradeCost = 20000000;
+
+var Bricks = 0;
+
+setInterval(function() {
+  Bricks = Bricks + VSRep * 1;
+  Bricks = Bricks + OTRep * 3;
+  Bricks = Bricks + ETRep * 7;
+  Bricks = Bricks + HCRep * 13;
+  Bricks = Bricks + MSARep * 18;
+  document.getElementById("Bricks").innerHTML = Bricks;
+}, 1000);
