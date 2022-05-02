@@ -7,7 +7,7 @@ function buyShack() {
       Shack = Shack;
 
       document.getElementById("Cash").innerHTML = Cash;
-      document.getElementById("ShackTot").innerHTML = Shack;
+      document.getElementById("Shack").innerHTML = Shack;
       document.getElementById("ShackCost").innerHTML = ShackCost;
     }
   }
@@ -17,9 +17,10 @@ function buyShack10() {
       Shack = Shack + 10;
       ShackCost = Math.round(0.96 * (ShackCost * (1.05 ** 10)));
       ShackCost = ShackCost;
+      Shack = Shack;
 
       document.getElementById("Cash").innerHTML = Cash;
-      document.getElementById("ShackTot").innerHTML = Shack;
+      document.getElementById("Shack").innerHTML = Shack;
       document.getElementById("ShackCost").innerHTML = ShackCost;
     }
   }
@@ -29,9 +30,10 @@ function buyShack100() {
      Shack = Shack + 100;
      ShackCost = Math.round(0.9 * (ShackCost * (1.05 ** 100)));
      ShackCost = ShackCost;
+     Shack = Shack;
 
      document.getElementById("Cash").innerHTML = Cash;
-     document.getElementById("ShackTot").innerHTML = Shack;
+     document.getElementById("Shack").innerHTML = Shack;
      document.getElementById("ShackCost").innerHTML = ShackCost;
    }
  }
