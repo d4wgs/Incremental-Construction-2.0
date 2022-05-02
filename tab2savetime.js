@@ -18,12 +18,12 @@ function openCity2(evt, cityName) {
   for (i = 0; i < tabcontent2.length; i++) {
     tabcontent2[i].style.display = "none";
   }
-  tablinks = document.getElementsByClassName("tablinks");
+  tablinks = document.getElementsByClassName("tablinks2");
   for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active2", "");
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
   document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active2";
+  evt.currentTarget.className += " active";
 }
 
 function loadGame() {
