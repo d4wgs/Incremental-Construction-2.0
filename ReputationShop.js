@@ -14,6 +14,7 @@ function buyGDRep() {
     GDRep = GDRep + 1;
     GDRepCost = Math.round(GDRepCost * 3.5);
     GDRep = GDRep;
+    GDRepCost = GDRepCost;
 
     document.getElementById("ReputationTot").innerHTML = Reputation;
     document.getElementById("GDRepCost").innerHTML = GDRepCost;
