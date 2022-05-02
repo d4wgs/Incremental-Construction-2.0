@@ -28,7 +28,7 @@ function openCity2(evt, cityName) {
 
 function loadGame() {
   var savedGame = JSON.parse(localStorage.getItem("gameSave"));
-  if (typeof savedGame.Cash !== undefined) Cash = savedGame.Cash;
+  if (typeof savedGame.Cash !== "undefined") Cash = savedGame.Cash;
 
   if (typeof savedGame.ShackCost !== undefined) ShackCost = savedGame.ShackCost;
   if (typeof savedGame.Shack !== undefined) Shack = savedGame.Shack;
