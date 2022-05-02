@@ -2,9 +2,9 @@ function buyReputation() {
   if (Skyscraper >= ReputationCost) {
     Skyscraper = Skyscraper - ReputationCost;
     Reputation = Reputation + 1;
-    ReputationCount = Reputation;
+    Reputation = Reputation;
 
-    document.getElementById("ReputationTot").innerHTML = ReputationCount;
+    document.getElementById("ReputationTot").innerHTML = Reputation;
     document.getElementById("SkyscraperTot").innerHTML = Skyscraper;
   }
 }
@@ -13,12 +13,11 @@ function buyGDRep() {
     Reputation = Reputation - GDRepCost;
     GDRep = GDRep + 1;
     GDRepCost = Math.round(GDRepCost * 3.5);
-    GDRepCount = GDRep;
-    GDRepTotCost1 = GDRepCost;
+    GDRep = GDRep;
 
     document.getElementById("ReputationTot").innerHTML = Reputation;
     document.getElementById("GDRepCost").innerHTML = GDRepCost;
-    document.getElementById("GDRepTot").innerHTML = GDRepCount;
+    document.getElementById("GDRepTot").innerHTML = GDRep;
   }
 }
 function buyVSRep() {
@@ -26,12 +25,12 @@ function buyVSRep() {
     Reputation = Reputation - VSRepCost;
     VSRep = VSRep + 1;
     VSRepCost = Math.round(VSRepCost * 3.5);
-    VSRepCount = VSRep;
-    VSRepTotCost1 = VSRepCost;
+    VSRep = VSRep;
+    VSRepCost = VSRepCost;
 
     document.getElementById("ReputationTot").innerHTML = Reputation;
     document.getElementById("VSRepCost").innerHTML = VSRepCost;
-    document.getElementById("VSRepTot").innerHTML = VSRepCount;
+    document.getElementById("VSRepTot").innerHTML = VSRep;
   }
 }
 function buyOTRep() {
@@ -39,12 +38,12 @@ function buyOTRep() {
     Reputation = Reputation - OTRepCost;
     OTRep = OTRep + 1;
     OTRepCost = Math.round(OTRepCost * 3.5);
-    OTRepCount = OTRep;
-    OTRepTotCost1 = OTRepCost;
+    OTRep = OTRep;
+    OTRepCost = OTRepCost;
 
     document.getElementById("ReputationTot").innerHTML = Reputation;
     document.getElementById("OTRepCost").innerHTML = OTRepCost;
-    document.getElementById("OTRepTot").innerHTML = OTRepCount;
+    document.getElementById("OTRepTot").innerHTML = OTRep;
   }
 }
 function buyETRep() {
@@ -52,12 +51,12 @@ function buyETRep() {
     Reputation = Reputation - ETRepCost;
     ETRep = ETRep + 1;
     ETRepCost = Math.round(ETRepCost * 3.5);
-    ETRepCount = ETRep;
-    ETRepTotCost1 = ETRepCost;
+    ETRep = ETRep;
+    ETRepCost = ETRepCost;
 
     document.getElementById("ReputationTot").innerHTML = Reputation;
     document.getElementById("ETRepCost").innerHTML = ETRepCost;
-    document.getElementById("ETRepTot").innerHTML = ETRepCount;
+    document.getElementById("ETRepTot").innerHTML = ETRep;
   }
 }
 function buyHCRep() {
@@ -65,12 +64,12 @@ function buyHCRep() {
     Reputation = Reputation - HCRepCost;
     HCRep = HCRep + 1;
     HCRepCost = Math.round(HCRepCost * 3.5);
-    HCRepCount = HCRep;
-    HCRepTotCost1 = HCRepCost;
+    HCRep = HCRep;
+    HCRepCost = HCRepCost;
 
     document.getElementById("ReputationTot").innerHTML = Reputation;
     document.getElementById("HCRepCost").innerHTML = HCRepCost;
-    document.getElementById("HCRepTot").innerHTML = HCRepCount;
+    document.getElementById("HCRepTot").innerHTML = HCRep;
   }
 }
 function buyMSARep() {
@@ -78,12 +77,12 @@ function buyMSARep() {
     Reputation = Reputation - MSARepCost;
     MSARep = MSARep + 1;
     MSARepCost = Math.round(MSARepCost * 3.5);
-    MSARepCount = MSARep;
-    MSARepTotCost1 = MSARepCost;
+    MSARep = MSARep;
+    MSARepCost = MSARepCost;
 
     document.getElementById("ReputationTot").innerHTML = Reputation;
     document.getElementById("MSARepCost").innerHTML = MSARepCost;
-    document.getElementById("MSARepTot").innerHTML = MSARepCount;
+    document.getElementById("MSARepTot").innerHTML = MSARep;
   }
 }
 
