@@ -3,11 +3,11 @@ function buyShack() {
       Cash = Cash - ShackCost;
       Shack = Shack + 1;
       ShackCost = Math.round(ShackCost * 1.05);
-      ShackTotCost1 = ShackCost;
+      ShackCost = ShackCost;
 
       document.getElementById("Cash").innerHTML = Cash;
       document.getElementById("ShackTot").innerHTML = Shack;
-      document.getElementById("ShackTotCost").innerHTML = ShackTotCost1;
+      document.getElementById("ShackCost").innerHTML = ShackCost1;
     }
   }
 function buyShack10() {
