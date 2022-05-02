@@ -2,254 +2,254 @@
 <head>
 <title>Incremental Construction 2.0</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
-    <link rel="stylesheet" href="stylesheet_1.css">
-    <link rel="stylesheet" href="stylesheet_2.css">
-    <script type="text/javascript" src="BuildingValues.js"></script>
-    <script type="text/javascript" src="BuyFunctions.js"></script>
-    <script type="text/javascript" src="tab2savetime.js"></script>
-    <script type="text/javascript" src="UpgradeFunctions.js"></script>
-    <script type="text/javascript" src="ReputationShop.js"></script>
-    <link rel="icon" href="https://i.imgur.com/1CgRaKG.png">
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+	<link rel="stylesheet" href="stylesheet_1.css">
+	<link rel="stylesheet" href="stylesheet_2.css">
+	<script type="text/javascript" src="BuildingValues.js"></script>
+	<script type="text/javascript" src="BuyFunctions.js"></script>
+	<script type="text/javascript" src="tab2savetime.js"></script>
+	<script type="text/javascript" src="UpgradeFunctions.js"></script>
+	<script type="text/javascript" src="ReputationShop.js"></script>
+	<link rel="icon" href="https://i.imgur.com/1CgRaKG.png">
 </head>
 
 <body>
-    
+	
 <marquee scrollamount="10">Incremental Construction 2.0 - d4wgs</marquee>
 
-    <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'ShackTab')" id="defaultOpen">Shack</button>
-        <button class="tablinks" onclick="openCity(event, 'ApartmentTab')">Apartment</button>
-        <button class="tablinks" onclick="openCity(event, 'HouseTab')">House</button>
-        <button class="tablinks" onclick="openCity(event, 'MotelTab')">Motel</button>
-        <button class="tablinks" onclick="openCity(event, 'Apartment ComplexTab')">Apartment Complex</button>
-        <button class="tablinks" onclick="openCity(event, 'TowerTab')">Tower</button>
-        <button class="tablinks" onclick="openCity(event, 'SkyscraperTab')">Skyscraper</button>
-    </div>
-    <div class="tab2">
-        <button class="tablinks2" onclick="openCity2(event, 'Upgrades')" id="defaultOpen2">Upgrades</button>
-        <button class="tablinks2" onclick="openCity2(event, 'Reputation_Shop')">Reputation</button>
-    </div>
+	<div class="tab">
+		<button class="tablinks" onclick="openCity(event, 'ShackTab')" id="defaultOpen">Shack</button>
+		<button class="tablinks" onclick="openCity(event, 'ApartmentTab')">Apartment</button>
+		<button class="tablinks" onclick="openCity(event, 'HouseTab')">House</button>
+		<button class="tablinks" onclick="openCity(event, 'MotelTab')">Motel</button>
+		<button class="tablinks" onclick="openCity(event, 'Apartment ComplexTab')">Apartment Complex</button>
+		<button class="tablinks" onclick="openCity(event, 'TowerTab')">Tower</button>
+		<button class="tablinks" onclick="openCity(event, 'SkyscraperTab')">Skyscraper</button>
+	</div>
+	<div class="tab2">
+		<button class="tablinks2" onclick="openCity2(event, 'Upgrades')" id="defaultOpen2">Upgrades</button>
+		<button class="tablinks2" onclick="openCity2(event, 'Reputation_Shop')">Reputation</button>
+	</div>
 
 <div id="settings_button">
 <button onclick="saveGame()">Save Button</button>
 <button onclick="resetGame()">Reset Button</button>
 </div>
 
-    <div id="ShackTab" class="tabcontent">
-        <h3>Shack</h3>
-        <p>Shack is lowest earning building. It is also the cheapest building to start out with.</p>
-        <div id="CPS_words"><small>CPS: <span id="ShackOut" style="color: #e67c2c">1</span></small></div>
+	<div id="ShackTab" class="tabcontent">
+		<h3>Shack</h3>
+		<p>Shack is lowest earning building. It is also the cheapest building to start out with.</p>
+		<div id="CPS_words"><small>CPS: <span id="ShackOut" style="color: #e67c2c">1</span></small></div>
 
-        <div id="building_purchase">
-            <button onclick="buyShack()" id="building_purchase" style="left:7vw; top:8.5vw">[1]</button>
-            <button onclick="buyShack10()" id="building_purchase" style="left:7vw; top:9.9vw">[10]</button>
-            <button onclick="buyShack100()" id="building_purchase" style="left:7vw; top:11.3vw">[100]</button>
-        </div>
+		<div id="building_purchase">
+			<button onclick="buyShack()" id="building_purchase" style="left:7vw; top:8.5vw">[1]</button>
+			<button onclick="buyShack10()" id="building_purchase" style="left:7vw; top:9.9vw">[10]</button>
+			<button onclick="buyShack100()" id="building_purchase" style="left:7vw; top:11.3vw">[100]</button>
+		</div>
 
-        <div id="building_cost_text">
-            <small><div class="tooltip">Cost Per*: <span class="tooltiptext">4% Discount on x10<br>10% Discount on x100</span></div></small>
-            <small style="color: #e67c2c"><span id="ShackCost"> 50</span></small>
-            <small>Cash</small>
-        </div>
-    </div>
+		<div id="building_cost_text">
+			<small><div class="tooltip">Cost Per*: <span class="tooltiptext">4% Discount on x10<br>10% Discount on x100</span></div></small>
+			<small style="color: #e67c2c"><span id="ShackCost"> 50</span></small>
+			<small>Cash</small>
+		</div>
+	</div>
 
-    <div id="ApartmentTab" class="tabcontent">
-        <h3>Apartment</h3>
-        <p>Purchase some apartments to reside in!</p>
-        <div id="CPS_words"><small>CPS: <span id="ApartmentOut" style="color: #e67c2c">3</span></small></div>
+	<div id="ApartmentTab" class="tabcontent">
+		<h3>Apartment</h3>
+		<p>Purchase some apartments to reside in!</p>
+		<div id="CPS_words"><small>CPS: <span id="ApartmentOut" style="color: #e67c2c">3</span></small></div>
 
-        <div id="building_purchase">
-            <button onclick="buyApartment()" id="building_purchase" style="left:7vw; top:8.5vw">[1]</button>
-            <button onclick="buyApartment10()" id="building_purchase" style="left:7vw; top:9.9vw">[10]</button>
-            <button onclick="buyApartment100()" id="building_purchase" style="left:7vw; top:11.3vw">[100]</button>
-        </div>
+		<div id="building_purchase">
+			<button onclick="buyApartment()" id="building_purchase" style="left:7vw; top:8.5vw">[1]</button>
+			<button onclick="buyApartment10()" id="building_purchase" style="left:7vw; top:9.9vw">[10]</button>
+			<button onclick="buyApartment100()" id="building_purchase" style="left:7vw; top:11.3vw">[100]</button>
+		</div>
 
-        <div id="building_cost_text">
-            <small><div class="tooltip">Cost Per*: <span class="tooltiptext">4% Discount on x10<br>10% Discount on x100</span></div></small>
-            <small style="color: #e67c2c"><span id="ApartmentCost"> 300</span></small>
-            <small>Cash</small>
-        </div>
-    </div>
-      
-    <div id="HouseTab" class="tabcontent">
-        <h3>House</h3>
-        <p>House is where things start to ramp up. Starts generating some real income.</p>
-        <div id="CPS_words"><small>CPS: <span id="HouseOut" style="color: #e67c2c">7</span></small></div>
+		<div id="building_cost_text">
+			<small><div class="tooltip">Cost Per*: <span class="tooltiptext">4% Discount on x10<br>10% Discount on x100</span></div></small>
+			<small style="color: #e67c2c"><span id="ApartmentCost"> 300</span></small>
+			<small>Cash</small>
+		</div>
+	</div>
+	  
+	<div id="HouseTab" class="tabcontent">
+		<h3>House</h3>
+		<p>House is where things start to ramp up. Starts generating some real income.</p>
+		<div id="CPS_words"><small>CPS: <span id="HouseOut" style="color: #e67c2c">7</span></small></div>
 
-        <div id="building_purchase">
-            <button onclick="buyHouse()" id="building_purchase" style="left:7vw; top:8.5vw">[1]</button>
-            <button onclick="buyHouse10()" id="building_purchase" style="left:7vw; top:9.9vw">[10]</button>
-            <button onclick="buyHouse100()" id="building_purchase" style="left:7vw; top:11.3vw">[100]</button>
-        </div>
+		<div id="building_purchase">
+			<button onclick="buyHouse()" id="building_purchase" style="left:7vw; top:8.5vw">[1]</button>
+			<button onclick="buyHouse10()" id="building_purchase" style="left:7vw; top:9.9vw">[10]</button>
+			<button onclick="buyHouse100()" id="building_purchase" style="left:7vw; top:11.3vw">[100]</button>
+		</div>
 
-        <div id="building_cost_text">
-            <small><div class="tooltip">Cost Per*: <span class="tooltiptext">4% Discount on x10<br>10% Discount on x100</span></div></small>
-            <small style="color: #e67c2c"><span id="HouseCost"> 1000</span></small>
-            <small>Cash</small>
-        </div>
-    </div>
+		<div id="building_cost_text">
+			<small><div class="tooltip">Cost Per*: <span class="tooltiptext">4% Discount on x10<br>10% Discount on x100</span></div></small>
+			<small style="color: #e67c2c"><span id="HouseCost"> 1000</span></small>
+			<small>Cash</small>
+		</div>
+	</div>
 
-    <div id="MotelTab" class="tabcontent">
-        <h3>Motel</h3>
-        <p>Motels are good places for a short nap. Cheap in price and does what you need it to do.</p>
-        <div id="CPS_words"><small>CPS: <span id="MotelOut" style="color: #e67c2c">10</span></small></div>
+	<div id="MotelTab" class="tabcontent">
+		<h3>Motel</h3>
+		<p>Motels are good places for a short nap. Cheap in price and does what you need it to do.</p>
+		<div id="CPS_words"><small>CPS: <span id="MotelOut" style="color: #e67c2c">10</span></small></div>
 
-        <div id="building_purchase">
-            <button onclick="buyMotel()" id="building_purchase" style="left:7vw; top:8.5vw">[1]</button>
-            <button onclick="buyMotel10()" id="building_purchase" style="left:7vw; top:9.9vw">[10]</button>
-            <button onclick="buyMotel100()" id="building_purchase" style="left:7vw; top:11.3vw">[100]</button>
-        </div>
+		<div id="building_purchase">
+			<button onclick="buyMotel()" id="building_purchase" style="left:7vw; top:8.5vw">[1]</button>
+			<button onclick="buyMotel10()" id="building_purchase" style="left:7vw; top:9.9vw">[10]</button>
+			<button onclick="buyMotel100()" id="building_purchase" style="left:7vw; top:11.3vw">[100]</button>
+		</div>
 
-        <div id="building_cost_text">
-            <small><div class="tooltip">Cost Per*: <span class="tooltiptext">4% Discount on x10<br>10% Discount on x100</span></div></small>
-            <small style="color: #e67c2c"><span id="MotelCost"> 10000</span></small>
-            <small>Cash</small>
-        </div>
-    </div>
-      
-    <div id="Apartment ComplexTab" class="tabcontent">
-        <h3>Apartment Complex</h3>
-        <p>Buy some Apartment Complexes to house your tenants! Don't be an evil landlord.</p>
-        <div id="CPS_words"><small>CPS: <span id="ApartmentComplexOut" style="color: #e67c2c">12</span></small></div>
+		<div id="building_cost_text">
+			<small><div class="tooltip">Cost Per*: <span class="tooltiptext">4% Discount on x10<br>10% Discount on x100</span></div></small>
+			<small style="color: #e67c2c"><span id="MotelCost"> 10000</span></small>
+			<small>Cash</small>
+		</div>
+	</div>
+	  
+	<div id="Apartment ComplexTab" class="tabcontent">
+		<h3>Apartment Complex</h3>
+		<p>Buy some Apartment Complexes to house your tenants! Don't be an evil landlord.</p>
+		<div id="CPS_words"><small>CPS: <span id="ApartmentComplexOut" style="color: #e67c2c">12</span></small></div>
 
-        <div id="building_purchase">
-            <button onclick="buyApartmentComplex()" id="building_purchase" style="left:7vw; top:8.5vw">[1]</button>
-            <button onclick="buyApartmentComplex10()" id="building_purchase" style="left:7vw; top:9.9vw">[10]</button>
-            <button onclick="buyApartmentComplex100()" id="building_purchase" style="left:7vw; top:11.3vw">[100]</button>
-        </div>
+		<div id="building_purchase">
+			<button onclick="buyApartmentComplex()" id="building_purchase" style="left:7vw; top:8.5vw">[1]</button>
+			<button onclick="buyApartmentComplex10()" id="building_purchase" style="left:7vw; top:9.9vw">[10]</button>
+			<button onclick="buyApartmentComplex100()" id="building_purchase" style="left:7vw; top:11.3vw">[100]</button>
+		</div>
 
-        <div id="building_cost_text">
-            <small><div class="tooltip">Cost Per*: <span class="tooltiptext">4% Discount on x10<br>10% Discount on x100</span></div></small>
-            <small style="color: #e67c2c"><span id="ApartmentComplexCost"> 50000</span></small>
-            <small>Cash</small>
-        </div>
-    </div>
+		<div id="building_cost_text">
+			<small><div class="tooltip">Cost Per*: <span class="tooltiptext">4% Discount on x10<br>10% Discount on x100</span></div></small>
+			<small style="color: #e67c2c"><span id="ApartmentComplexCost"> 50000</span></small>
+			<small>Cash</small>
+		</div>
+	</div>
 
-    <div id="TowerTab" class="tabcontent">
-        <h3>Tower</h3>
-        <p>Big jump in building size, eh?. Purchase your first REAL building!</p>
-        <div id="CPS_words"><small>CPS: <span id="TowerOut" style="color: #e67c2c">15</span></small></div>
-        
-        <div id="building_purchase">
-            <button onclick="buyTower()" id="building_purchase" style="left:7vw; top:8.5vw">[1]</button>
-            <button onclick="buyTower10()" id="building_purchase" style="left:7vw; top:9.9vw">[10]</button>
-            <button onclick="buyTower100()" id="building_purchase" style="left:7vw; top:11.3vw">[100]</button>
-        </div>
-        
-        <div id="building_cost_text">
-            <small><div class="tooltip">Cost Per*: <span class="tooltiptext">4% Discount on x10<br>10% Discount on x100</span></div></small>
-            <small style="color: #e67c2c"><span id="TowerCost"> 300000</span></small>
-            <small>Cash</small>
-        </div>
-    </div>
+	<div id="TowerTab" class="tabcontent">
+		<h3>Tower</h3>
+		<p>Big jump in building size, eh?. Purchase your first REAL building!</p>
+		<div id="CPS_words"><small>CPS: <span id="TowerOut" style="color: #e67c2c">15</span></small></div>
+		
+		<div id="building_purchase">
+			<button onclick="buyTower()" id="building_purchase" style="left:7vw; top:8.5vw">[1]</button>
+			<button onclick="buyTower10()" id="building_purchase" style="left:7vw; top:9.9vw">[10]</button>
+			<button onclick="buyTower100()" id="building_purchase" style="left:7vw; top:11.3vw">[100]</button>
+		</div>
+		
+		<div id="building_cost_text">
+			<small><div class="tooltip">Cost Per*: <span class="tooltiptext">4% Discount on x10<br>10% Discount on x100</span></div></small>
+			<small style="color: #e67c2c"><span id="TowerCost"> 300000</span></small>
+			<small>Cash</small>
+		</div>
+	</div>
 
-    <div id="SkyscraperTab" class="tabcontent">
-        <h3>Skyscraper</h3>
-        <p>Road to fame. Purchase some skyscrapers to start building your reputation!</p>
-        <div id="CPS_words"><small>CPS: <span id="SkyscraperOut" style="color: #e67c2c">25</span></small></div>
+	<div id="SkyscraperTab" class="tabcontent">
+		<h3>Skyscraper</h3>
+		<p>Road to fame. Purchase some skyscrapers to start building your reputation!</p>
+		<div id="CPS_words"><small>CPS: <span id="SkyscraperOut" style="color: #e67c2c">25</span></small></div>
 
-        <div id="building_purchase">
-            <button onclick="buySkyscraper()" id="building_purchase" style="left:7vw; top:8.5vw">[1]</button>
-            <button onclick="buySkyscraper10()" id="building_purchase" style="left:7vw; top:9.9vw">[10]</button>
-            <button onclick="buySkyscraper100()" id="building_purchase" style="left:7vw; top:11.3vw">[100]</button>
-        </div>
+		<div id="building_purchase">
+			<button onclick="buySkyscraper()" id="building_purchase" style="left:7vw; top:8.5vw">[1]</button>
+			<button onclick="buySkyscraper10()" id="building_purchase" style="left:7vw; top:9.9vw">[10]</button>
+			<button onclick="buySkyscraper100()" id="building_purchase" style="left:7vw; top:11.3vw">[100]</button>
+		</div>
 
-        <div id="building_cost_text">
-            <small><div class="tooltip">Cost Per*: <span class="tooltiptext">4% Discount on x10<br>10% Discount on x100</span></div></small>
-            <small style="color: #e67c2c"><span id="SkyscraperCost"> 1000000</span></small>
-            <small>Cash</small>
-        </div>
-    </div>
+		<div id="building_cost_text">
+			<small><div class="tooltip">Cost Per*: <span class="tooltiptext">4% Discount on x10<br>10% Discount on x100</span></div></small>
+			<small style="color: #e67c2c"><span id="SkyscraperCost"> 1000000</span></small>
+			<small>Cash</small>
+		</div>
+	</div>
 
-    <div id="Upgrades" class="tabcontent2">
-        <h3>Upgrades</h3>
-            <button onclick="upgradeShack()" id="purchaseUpgrade" style="font-size:1vw; right:34vw; top:4.5vw">Shack</button>
-                <small id="purchaseUpgrade_text" style="top:4.75vw; left:66.5vw"> - It costs 
-                    <span id="ShackUpgradeCost" style="color:#e67c2c">1000</span> Cash to purchase this.</small>
-            <button onclick="upgradeApartment()" id="purchaseUpgrade" style="font-size:1vw; right:34vw; top:6vw">Apartment</button>
-                <small id="purchaseUpgrade_text" style="top:6.25vw; left:66.5vw"> - It costs 
-                    <span id="ApartmentUpgradeCost" style="color:#e67c2c">6000</span> Cash to purchase this.</small>
-            <button onclick="upgradeHouse()" id="purchaseUpgrade" style="font-size:1vw; right:34vw; top:7.5vw">House</button>
-                <small id="purchaseUpgrade_text" style="top:7.75vw; left:66.5vw"> - It costs 
-                    <span id="HouseUpgradeCost" style="color:#e67c2c">20000</span> Cash to purchase this.</small>
-            <button onclick="upgradeMotel()" id="purchaseUpgrade" style="font-size:1vw; right:34vw; top:9vw">Motel</button>
-                <small id="purchaseUpgrade_text" style="top:9.25vw; left:66.5vw"> - It costs 
-                    <span id="MotelUpgradeCost" style="color:#e67c2c">200000</span> Cash to purchase this.</small>
-            <button onclick="upgradeApartmentComplex()" id="purchaseUpgrade" style="font-size:1vw; right:34vw; top:10.5vw">Apartment Complex</button>
-                <small id="purchaseUpgrade_text" style="top:10.75vw; left:66.5vw"> - It costs 
-                    <span id="ApartmentComplexUpgradeCost" style="color:#e67c2c">1000000</span> Cash to purchase this.</small>
-            <button onclick="upgradeTower()" id="purchaseUpgrade" style="font-size:1vw; right:34vw; top:12vw">Tower</button>
-                <small id="purchaseUpgrade_text" style="top:12.25vw; left:66.5vw"> - It costs 
-                    <span id="TowerUpgradeCost" style="color:#e67c2c">6000000</span> Cash to purchase this.</small>
-            <button onclick="upgradeSkyscraper()" id="purchaseUpgrade" style="font-size:1vw; right:34vw; top:13.5vw">Skyscraper</button>
-                <small id="purchaseUpgrade_text" style="top:13.75vw; left:66.5vw"> - It costs 
-                    <span id="SkyscraperUpgradeCost" style="color:#e67c2c">20000000</span> Cash to purchase this.</small>
+	<div id="Upgrades" class="tabcontent2">
+		<h3>Upgrades</h3>
+			<button onclick="upgradeShack()" id="purchaseUpgrade" style="font-size:1vw; right:34vw; top:4.5vw">Shack</button>
+				<small id="purchaseUpgrade_text" style="top:4.75vw; left:66.5vw"> - It costs 
+					<span id="ShackUpgradeCost" style="color:#e67c2c">1000</span> Cash to purchase this.</small>
+			<button onclick="upgradeApartment()" id="purchaseUpgrade" style="font-size:1vw; right:34vw; top:6vw">Apartment</button>
+				<small id="purchaseUpgrade_text" style="top:6.25vw; left:66.5vw"> - It costs 
+					<span id="ApartmentUpgradeCost" style="color:#e67c2c">6000</span> Cash to purchase this.</small>
+			<button onclick="upgradeHouse()" id="purchaseUpgrade" style="font-size:1vw; right:34vw; top:7.5vw">House</button>
+				<small id="purchaseUpgrade_text" style="top:7.75vw; left:66.5vw"> - It costs 
+					<span id="HouseUpgradeCost" style="color:#e67c2c">20000</span> Cash to purchase this.</small>
+			<button onclick="upgradeMotel()" id="purchaseUpgrade" style="font-size:1vw; right:34vw; top:9vw">Motel</button>
+				<small id="purchaseUpgrade_text" style="top:9.25vw; left:66.5vw"> - It costs 
+					<span id="MotelUpgradeCost" style="color:#e67c2c">200000</span> Cash to purchase this.</small>
+			<button onclick="upgradeApartmentComplex()" id="purchaseUpgrade" style="font-size:1vw; right:34vw; top:10.5vw">Apartment Complex</button>
+				<small id="purchaseUpgrade_text" style="top:10.75vw; left:66.5vw"> - It costs 
+					<span id="ApartmentComplexUpgradeCost" style="color:#e67c2c">1000000</span> Cash to purchase this.</small>
+			<button onclick="upgradeTower()" id="purchaseUpgrade" style="font-size:1vw; right:34vw; top:12vw">Tower</button>
+				<small id="purchaseUpgrade_text" style="top:12.25vw; left:66.5vw"> - It costs 
+					<span id="TowerUpgradeCost" style="color:#e67c2c">6000000</span> Cash to purchase this.</small>
+			<button onclick="upgradeSkyscraper()" id="purchaseUpgrade" style="font-size:1vw; right:34vw; top:13.5vw">Skyscraper</button>
+				<small id="purchaseUpgrade_text" style="top:13.75vw; left:66.5vw"> - It costs 
+					<span id="SkyscraperUpgradeCost" style="color:#e67c2c">20000000</span> Cash to purchase this.</small>
 
-        <div id="RepBuildings1">
-            <h3>Upgrade Information</h3>
-                <small>Cash Per Second (CPS) Increase: <span style="color:#e67c2c">50% [1.5x]</span> - <span style="color:#ff4747">ROUNDED</span><br><br>
-                Upgrade Price Increase: <span style="color:#e67c2c">350% [3.5x]</span> - <span style="color:#ff4747">ROUNDED</span></small>
-        </div>
-    </div>
+		<div id="RepBuildings1">
+			<h3>Upgrade Information</h3>
+				<small>Cash Per Second (CPS) Increase: <span style="color:#e67c2c">50% [1.5x]</span> - <span style="color:#ff4747">ROUNDED</span><br><br>
+				Upgrade Price Increase: <span style="color:#e67c2c">350% [3.5x]</span> - <span style="color:#ff4747">ROUNDED</span></small>
+		</div>
+	</div>
 
-    <div id="Reputation_Shop" class="tabcontent2">
-        <h3>Reputation Shop</h3>
-            <button onclick="buyReputation()" id="purchaseUpgrade" style="color:#0015ff; right:34vw; top:4.5vw">Build Reputation</button>
-                <small id="purchaseUpgrade_text" style="top:4.75vw; left:66.5vw"> - You need to deconstruct 
-                    <span style="color:#e67c2c"><span id="ReputationCost">3</span> Skyscrapers</span> to purchase this.</small>
-            <button onclick="buyGDRep()" id="purchaseUpgrade" style=" right:34vw; top:6vw"><div class="tooltip2">Gravitational Displacer<span class="tooltiptext2">Automatically gives you 1,000 Cash per tick!</span></div></button>
-                <small id="purchaseUpgrade_text" style="top:6.25vw; left:66.5vw"> - You need 
-                    <span style="color:#e67c2c"><span id="GDRepCost">3</span> Reputation</span> to purchase <span style="color:#e67c2c">1</span> Gravitational Displacer.</small>
-            <button onclick="buyVSRep()" id="purchaseUpgrade" style=" right:34vw; top:7.5vw"><div class="tooltip2">Vulcan Station<span class="tooltiptext2">Automatically gives you 1 Brick per second!</span></div></button>
-                <small id="purchaseUpgrade_text" style="top:7.75vw; left:66.5vw"> - You need 
-                    <span style="color:#e67c2c"><span id="VSRepCost">10</span> Reputation</span> to purchase <span style="color:#e67c2c">1</span> Vulcan Station.</small>
-            <button onclick="buyOTRep()" id="purchaseUpgrade" style=" right:34vw; top:9vw"><div class="tooltip2">Orbiting Terminal<span class="tooltiptext2">Automatically gives you 3 Bricks per second!</span></div></button>
-                <small id="purchaseUpgrade_text" style="top:9.25vw; left:66.5vw"> - You need 
-                    <span style="color:#e67c2c"><span id="OTRepCost">25</span> Reputation</span> to purchase <span style="color:#e67c2c">1</span> Orbiting Terminal.</small>
-            <button onclick="buyETRep()" id="purchaseUpgrade" style=" right:34vw; top:10.5vw"><div class="tooltip2">Elysium Transport<span class="tooltiptext2">Automatically gives you 7 Bricks per second!</span></div></button>
-                <small id="purchaseUpgrade_text" style="top:10.75vw; left:66.5vw"> - You need 
-                    <span style="color:#e67c2c"><span id="ETRepCost">60</span> Reputation</span> to purchase <span style="color:#e67c2c">1</span> Elysium Transport.</small>
-            <button onclick="buyHCRep()" id="purchaseUpgrade" style=" right:34vw; top:12vw"><div class="tooltip2">Hephaestus Colony<span class="tooltiptext2">Automatically gives you 13 Bricks per second!</span></div></button>
-                <small id="purchaseUpgrade_text" style="top:12.25vw; left:66.5vw"> - You need 
-                    <span style="color:#e67c2c"><span id="HCRepCost">125</span> Reputation</span> to purchase <span style="color:#e67c2c">1</span> Hephaestus Colony.</small>
-            <button onclick="buyMSARep()" id="purchaseUpgrade" style=" right:34vw; top:13.5vw"><div class="tooltip2">Massive Sensor Array<span class="tooltiptext2">Automatically gives you 18 Bricks per second!</span></div></button>
-                <small id="purchaseUpgrade_text" style="top:13.75vw; left:66.5vw"> - You need 
-                    <span style="color:#e67c2c"><span id="MSARepCost">1000</span> Reputation</span> to purchase <span style="color:#e67c2c">1</span> Massive Sensor Array.</small>
+	<div id="Reputation_Shop" class="tabcontent2">
+		<h3>Reputation Shop</h3>
+			<button onclick="buyReputation()" id="purchaseUpgrade" style="color:#0015ff; right:34vw; top:4.5vw">Build Reputation</button>
+				<small id="purchaseUpgrade_text" style="top:4.75vw; left:66.5vw"> - You need to deconstruct 
+					<span style="color:#e67c2c"><span id="ReputationCost">3</span> Skyscrapers</span> to purchase this.</small>
+			<button onclick="buyGDRep()" id="purchaseUpgrade" style=" right:34vw; top:6vw"><div class="tooltip2">Gravitational Displacer<span class="tooltiptext2">Automatically gives you 1,000 Cash per tick!</span></div></button>
+				<small id="purchaseUpgrade_text" style="top:6.25vw; left:66.5vw"> - You need 
+					<span style="color:#e67c2c"><span id="GDRepCost">3</span> Reputation</span> to purchase <span style="color:#e67c2c">1</span> Gravitational Displacer.</small>
+			<button onclick="buyVSRep()" id="purchaseUpgrade" style=" right:34vw; top:7.5vw"><div class="tooltip2">Vulcan Station<span class="tooltiptext2">Automatically gives you 1 Brick per second!</span></div></button>
+				<small id="purchaseUpgrade_text" style="top:7.75vw; left:66.5vw"> - You need 
+					<span style="color:#e67c2c"><span id="VSRepCost">10</span> Reputation</span> to purchase <span style="color:#e67c2c">1</span> Vulcan Station.</small>
+			<button onclick="buyOTRep()" id="purchaseUpgrade" style=" right:34vw; top:9vw"><div class="tooltip2">Orbiting Terminal<span class="tooltiptext2">Automatically gives you 3 Bricks per second!</span></div></button>
+				<small id="purchaseUpgrade_text" style="top:9.25vw; left:66.5vw"> - You need 
+					<span style="color:#e67c2c"><span id="OTRepCost">25</span> Reputation</span> to purchase <span style="color:#e67c2c">1</span> Orbiting Terminal.</small>
+			<button onclick="buyETRep()" id="purchaseUpgrade" style=" right:34vw; top:10.5vw"><div class="tooltip2">Elysium Transport<span class="tooltiptext2">Automatically gives you 7 Bricks per second!</span></div></button>
+				<small id="purchaseUpgrade_text" style="top:10.75vw; left:66.5vw"> - You need 
+					<span style="color:#e67c2c"><span id="ETRepCost">60</span> Reputation</span> to purchase <span style="color:#e67c2c">1</span> Elysium Transport.</small>
+			<button onclick="buyHCRep()" id="purchaseUpgrade" style=" right:34vw; top:12vw"><div class="tooltip2">Hephaestus Colony<span class="tooltiptext2">Automatically gives you 13 Bricks per second!</span></div></button>
+				<small id="purchaseUpgrade_text" style="top:12.25vw; left:66.5vw"> - You need 
+					<span style="color:#e67c2c"><span id="HCRepCost">125</span> Reputation</span> to purchase <span style="color:#e67c2c">1</span> Hephaestus Colony.</small>
+			<button onclick="buyMSARep()" id="purchaseUpgrade" style=" right:34vw; top:13.5vw"><div class="tooltip2">Massive Sensor Array<span class="tooltiptext2">Automatically gives you 18 Bricks per second!</span></div></button>
+				<small id="purchaseUpgrade_text" style="top:13.75vw; left:66.5vw"> - You need 
+					<span style="color:#e67c2c"><span id="MSARepCost">1000</span> Reputation</span> to purchase <span style="color:#e67c2c">1</span> Massive Sensor Array.</small>
 
-        <div id="RepBuildings1">
-            <h3>Reputation Buildings</h3>
-                Gravitational Displacers: <span id=GDRep>0</span><br>
-                Vulcan Stations: <span id=VSRep>0</span><br>
-                Orbiting Terminals: <span id=OTRep>0</span>
-        </div>
-        <div id="RepBuildings2">
-                Elysium Transports: <span id=ETRep>0</span><br>
-                Hephaestus Colonies: <span id=HCRep>0</span><br>
-                Massive Sensor Arrays: <span id=MSARep>0</span>
-        </div>
-        <div id="RepBuildings3">
-                <small>Reputation Cost Increase: <span style="color:#e67c2c">350% [3.5x]</span> - <span style="color:#ff4747">ROUNDED</span></small>
-        </div>
-    </div>
+		<div id="RepBuildings1">
+			<h3>Reputation Buildings</h3>
+				Gravitational Displacers: <small style="color:#e67c2c"><span id=GDRep>0</span></small><br>
+				Vulcan Stations: <small style="color:#e67c2c"><span id=VSRep>0</small></span><br>
+				Orbiting Terminals: <small style="color:#e67c2c"></small><span id=OTRep>0</span>
+		</div>
+		<div id="RepBuildings2">
+				Elysium Transports: <small style="color:#e67c2c"><span id=ETRep>0</small></span><br>
+				Hephaestus Colonies: <small style="color:#e67c2c"><span id=HCRep>0</small></span><br>
+				Massive Sensor Arrays: <small style="color:#e67c2c"><span id=MSARep>0</small></span>
+		</div>
+		<div id="RepBuildings3">
+				<small>Reputation Cost Increase: <span style="color:#e67c2c">350% [3.5x]</span> - <span style="color:#ff4747">ROUNDED</span></small>
+		</div>
+	</div>
 
-    <h1>Cash: <span id="Cash">75</span></h1>
+	<h1>Cash: <span id="Cash">75</span></h1>
 
-    <div class="Bricks_bar">
-        <h3 id="Bricks_progress">Bricks: <span id="Bricks">0</span> (WIP)</h3>
-    </div>
+	<div class="Bricks_bar">
+		<h3 id="Bricks_progress">Bricks: <span id="Bricks">0</span> (WIP)</h3>
+	</div>
 
-    <div id="totalbuildings">
-            Shacks: <span id="Shack">0</span><br>
-            Apartment: <span id="Apartment">0</span><br>
-            House: <span id="House">0</span><br>
-            Motel: <span id="Motel">0</span><br>
-            Apartment Complex: <span id="ApartmentComplex">0</span><br>
-            Tower: <span id="Tower">0</span><br>
-            Skyscraper: <span id="Skyscraper">0</span><br>
-        <div id="bottomtext2" style="color: #5975ff">
-            Reputation: <span id="Reputation">100000</span></small>
-        </div>
+	<div id="totalbuildings">
+			Shacks: <span id="Shack">0</span><br>
+			Apartment: <span id="Apartment">0</span><br>
+			House: <span id="House">0</span><br>
+			Motel: <span id="Motel">0</span><br>
+			Apartment Complex: <span id="ApartmentComplex">0</span><br>
+			Tower: <span id="Tower">0</span><br>
+			Skyscraper: <span id="Skyscraper">0</span><br>
+		<div id="bottomtext2" style="color: #5975ff">
+			Reputation: <span id="Reputation">100000</span></small>
+		</div>
     </div>
 
 <script>
