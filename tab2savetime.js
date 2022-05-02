@@ -196,8 +196,8 @@ window.onload = function() {
   document.getElementById("Reputation").innerHTML = Reputation;
   document.getElementById("ReputationCostTot").innerHTML = ReputationCost;
 
-  document.getElementById("GDRepCost").innerHTML = GDRepCost;
   document.getElementById("GDRep").innerHTML = GDRep;
+  document.getElementById("GDRepCost").innerHTML = GDRepCost;
 
   document.getElementById("VSRepCost").innerHTML = VSRepCost;
   document.getElementById("VSRep").innerHTML = VSRep;
