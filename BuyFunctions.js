@@ -7,7 +7,7 @@ function buyShack() {
 
       document.getElementById("Cash").innerHTML = Cash;
       document.getElementById("ShackTot").innerHTML = Shack;
-      document.getElementById("ShackCost").innerHTML = ShackCost1;
+      document.getElementById("ShackCost").innerHTML = ShackCost;
     }
   }
 function buyShack10() {
