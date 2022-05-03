@@ -194,7 +194,6 @@ window.onload = function() {
   document.getElementById("Skyscraper").innerHTML = Skyscraper;
 
   document.getElementById("Reputation").innerHTML = Reputation;
-  document.getElementById("ReputationCostTot").innerHTML = ReputationCost;
 
   document.getElementById("GDRep").innerHTML = GDRep;
   document.getElementById("GDRepCost").innerHTML = GDRepCost;
