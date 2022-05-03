@@ -28,9 +28,9 @@ var SkyscraperCost = 1000000;
 var Skyscraper = 0;
 var SkyscraperTot = 0;
 
-var Reputation = 100000;
+var Reputation = 0;
 var ReputationCost = 3;
-var ReputationTot = 100000;
+var ReputationTot = 0;
 
 var GDRepCost = 3;
 var GDRep = 0;
