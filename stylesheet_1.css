@@ -97,6 +97,10 @@ top:4.5vw;
 font-family: 'Times New Roman', serif;
 }
 
+#purchaseUpgrade_Text {
+position: absolute;
+}
+
 /* Save Button */
 #settings_button1 {
 width: 5vw;
@@ -123,6 +127,11 @@ text-align: center;
 bottom: 0.85vw;
 color: #1e1e1e;
 visibility: visible;
+}
+
+#hidden {
+visibility: hidden;
+position: fixed;
 }
 
 h1 {
