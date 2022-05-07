@@ -5,10 +5,14 @@ function buyShack() {
       ShackCost = Math.round(ShackCost * 1.05);
       ShackCost = ShackCost;
       Shack = Shack;
+      if (count == 6) {
+        document.getElementById("hiddentext").style.visibility = "visible";
+    }
 
       document.getElementById("Cash").innerHTML = Cash;
       document.getElementById("Shack").innerHTML = Shack;
       document.getElementById("ShackCost").innerHTML = ShackCost;
+      document.getElementById("count").innerHTML = count++;
     }
   }
 function buyShack10() {
