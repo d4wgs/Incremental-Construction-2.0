@@ -34,16 +34,17 @@
 <div id="settings_button">
 <button onclick="saveGame()">Save Button</button>
 </div>
+<h5 id="hidden">Hidden Text</h5>
 
 	<div id="ShackTab" class="tabcontent">
 		<h3>Shack</h3>
 		<p>Shack is lowest earning building. It is also the cheapest building to start out with.</p>
 		<div id="CPS_words"><small>CPS: <span id="ShackOut" style="color: #e67c2c">1</span></small></div>
 
-		<div id="building_purchase">
-			<button onclick="buyShack()" id="building_purchase" style="left:7vw; top:8.5vw">[1]</button>
-			<button onclick="buyShack10()" id="building_purchase" style="left:7vw; top:9.9vw">[10]</button>
-			<button onclick="buyShack100()" id="building_purchase" style="left:7vw; top:11.3vw">[100]</button>
+		<div class="building_purchase_button">
+			<button onclick="buyShack()" id="building_purchase1">[1]</button>
+			<button onclick="buyShack10()" id="building_purchase2">[10]</button>
+			<button onclick="buyShack100()" id="building_purchase3">[100]</button>
 		</div>
 
 		<div id="building_cost_text">
@@ -59,9 +60,9 @@
 		<div id="CPS_words"><small>CPS: <span id="ApartmentOut" style="color: #e67c2c">3</span></small></div>
 
 		<div id="building_purchase">
-			<button onclick="buyApartment()" id="building_purchase" style="left:7vw; top:8.5vw">[1]</button>
-			<button onclick="buyApartment10()" id="building_purchase" style="left:7vw; top:9.9vw">[10]</button>
-			<button onclick="buyApartment100()" id="building_purchase" style="left:7vw; top:11.3vw">[100]</button>
+			<button onclick="buyApartment()" id="building_purchase1">[1]</button>
+			<button onclick="buyApartment10()" id="building_purchase2">[10]</button>
+			<button onclick="buyApartment100()" id="building_purchase3">[100]</button>
 		</div>
 
 		<div id="building_cost_text">
@@ -77,9 +78,9 @@
 		<div id="CPS_words"><small>CPS: <span id="HouseOut" style="color: #e67c2c">7</span></small></div>
 
 		<div id="building_purchase">
-			<button onclick="buyHouse()" id="building_purchase" style="left:7vw; top:8.5vw">[1]</button>
-			<button onclick="buyHouse10()" id="building_purchase" style="left:7vw; top:9.9vw">[10]</button>
-			<button onclick="buyHouse100()" id="building_purchase" style="left:7vw; top:11.3vw">[100]</button>
+			<button onclick="buyHouse()" id="building_purchase1">[1]</button>
+			<button onclick="buyHouse10()" id="building_purchase2">[10]</button>
+			<button onclick="buyHouse10()" id="building_purchase3">[100]</button>
 		</div>
 
 		<div id="building_cost_text">
@@ -95,9 +96,9 @@
 		<div id="CPS_words"><small>CPS: <span id="MotelOut" style="color: #e67c2c">10</span></small></div>
 
 		<div id="building_purchase">
-			<button onclick="buyMotel()" id="building_purchase" style="left:7vw; top:8.5vw">[1]</button>
-			<button onclick="buyMotel10()" id="building_purchase" style="left:7vw; top:9.9vw">[10]</button>
-			<button onclick="buyMotel100()" id="building_purchase" style="left:7vw; top:11.3vw">[100]</button>
+			<button onclick="buyMotel()" id="building_purchase1">[1]</button>
+			<button onclick="buyMotel10()" id="building_purchase2">[10]</button>
+			<button onclick="buyMotel10()" id="building_purchase3">[100]</button>
 		</div>
 
 		<div id="building_cost_text">
@@ -113,9 +114,9 @@
 		<div id="CPS_words"><small>CPS: <span id="ApartmentComplexOut" style="color: #e67c2c">12</span></small></div>
 
 		<div id="building_purchase">
-			<button onclick="buyApartmentComplex()" id="building_purchase" style="left:7vw; top:8.5vw">[1]</button>
-			<button onclick="buyApartmentComplex10()" id="building_purchase" style="left:7vw; top:9.9vw">[10]</button>
-			<button onclick="buyApartmentComplex100()" id="building_purchase" style="left:7vw; top:11.3vw">[100]</button>
+			<button onclick="buyApartmentComplex()" id="building_purchase1">[1]</button>
+			<button onclick="buyApartmentComplex10()" id="building_purchase2">[10]</button>
+			<button onclick="buyApartmentComplex10()" id="building_purchase3">[100]</button>
 		</div>
 
 		<div id="building_cost_text">
@@ -131,9 +132,9 @@
 		<div id="CPS_words"><small>CPS: <span id="TowerOut" style="color: #e67c2c">15</span></small></div>
 		
 		<div id="building_purchase">
-			<button onclick="buyTower()" id="building_purchase" style="left:7vw; top:8.5vw">[1]</button>
-			<button onclick="buyTower10()" id="building_purchase" style="left:7vw; top:9.9vw">[10]</button>
-			<button onclick="buyTower100()" id="building_purchase" style="left:7vw; top:11.3vw">[100]</button>
+			<button onclick="buyTower()" id="building_purchase1">[1]</button>
+			<button onclick="buyTower10()" id="building_purchase2">[10]</button>
+			<button onclick="buyTower10()" id="building_purchase3">[100]</button>
 		</div>
 		
 		<div id="building_cost_text">
@@ -149,9 +150,9 @@
 		<div id="CPS_words"><small>CPS: <span id="SkyscraperOut" style="color: #e67c2c">25</span></small></div>
 
 		<div id="building_purchase">
-			<button onclick="buySkyscraper()" id="building_purchase" style="left:7vw; top:8.5vw">[1]</button>
-			<button onclick="buySkyscraper10()" id="building_purchase" style="left:7vw; top:9.9vw">[10]</button>
-			<button onclick="buySkyscraper100()" id="building_purchase" style="left:7vw; top:11.3vw">[100]</button>
+			<button onclick="buySkyscraper()" id="building_purchase1">[1]</button>
+			<button onclick="buySkyscraper10()" id="building_purchase2">[10]</button>
+			<button onclick="buySkyscraper10()" id="building_purchase3">[100]</button>
 		</div>
 
 		<div id="building_cost_text">
