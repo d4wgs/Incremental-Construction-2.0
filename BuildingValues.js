@@ -3,6 +3,7 @@ var Cash = 75;
 var ShackCost = 50;
 var Shack = 0;
 var ShackTot = 0;
+var ShackCount = 1;
 
 var ApartmentCost = 300;
 var Apartment = 0;
