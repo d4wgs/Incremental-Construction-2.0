@@ -87,6 +87,7 @@ width: 10vw;
 height: 2vw;
 background-color: #ff4747;
 color: #1e1e1e;
+visibility: hidden;
 }
 
 #Bricks_progress {
@@ -94,6 +95,7 @@ position: relative;
 text-align: center;
 bottom: 0.85vw;
 color: #1e1e1e;
+visibility: hidden;
 }
 
 h1 {
@@ -135,7 +137,7 @@ marquee {
 background-color: #1e1e1e;
 color: #FF5677;
 position: relative;
-width: 21vw;
+width: 21.5vw;
 font-size: 1vw;
 font-family: 'Times New Roman', serif;
 }
