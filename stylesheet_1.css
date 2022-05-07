@@ -1,8 +1,40 @@
-/* purchase building button */
-#building_purchase {
+/* first purchase building button */
+#building_purchase1 {
 position: fixed;
 width: 3.4vw;
 font-size: 0.85vw;
+left: 7vw; 
+top: 8.5vw;
+}
+
+/* second purchase building button */
+#building_purchase2 {
+position: fixed;
+width: 3.4vw;
+font-size: 0.85vw;
+left: 7vw; 
+top:9.9vw;
+}
+
+/* third purchase building button */
+#building_purchase3 {
+position: fixed;
+width: 3.4vw;
+font-size: 0.85vw;
+left:7vw;
+top:11.3vw;
+}
+
+.building_purchase_button button {
+padding: 0.13vw 0.15vw;
+border: 0.05vw solid rgb(0, 0, 0);
+text-align: center;
+cursor: pointer;
+transition: 0.5s;
+}
+
+.building_purchase_button button:hover {
+background-color: #232423;
 }
 
 /* Building Cost Text */
@@ -87,7 +119,7 @@ width: 10vw;
 height: 2vw;
 background-color: #ff4747;
 color: #1e1e1e;
-visibility: hidden;
+visibility: visible;
 }
 
 #Bricks_progress {
