@@ -105,8 +105,8 @@ position: fixed;
 /* Save Button */
 #settings_button1 {
 width: 5vw;
-height: 5vw;
-bottom: -2vw;
+height: 2vw;
+bottom: 1vw;
 right: 0.5vw;
 position: fixed;
 }
@@ -139,11 +139,7 @@ position: relative;
 text-align: center;
 bottom: 0.85vw;
 color: #1e1e1e;
-visibility: hidden;
-}
-
-#hidden {
-visibility: hidden;
+visibility: visible;
 }
 
 h1 {
@@ -184,8 +180,9 @@ font-family: 'Monaco';
 marquee {
 background-color: #1e1e1e;
 color: #FF5677;
-position: relative;
-width: 21.5vw;
+position: fixed;
+width: 21.2vw;
 font-size: 1vw;
 font-family: 'Times New Roman', serif;
+right: 46.8vw;
 }
