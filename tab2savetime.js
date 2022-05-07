@@ -228,7 +228,7 @@ window.onload = function() {
   document.getElementById("MotelUpgradeCost").innerHTML = MotelUpgradeCost;
 
   document.getElementById("ApartmentComplexOut").innerHTML = ApartmentComplexOut;
-  document.getElementById("ApartmentComplexUpgradeCost").innerHTML = ApartmentComplexCost;
+  document.getElementById("ApartmentComplexUpgradeCost").innerHTML = ApartmentComplexUpgradeCost;
 
   document.getElementById("TowerOut").innerHTML = TowerOut;
   document.getElementById("TowerUpgradeCost").innerHTML = TowerUpgradeCost;
@@ -247,11 +247,3 @@ document.addEventListener("keydown", function(event) {
       saveGame();
   }
 }, false);
-
-function resetGame() {
-  if (confirm("Are you sure you want to reset your game data?")) {
-    var gameSave = {};
-    localStorage.setItem("gameSave", JSON.stringify(gameSave));
-    location.reload();
-  }
-}
