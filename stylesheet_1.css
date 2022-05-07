@@ -130,6 +130,10 @@ color: #1e1e1e;
 visibility: hidden;
 }
 
+#hidden {
+visibility: hidden;
+}
+
 h1 {
 font-size: 2.5vw;
 font-family: 'Monaco';
