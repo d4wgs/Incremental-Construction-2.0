@@ -25,7 +25,7 @@ left:7vw;
 top:11.3vw;
 }
 
-.building_purchase_button button {
+.building_purchase_button .settings_button button {
 padding: 0.13vw 0.15vw;
 border: 0.05vw solid rgb(0, 0, 0);
 text-align: center;
@@ -33,7 +33,7 @@ cursor: pointer;
 transition: 0.5s;
 }
 
-.building_purchase_button button:hover {
+.building_purchase_button .settings_button button:hover {
 background-color: #232423;
 }
 
@@ -97,11 +97,6 @@ top:4.5vw;
 font-family: 'Times New Roman', serif;
 }
 
-/* Buy Upgrades Text */
-#purchaseUpgrade_text {
-position: fixed;
-}
-
 /* Save Button */
 #settings_button1 {
 width: 5vw;
@@ -109,18 +104,6 @@ height: 2vw;
 bottom: 1vw;
 right: 0.5vw;
 position: fixed;
-}
-
-.settings_button button {
-padding: 0.13vw 0.15vw;
-border: 0.05vw solid rgb(0, 0, 0);
-text-align: center;
-cursor: pointer;
-transition: 0.5s;
-}
-
-.settings_button button:hover {
-background-color: #232423;
 }
 
 .Bricks_bar {
