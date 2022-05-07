@@ -14,8 +14,6 @@ function buyShack10() {
       Cash = Cash - (10 * ShackCost);
       Shack = Shack + 10;
       ShackCost = Math.round(0.96 * (ShackCost * (1.05 ** 10)));
-      ShackCost = ShackCost;
-      Shack = Shack;
 
       document.getElementById("Cash").innerHTML = Cash;
       document.getElementById("Shack").innerHTML = Shack;
@@ -27,8 +25,6 @@ function buyShack100() {
      Cash = Cash - (100 * ShackCost);
      Shack = Shack + 100;
      ShackCost = Math.round(0.9 * (ShackCost * (1.05 ** 100)));
-     ShackCost = ShackCost;
-     Shack = Shack;
 
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Shack").innerHTML = Shack;
@@ -40,8 +36,6 @@ function buyApartment() {
      Cash = Cash - ApartmentCost;
      Apartment = Apartment + 1;
      ApartmentCost = Math.round(ApartmentCost * 1.05);
-     ApartmentCost = ApartmentCost;
-     Apartment = Apartment;
 
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Apartment").innerHTML = Apartment;
@@ -53,8 +47,6 @@ function buyApartment10() {
      Cash = Cash - (10 * ApartmentCost);
      Apartment = Apartment + 10;
      ApartmentCost = Math.round(0.96 * (ApartmentCost * (1.05 ** 10)));
-     ApartmentCost = ApartmentCost;
-     Apartment = Apartment;
 
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Apartment").innerHTML = Apartment;
@@ -66,8 +58,6 @@ function buyApartment100() {
      Cash = Cash - (100 * ApartmentCost);
      Apartment = Apartment + 100;
      ApartmentCost = Math.round(0.9 * (ApartmentCost * (1.05 ** 100)));
-     ApartmentCost = ApartmentCost;
-     Apartment = Apartment;
 
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Apartment").innerHTML = Apartment;
@@ -79,8 +69,6 @@ function buyHouse() {
      Cash = Cash - HouseCost;
      House = House + 1;
      HouseCost = Math.round(HouseCost * 1.05);
-     HouseCost = HouseCost;
-     House = House;
 
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("House").innerHTML = House;
@@ -92,8 +80,6 @@ function buyHouse10() {
      Cash = Cash - (10 * HouseCost);
      House = House + 10;
      HouseCost = Math.round(0.96 * (HouseCost * (1.05 ** 10)));
-     HouseCost = HouseCost;
-     House = House;
 
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("House").innerHTML = House;
@@ -105,8 +91,6 @@ function buyHouse100() {
      Cash = Cash - (100 * HouseCost);
      House = House + 100;
      HouseCost = Math.round(0.9 * (HouseCost * (1.05 ** 100)));
-     HouseCost = HouseCost;
-     House = House;
 
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("House").innerHTML = House;
@@ -118,8 +102,6 @@ function buyMotel() {
      Cash = Cash - MotelCost;
      Motel = Motel + 1;
      MotelCost = Math.round(MotelCost * 1.05);
-     MotelCost = MotelCost;
-     Motel = Motel;
 
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Motel").innerHTML = Motel;
@@ -131,8 +113,6 @@ function buyMotel10() {
      Cash = Cash - (10 * MotelCost);
      Motel = Motel + 10;
      MotelCost = Math.round(0.96 * (MotelCost * (1.05 ** 100)));
-     MotelCost = MotelCost;
-     Motel = Motel;
 
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Motel").innerHTML = Motel;
@@ -144,8 +124,6 @@ function buyMotel100() {
      Cash = Cash - (100 * MotelCost);
      Motel = Motel + 100;
      MotelCost = Math.round(0.9 * (MotelCost * (1.05 ** 100)));
-     MotelCost = MotelCost;
-     Motel = Motel;
 
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Motel").innerHTML = Motel;
@@ -157,8 +135,6 @@ function buyMotel100() {
       Cash = Cash - ApartmentComplexCost;
       ApartmentComplex = ApartmentComplex + 1;
       ApartmentComplexCost = Math.round(ApartmentComplexCost * 1.05);
-      ApartmentComplexCost = ApartmentComplexCost;
-      ApartmentComplex = ApartmentComplex;
 
       document.getElementById("Cash").innerHTML = Cash;
       document.getElementById("ApartmentComplex").innerHTML = ApartmentComplex;
@@ -170,8 +146,6 @@ function buyApartmentComplex10() {
      Cash = Cash - (10 * ApartmentComplexCost);
      ApartmentComplex = ApartmentComplex + 10;
      ApartmentComplexCost = Math.round(0.96 * (ApartmentComplexCost * (1.05 ** 10)));
-     ApartmentComplexCost = ApartmentComplexCost;
-     ApartmentComplex = ApartmentComplex;
 
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("ApartmentComplex").innerHTML = ApartmentComplex;
@@ -183,8 +157,6 @@ function buyApartmentComplex100() {
      Cash = Cash - (100 * ApartmentComplexCost);
      ApartmentComplex = ApartmentComplex + 100;
      ApartmentComplexCost = Math.round(0.9 * (ApartmentComplexCost * (1.05 ** 100)));
-     ApartmentComplexCost = ApartmentComplexCost;
-     ApartmentComplex = ApartmentComplex;
 
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("ApartmentComplex").innerHTML = ApartmentComplex;
@@ -196,8 +168,6 @@ function buyTower() {
      Cash = Cash - TowerCost;
      Tower = Tower + 1;
      TowerCost = Math.round(TowerCost * 1.05);
-     TowerCost = TowerCost;
-     Tower = Tower;
 
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Tower").innerHTML = Tower;
@@ -209,8 +179,6 @@ function buyTower10() {
      Cash = Cash - (10 * TowerCost);
      Tower = Tower + 10;
      TowerCost = Math.round(0.96 * (TowerCost * (1.05 ** 10)));
-     TowerCost = TowerCost;
-     Tower = Tower;
 
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Tower").innerHTML = Tower;
@@ -222,8 +190,6 @@ function buyTower100() {
      Cash = Cash - (100 * TowerCost);
      Tower = Tower + 100;
      TowerCost = Math.round(0.9 * (TowerCost * (1.05 ** 100)));
-     TowerCost = TowerCost;
-     Tower = Tower;
 
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Tower").innerHTML = Tower;
@@ -235,8 +201,6 @@ function buySkyscraper() {
      Cash = Cash - SkyscraperCost;
      Skyscraper = Skyscraper + 1;
      SkyscraperCost = Math.round(SkyscraperCost * 1.05);
-     SkyscraperCost = SkyscraperCost;
-     Skyscraper = Skyscraper;
 
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Skyscraper").innerHTML = Skyscraper;
@@ -248,8 +212,6 @@ function buySkyscraper10() {
      Cash = Cash - (100 * SkyscraperCost);
      Skyscraper = Skyscraper + 10;
      SkyscraperCost = Math.round(0.96 * (SkyscraperCost * (1.05 ** 10)));
-     SkyscraperCost = SkyscraperCost;
-     Skyscraper = Skyscraper;
 
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Skyscraper").innerHTML = Skyscraper;
@@ -261,8 +223,6 @@ function buySkyscraper100() {
      Cash = Cash - (100 * SkyscraperCost);
      Skyscraper = Skyscraper + 100;
      SkyscraperCost = Math.round(0.9 * (SkyscraperCost * (1.05 ** 100)));
-     SkyscraperCost = SkyscraperCost;
-     Skyscraper = Skyscraper;
 
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Skyscraper").innerHTML = Skyscraper;
