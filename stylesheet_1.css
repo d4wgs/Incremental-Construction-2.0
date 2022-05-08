@@ -58,7 +58,7 @@ left: 11vw;
 
 /* "CPS:" in the building menus */
 #CPS_words {
-position: absolute;
+position: fixed;
 top: 11.5vw;
 right: 69vw;
 }
@@ -148,7 +148,8 @@ position: fixed;
 
 #VisibleText_Apartment {
 visibility: visible;
-position: fixed;
+position: relative;
+text-align: center;
 }
 
 h1 {
