@@ -78,92 +78,117 @@
 
 
 	<div id="HouseTab" class="tabcontent">
-		<h3>House</h3>
-		<p>House is where things start to ramp up. Starts generating some real income.</p>
-		<div id="CPS_words"><small>CPS: <span id="HouseOut" style="color: #e67c2c">7</span></small></div>
+		<div id="HiddenText_House"></div>
+			<h3>House</h3>
+			<p>House is where things start to ramp up. Starts generating some real income.</p>
+			<div id="CPS_words"><small>CPS: <span id="HouseOut" style="color: #e67c2c">7</span></small></div>
 
-		<div class="building_purchase_button">
-			<button onclick="buyHouse()" id="building_purchase1">[1]</button>
-			<button onclick="buyHouse10()" id="building_purchase2">[10]</button>
-			<button onclick="buyHouse10()" id="building_purchase3">[100]</button>
+			<div class="building_purchase_button">
+				<button onclick="buyHouse()" id="building_purchase1">[1]</button>
+				<button onclick="buyHouse10()" id="building_purchase2">[10]</button>
+				<button onclick="buyHouse10()" id="building_purchase3">[100]</button>
+			</div>
+
+			<div id="building_cost_text">
+				<small><div class="tooltip">Cost Per*: <span class="tooltiptext">4% Discount on x10<br>10% Discount on x100</span></div></small>
+				<small style="color: #e67c2c"><span id="HouseCost"> 1000</span></small>
+				<small>Cash</small>
+			</div>
 		</div>
-
-		<div id="building_cost_text">
-			<small><div class="tooltip">Cost Per*: <span class="tooltiptext">4% Discount on x10<br>10% Discount on x100</span></div></small>
-			<small style="color: #e67c2c"><span id="HouseCost"> 1000</span></small>
-			<small>Cash</small>
+		<div id="VisibleText_House">
+			<br><br><br><h3>You need 5 of the previous building to discover the next building.</h3>
 		</div>
 	</div>
 
 	<div id="MotelTab" class="tabcontent">
-		<h3>Motel</h3>
-		<p>Motels are good places for a short nap. Cheap in price and does what you need it to do.</p>
-		<div id="CPS_words"><small>CPS: <span id="MotelOut" style="color: #e67c2c">10</span></small></div>
+		<div id="HiddenText_Motel">
+			<h3>Motel</h3>
+			<p>Motels are good places for a short nap. Cheap in price and does what you need it to do.</p>
+			<div id="CPS_words"><small>CPS: <span id="MotelOut" style="color: #e67c2c">10</span></small></div>
 
-		<div class="building_purchase_button">
-			<button onclick="buyMotel()" id="building_purchase1">[1]</button>
-			<button onclick="buyMotel10()" id="building_purchase2">[10]</button>
-			<button onclick="buyMotel10()" id="building_purchase3">[100]</button>
+			<div class="building_purchase_button">
+				<button onclick="buyMotel()" id="building_purchase1">[1]</button>
+				<button onclick="buyMotel10()" id="building_purchase2">[10]</button>
+				<button onclick="buyMotel10()" id="building_purchase3">[100]</button>
+			</div>
+
+			<div id="building_cost_text">
+				<small><div class="tooltip">Cost Per*: <span class="tooltiptext">4% Discount on x10<br>10% Discount on x100</span></div></small>
+				<small style="color: #e67c2c"><span id="MotelCost"> 10000</span></small>
+				<small>Cash</small>
+			</div>
 		</div>
-
-		<div id="building_cost_text">
-			<small><div class="tooltip">Cost Per*: <span class="tooltiptext">4% Discount on x10<br>10% Discount on x100</span></div></small>
-			<small style="color: #e67c2c"><span id="MotelCost"> 10000</span></small>
-			<small>Cash</small>
+		<div id="VisibleText_Motel">
+			<br><br><br><h3>You need 5 of the previous building to discover the next building.</h3>
 		</div>
 	</div>
 	  
 	<div id="Apartment ComplexTab" class="tabcontent">
-		<h3>Apartment Complex</h3>
-		<p>Buy some Apartment Complexes to house your tenants! Don't be an evil landlord.</p>
-		<div id="CPS_words"><small>CPS: <span id="ApartmentComplexOut" style="color: #e67c2c">12</span></small></div>
+		<div id="HiddenText_ApartmentComplex">
+			<h3>Apartment Complex</h3>
+			<p>Buy some Apartment Complexes to house your tenants! Don't be an evil landlord.</p>
+			<div id="CPS_words"><small>CPS: <span id="ApartmentComplexOut" style="color: #e67c2c">12</span></small></div>
 
-		<div class="building_purchase_button">
-			<button onclick="buyApartmentComplex()" id="building_purchase1">[1]</button>
-			<button onclick="buyApartmentComplex10()" id="building_purchase2">[10]</button>
-			<button onclick="buyApartmentComplex10()" id="building_purchase3">[100]</button>
+			<div class="building_purchase_button">
+				<button onclick="buyApartmentComplex()" id="building_purchase1">[1]</button>
+				<button onclick="buyApartmentComplex10()" id="building_purchase2">[10]</button>
+				<button onclick="buyApartmentComplex10()" id="building_purchase3">[100]</button>
+			</div>
+
+			<div id="building_cost_text">
+				<small><div class="tooltip">Cost Per*: <span class="tooltiptext">4% Discount on x10<br>10% Discount on x100</span></div></small>
+				<small style="color: #e67c2c"><span id="ApartmentComplexCost"> 50000</span></small>
+				<small>Cash</small>
+			</div>
 		</div>
-
-		<div id="building_cost_text">
-			<small><div class="tooltip">Cost Per*: <span class="tooltiptext">4% Discount on x10<br>10% Discount on x100</span></div></small>
-			<small style="color: #e67c2c"><span id="ApartmentComplexCost"> 50000</span></small>
-			<small>Cash</small>
+		<div id="VisibleText_ApartmentComplex">
+			<br><br><br><h3>You need 5 of the previous building to discover the next building.</h3>
 		</div>
 	</div>
 
 	<div id="TowerTab" class="tabcontent">
-		<h3>Tower</h3>
-		<p>Big jump in building size, eh?. Purchase your first REAL building!</p>
-		<div id="CPS_words"><small>CPS: <span id="TowerOut" style="color: #e67c2c">15</span></small></div>
+		<div id="HiddenText_Tower">
+			<h3>Tower</h3>
+			<p>Big jump in building size, eh?. Purchase your first REAL building!</p>
+			<div id="CPS_words"><small>CPS: <span id="TowerOut" style="color: #e67c2c">15</span></small></div>
 		
-		<div class="building_purchase_button">
-			<button onclick="buyTower()" id="building_purchase1">[1]</button>
-			<button onclick="buyTower10()" id="building_purchase2">[10]</button>
-			<button onclick="buyTower10()" id="building_purchase3">[100]</button>
+			<div class="building_purchase_button">
+				<button onclick="buyTower()" id="building_purchase1">[1]</button>
+				<button onclick="buyTower10()" id="building_purchase2">[10]</button>
+				<button onclick="buyTower10()" id="building_purchase3">[100]</button>
+			</div>
+		
+			<div id="building_cost_text">
+				<small><div class="tooltip">Cost Per*: <span class="tooltiptext">4% Discount on x10<br>10% Discount on x100</span></div></small>
+				<small style="color: #e67c2c"><span id="TowerCost"> 300000</span></small>
+				<small>Cash</small>
+			</div>
 		</div>
-		
-		<div id="building_cost_text">
-			<small><div class="tooltip">Cost Per*: <span class="tooltiptext">4% Discount on x10<br>10% Discount on x100</span></div></small>
-			<small style="color: #e67c2c"><span id="TowerCost"> 300000</span></small>
-			<small>Cash</small>
+		<div id="VisibleText_Tower">
+			<br><br><br><h3>You need 5 of the previous building to discover the next building.</h3>
 		</div>
 	</div>
 
 	<div id="SkyscraperTab" class="tabcontent">
-		<h3>Skyscraper</h3>
-		<p>Road to fame. Purchase some skyscrapers to start building your reputation!</p>
-		<div id="CPS_words"><small>CPS: <span id="SkyscraperOut" style="color: #e67c2c">25</span></small></div>
+		<div id="HiddenText_Skyscraper"></div>
+			<h3>Skyscraper</h3>
+			<p>Road to fame. Purchase some skyscrapers to start building your reputation!</p>
+			<div id="CPS_words"><small>CPS: <span id="SkyscraperOut" style="color: #e67c2c">25</span></small></div>
 
-		<div id="building_purchase_button">
-			<button onclick="buySkyscraper()" id="building_purchase1">[1]</button>
-			<button onclick="buySkyscraper10()" id="building_purchase2">[10]</button>
-			<button onclick="buySkyscraper10()" id="building_purchase3">[100]</button>
+			<div id="building_purchase_button">
+				<button onclick="buySkyscraper()" id="building_purchase1">[1]</button>
+				<button onclick="buySkyscraper10()" id="building_purchase2">[10]</button>
+				<button onclick="buySkyscraper10()" id="building_purchase3">[100]</button>
+			</div>
+
+			<div id="building_cost_text">
+				<small><div class="tooltip">Cost Per*: <span class="tooltiptext">4% Discount on x10<br>10% Discount on x100</span></div></small>
+				<small style="color: #e67c2c"><span id="SkyscraperCost"> 1000000</span></small>
+				<small>Cash</small>
+			</div>
 		</div>
-
-		<div id="building_cost_text">
-			<small><div class="tooltip">Cost Per*: <span class="tooltiptext">4% Discount on x10<br>10% Discount on x100</span></div></small>
-			<small style="color: #e67c2c"><span id="SkyscraperCost"> 1000000</span></small>
-			<small>Cash</small>
+		<div id="VisibleText_Skyscraper">
+			<br><br><br><h3>You need 5 of the previous building to discover the next building.</h3>
 		</div>
 	</div>
 
