@@ -25,7 +25,7 @@ left:7vw;
 top:11.3vw;
 }
 
-.building_purchase_button .settings_button button {
+.building_purchase_button button {
 padding: 0.13vw 0.15vw;
 border: 0.05vw solid rgb(0, 0, 0);
 text-align: center;
@@ -33,7 +33,19 @@ cursor: pointer;
 transition: 0.5s;
 }
 
-.building_purchase_button .settings_button button:hover {
+.building_purchase_button button:hover {
+background-color: #232423;
+}
+
+.settings_button button {
+padding: 0.13vw 0.15vw;
+border: 0.05vw solid rgb(0, 0, 0);
+text-align: center;
+cursor: pointer;
+transition: 0.5s;
+}
+
+.settings_button button:hover {
 background-color: #232423;
 }
 
@@ -129,8 +141,13 @@ color: #1e1e1e;
 visibility: visible;
 }
 
-#hidden {
+#HiddenText_Apartment {
 visibility: hidden;
+position: fixed;
+}
+
+#VisibleText_Apartment {
+visibility: visible;
 position: fixed;
 }
 
