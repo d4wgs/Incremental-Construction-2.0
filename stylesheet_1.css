@@ -130,7 +130,7 @@ width: 10vw;
 height: 2vw;
 background-color: #ff4747;
 color: #1e1e1e;
-visibility: visible;
+visibility: hidden;
 }
 
 #Bricks_progress {
@@ -138,7 +138,7 @@ position: relative;
 text-align: center;
 bottom: 0.85vw;
 color: #1e1e1e;
-visibility: visible;
+visibility: hidden;
 }
 
 #HiddenText_Apartment {
