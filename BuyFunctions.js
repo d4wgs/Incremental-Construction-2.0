@@ -3,10 +3,14 @@ function buyShack() {
       Cash = Cash - ShackCost;
       Shack = Shack + 1;
       ShackCost = Math.round(ShackCost * 1.05);
-
       document.getElementById("Cash").innerHTML = Cash;
       document.getElementById("Shack").innerHTML = Shack;
       document.getElementById("ShackCost").innerHTML = ShackCost;
+
+      if (Shack >= 5) {
+        document.getElementById("HiddenText_Apartment").style.visibility = "visible";
+        document.getElementById("VisibleText_Apartment").style.visibility = "hidden";
+      }
     }
   }
 function buyShack10() {
