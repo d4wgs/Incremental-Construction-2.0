@@ -18,10 +18,14 @@ function buyShack10() {
       Cash = Cash - (10 * ShackCost);
       Shack = Shack + 10;
       ShackCost = Math.round(0.96 * (ShackCost * (1.05 ** 10)));
-
       document.getElementById("Cash").innerHTML = Cash;
       document.getElementById("Shack").innerHTML = Shack;
       document.getElementById("ShackCost").innerHTML = ShackCost;
+
+      if (Shack >= 5) {
+        document.getElementById("HiddenText_Apartment").style.visibility = "visible";
+        document.getElementById("VisibleText_Apartment").style.visibility = "hidden";
+      }
     }
   }
 function buyShack100() {
@@ -29,10 +33,14 @@ function buyShack100() {
      Cash = Cash - (100 * ShackCost);
      Shack = Shack + 100;
      ShackCost = Math.round(0.9 * (ShackCost * (1.05 ** 100)));
-
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Shack").innerHTML = Shack;
      document.getElementById("ShackCost").innerHTML = ShackCost;
+
+     if (Shack >= 5) {
+      document.getElementById("HiddenText_Apartment").style.visibility = "visible";
+      document.getElementById("VisibleText_Apartment").style.visibility = "hidden";
+    }
    }
  }
 function buyApartment() {
@@ -40,10 +48,14 @@ function buyApartment() {
      Cash = Cash - ApartmentCost;
      Apartment = Apartment + 1;
      ApartmentCost = Math.round(ApartmentCost * 1.05);
-
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Apartment").innerHTML = Apartment;
      document.getElementById("ApartmentCost").innerHTML = ApartmentCost;
+
+     if (Apartment >= 5) {
+      document.getElementById("HiddenText_House").style.visibility = "visible";
+      document.getElementById("VisibleText_House").style.visibility = "hidden";
+    }
    }
  }
 function buyApartment10() {
@@ -51,10 +63,14 @@ function buyApartment10() {
      Cash = Cash - (10 * ApartmentCost);
      Apartment = Apartment + 10;
      ApartmentCost = Math.round(0.96 * (ApartmentCost * (1.05 ** 10)));
-
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Apartment").innerHTML = Apartment;
      document.getElementById("ApartmentCost").innerHTML = ApartmentCost;
+
+     if (Apartment >= 5) {
+      document.getElementById("HiddenText_House").style.visibility = "visible";
+      document.getElementById("VisibleText_House").style.visibility = "hidden";
+    }
    }
  }
 function buyApartment100() {
@@ -62,10 +78,14 @@ function buyApartment100() {
      Cash = Cash - (100 * ApartmentCost);
      Apartment = Apartment + 100;
      ApartmentCost = Math.round(0.9 * (ApartmentCost * (1.05 ** 100)));
-
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Apartment").innerHTML = Apartment;
      document.getElementById("ApartmentCost").innerHTML = ApartmentCost;
+
+     if (Apartment >= 5) {
+      document.getElementById("HiddenText_House").style.visibility = "visible";
+      document.getElementById("VisibleText_House").style.visibility = "hidden";
+    }
    }
  }
 function buyHouse() {
@@ -73,10 +93,14 @@ function buyHouse() {
      Cash = Cash - HouseCost;
      House = House + 1;
      HouseCost = Math.round(HouseCost * 1.05);
-
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("House").innerHTML = House;
      document.getElementById("HouseCost").innerHTML = HouseCost;
+
+     if (House >= 5) {
+      document.getElementById("HiddenText_Motel").style.visibility = "visible";
+      document.getElementById("VisibleText_Motel").style.visibility = "hidden";
+    }
    }
  }
 function buyHouse10() {
@@ -84,10 +108,14 @@ function buyHouse10() {
      Cash = Cash - (10 * HouseCost);
      House = House + 10;
      HouseCost = Math.round(0.96 * (HouseCost * (1.05 ** 10)));
-
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("House").innerHTML = House;
      document.getElementById("HouseCost").innerHTML = HouseCost;
+
+     if (House >= 5) {
+      document.getElementById("HiddenText_Motel").style.visibility = "visible";
+      document.getElementById("VisibleText_Motel").style.visibility = "hidden";
+    }
    }
  }
 function buyHouse100() {
@@ -95,10 +123,14 @@ function buyHouse100() {
      Cash = Cash - (100 * HouseCost);
      House = House + 100;
      HouseCost = Math.round(0.9 * (HouseCost * (1.05 ** 100)));
-
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("House").innerHTML = House;
      document.getElementById("HouseCost").innerHTML = HouseCost;
+
+     if (House >= 5) {
+      document.getElementById("HiddenText_Motel").style.visibility = "visible";
+      document.getElementById("VisibleText_Motel").style.visibility = "hidden";
+    }
    }
  }
 function buyMotel() {
@@ -106,10 +138,14 @@ function buyMotel() {
      Cash = Cash - MotelCost;
      Motel = Motel + 1;
      MotelCost = Math.round(MotelCost * 1.05);
-
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Motel").innerHTML = Motel;
      document.getElementById("MotelCost").innerHTML = MotelCost;
+
+     if (ApartmentComplex >= 5) {
+      document.getElementById("HiddenText_ApartmentComplex").style.visibility = "visible";
+      document.getElementById("VisibleText_ApartmentComplex").style.visibility = "hidden";
+    }
    }
  }
 function buyMotel10() {
@@ -117,10 +153,14 @@ function buyMotel10() {
      Cash = Cash - (10 * MotelCost);
      Motel = Motel + 10;
      MotelCost = Math.round(0.96 * (MotelCost * (1.05 ** 100)));
-
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Motel").innerHTML = Motel;
      document.getElementById("MotelCost").innerHTML = MotelCost;
+
+     if (ApartmentComplex >= 5) {
+      document.getElementById("HiddenText_ApartmentComplex").style.visibility = "visible";
+      document.getElementById("VisibleText_ApartmentComplex").style.visibility = "hidden";
+    }
    }
  }
 function buyMotel100() {
@@ -128,10 +168,14 @@ function buyMotel100() {
      Cash = Cash - (100 * MotelCost);
      Motel = Motel + 100;
      MotelCost = Math.round(0.9 * (MotelCost * (1.05 ** 100)));
-
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Motel").innerHTML = Motel;
      document.getElementById("MotelCost").innerHTML = MotelCost;
+
+     if (ApartmentComplex >= 5) {
+      document.getElementById("HiddenText_ApartmentComplex").style.visibility = "visible";
+      document.getElementById("VisibleText_ApartmentComplex").style.visibility = "hidden";
+    }
    }
  }
   function buyApartmentComplex() {
@@ -143,6 +187,11 @@ function buyMotel100() {
       document.getElementById("Cash").innerHTML = Cash;
       document.getElementById("ApartmentComplex").innerHTML = ApartmentComplex;
       document.getElementById("ApartmentComplexCost").innerHTML = ApartmentComplexCost;
+
+      if (ApartmentComplex >= 5) {
+        document.getElementById("HiddenText_Tower").style.visibility = "visible";
+        document.getElementById("VisibleText_Tower").style.visibility = "hidden";
+      }
     }
   }
 function buyApartmentComplex10() {
@@ -150,10 +199,14 @@ function buyApartmentComplex10() {
      Cash = Cash - (10 * ApartmentComplexCost);
      ApartmentComplex = ApartmentComplex + 10;
      ApartmentComplexCost = Math.round(0.96 * (ApartmentComplexCost * (1.05 ** 10)));
-
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("ApartmentComplex").innerHTML = ApartmentComplex;
      document.getElementById("ApartmentComplexCost").innerHTML = ApartmentComplexCost;
+
+     if (ApartmentComplex >= 5) {
+      document.getElementById("HiddenText_Tower").style.visibility = "visible";
+      document.getElementById("VisibleText_Tower").style.visibility = "hidden";
+    }
    }
  }
 function buyApartmentComplex100() {
@@ -161,10 +214,14 @@ function buyApartmentComplex100() {
      Cash = Cash - (100 * ApartmentComplexCost);
      ApartmentComplex = ApartmentComplex + 100;
      ApartmentComplexCost = Math.round(0.9 * (ApartmentComplexCost * (1.05 ** 100)));
-
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("ApartmentComplex").innerHTML = ApartmentComplex;
      document.getElementById("ApartmentComplexCost").innerHTML = ApartmentComplexCost;
+
+     if (ApartmentComplex >= 5) {
+      document.getElementById("HiddenText_Tower").style.visibility = "visible";
+      document.getElementById("VisibleText_Tower").style.visibility = "hidden";
+    }
    }
  }
 function buyTower() {
@@ -176,6 +233,11 @@ function buyTower() {
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Tower").innerHTML = Tower;
      document.getElementById("TowerCost").innerHTML = TowerCost;
+
+     if (Tower >= 5) {
+      document.getElementById("HiddenText_Skyscraper").style.visibility = "visible";
+      document.getElementById("VisibleText_Skyscraper").style.visibility = "hidden";
+    }
    }
  }
 function buyTower10() {
@@ -183,10 +245,14 @@ function buyTower10() {
      Cash = Cash - (10 * TowerCost);
      Tower = Tower + 10;
      TowerCost = Math.round(0.96 * (TowerCost * (1.05 ** 10)));
-
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Tower").innerHTML = Tower;
      document.getElementById("TowerCost").innerHTML = TowerCost;
+
+     if (Tower >= 5) {
+      document.getElementById("HiddenText_Skyscraper").style.visibility = "visible";
+      document.getElementById("VisibleText_Skyscraper").style.visibility = "hidden";
+    }
    }
  }
 function buyTower100() {
@@ -194,11 +260,15 @@ function buyTower100() {
      Cash = Cash - (100 * TowerCost);
      Tower = Tower + 100;
      TowerCost = Math.round(0.9 * (TowerCost * (1.05 ** 100)));
-
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Tower").innerHTML = Tower;
      document.getElementById("TowerCost").innerHTML = TowerCost;
+
+     if (Tower >= 5) {
+      document.getElementById("HiddenText_Skyscraper").style.visibility = "visible";
+      document.getElementById("VisibleText_Skyscraper").style.visibility = "hidden";
     }
+  }
  }
 function buySkyscraper() {
    if (Cash >= SkyscraperCost) {
