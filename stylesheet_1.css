@@ -141,8 +141,7 @@ color: #1e1e1e;
 visibility: hidden;
 }
 
-#HiddenText_Apartment, #HiddenText_House, #HiddenText_Motel, #HiddenText_ApartmentComplex, #HiddenText_Tower, #HiddenText_Skyscraper,
-#HiddenRequirement_Apartment, #HiddenRequirement_House, #HiddenRequirement_Motel, #HiddenRequirement_ApartmentComplex, #HiddenRequirement_Tower, #HiddenRequirement_Skyscraper {
+#HiddenText_Apartment, #HiddenText_House, #HiddenText_Motel, #HiddenText_ApartmentComplex, #HiddenText_Tower, #HiddenText_Skyscraper {
 visibility: hidden;
 position: fixed;
 }
@@ -151,7 +150,7 @@ position: fixed;
 #VisibleRequirement_Apartment, #VisibleRequirement_House, #VisibleRequirement_Motel, #VisibleRequirement_ApartmentComplex, #VisibleRequirement_Tower, #VisibleRequirement_Skyscraper {
 visibility: visible;
 text-align: center;
-position: absolute;
+position: relative;
 }
 
 h1 {
