@@ -141,13 +141,14 @@ color: #1e1e1e;
 visibility: hidden;
 }
 
-#HiddenText_Apartment, #HiddenText_House, #HiddenText_Motel, #HiddenText_ApartmentComplex, #HiddenText_Tower, #HiddenText_Skyscraper {
+#VisibleText_Apartment, #HiddenText_House, #HiddenText_Motel, #HiddenText_ApartmentComplex, #HiddenText_Tower, #HiddenText_Skyscraper,
+#VisibleRequirement_Apartment {
 visibility: hidden;
 position: fixed;
 }
 
-#VisibleText_Apartment, #VisibleText_House, #VisibleText_Motel, #VisibleText_ApartmentComplex, #VisibleText_Tower, #VisibleText_Skyscraper,
-#VisibleRequirement_Apartment, #VisibleRequirement_House, #VisibleRequirement_Motel, #VisibleRequirement_ApartmentComplex, #VisibleRequirement_Tower, #VisibleRequirement_Skyscraper {
+#HiddenText_Apartment, #VisibleText_House, #VisibleText_Motel, #VisibleText_ApartmentComplex, #VisibleText_Tower, #VisibleText_Skyscraper,
+ #VisibleRequirement_House, #VisibleRequirement_Motel, #VisibleRequirement_ApartmentComplex, #VisibleRequirement_Tower, #VisibleRequirement_Skyscraper {
 visibility: visible;
 text-align: center;
 position: relative;
