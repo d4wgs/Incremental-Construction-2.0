@@ -148,8 +148,8 @@ position: fixed;
 
 #VisibleText_Apartment, #VisibleText_House, #VisibleText_Motel, #VisibleText_ApartmentComplex, #VisibleText_Tower, #VisibleText_Skyscraper {
 visibility: visible;
-position: relative;
 text-align: center;
+position: absolute;
 }
 
 h1 {
