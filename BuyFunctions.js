@@ -8,9 +8,9 @@ function buyShack() {
       document.getElementById("ShackCost").innerHTML = ShackCost;
 
       if (Shack >= 5) {
-        document.getElementById("HiddenText_Apartment").style.visibility = "hidden";
-        document.getElementById("VisibleText_Apartment").style.visibility = "visible";
-        document.getElementById("VisibleRequirement_Apartment").style.visibility = "visible";
+        document.getElementById("HiddenText_Apartment").style.visibility = "visible";
+        document.getElementById("VisibleText_Apartment").style.visibility = "hidden";
+        document.getElementById("VisibleRequirement_Apartment").style.visibility = "hidden";
       }
     }
   }
