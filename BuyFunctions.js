@@ -74,9 +74,15 @@ function buyApartment() {
      document.getElementById("ApartmentCost").innerHTML = ApartmentCost;
 
      if (Apartment >= 5) {
-      document.getElementById("HiddenText_House").style.visibility = "visible";
       document.getElementById("VisibleText_House").style.visibility = "hidden";
-      document.getElementById("VisibleRequirement_House").style.visibility = "hidden";
+      document.getElementById("HiddenText_House").style.visibility = "visible";
+      document.getElementById("HiddenHouseName").style.visibility = "visible";
+      document.getElementById("VisibleHouseName").style.visibility = "hidden";
+    } else {
+      document.getElementById("VisibleText_House").style.visibility = "visible";
+      document.getElementById("HiddenText_House").style.visibility = "hidden";
+      document.getElementById("HiddenHouseName").style.visibility = "hidden";
+      document.getElementById("VisibleHouseName").style.visibility = "visible";
     }
    }
  }
@@ -90,9 +96,15 @@ function buyApartment10() {
      document.getElementById("ApartmentCost").innerHTML = ApartmentCost;
 
      if (Apartment >= 5) {
-      document.getElementById("HiddenText_House").style.visibility = "visible";
       document.getElementById("VisibleText_House").style.visibility = "hidden";
-      document.getElementById("VisibleRequirement_House").style.visibility = "hidden";
+      document.getElementById("HiddenText_House").style.visibility = "visible";
+      document.getElementById("HiddenHouseName").style.visibility = "visible";
+      document.getElementById("VisibleHouseName").style.visibility = "hidden";
+    } else {
+      document.getElementById("VisibleText_House").style.visibility = "visible";
+      document.getElementById("HiddenText_House").style.visibility = "hidden";
+      document.getElementById("HiddenHouseName").style.visibility = "hidden";
+      document.getElementById("VisibleHouseName").style.visibility = "visible";
     }
    }
  }
@@ -106,9 +118,15 @@ function buyApartment100() {
      document.getElementById("ApartmentCost").innerHTML = ApartmentCost;
 
      if (Apartment >= 5) {
-      document.getElementById("HiddenText_House").style.visibility = "visible";
       document.getElementById("VisibleText_House").style.visibility = "hidden";
-      document.getElementById("VisibleRequirement_House").style.visibility = "hidden";
+      document.getElementById("HiddenText_House").style.visibility = "visible";
+      document.getElementById("HiddenHouseName").style.visibility = "visible";
+      document.getElementById("VisibleHouseName").style.visibility = "hidden";
+    } else {
+      document.getElementById("VisibleText_House").style.visibility = "visible";
+      document.getElementById("HiddenText_House").style.visibility = "hidden";
+      document.getElementById("HiddenHouseName").style.visibility = "hidden";
+      document.getElementById("VisibleHouseName").style.visibility = "visible";
     }
    }
  }
@@ -122,9 +140,15 @@ function buyHouse() {
      document.getElementById("HouseCost").innerHTML = HouseCost;
 
      if (House >= 5) {
-      document.getElementById("HiddenText_Motel").style.visibility = "visible";
       document.getElementById("VisibleText_Motel").style.visibility = "hidden";
-      document.getElementById("VisibleRequirement_Motel").style.visibility = "hidden";
+      document.getElementById("HiddenText_Motel").style.visibility = "visible";
+      document.getElementById("HiddenMotelName").style.visibility = "visible";
+      document.getElementById("VisibleMotelName").style.visibility = "hidden";
+    } else {
+      document.getElementById("VisibleText_Motel").style.visibility = "visible";
+      document.getElementById("HiddenText_Motel").style.visibility = "hidden";
+      document.getElementById("HiddenMotelName").style.visibility = "hidden";
+      document.getElementById("VisibleMotelName").style.visibility = "visible";
     }
    }
  }
@@ -138,9 +162,15 @@ function buyHouse10() {
      document.getElementById("HouseCost").innerHTML = HouseCost;
 
      if (House >= 5) {
-      document.getElementById("HiddenText_Motel").style.visibility = "visible";
       document.getElementById("VisibleText_Motel").style.visibility = "hidden";
-      document.getElementById("VisibleRequirement_Motel").style.visibility = "hidden";
+      document.getElementById("HiddenText_Motel").style.visibility = "visible";
+      document.getElementById("HiddenMotelName").style.visibility = "visible";
+      document.getElementById("VisibleMotelName").style.visibility = "hidden";
+    } else {
+      document.getElementById("VisibleText_Motel").style.visibility = "visible";
+      document.getElementById("HiddenText_Motel").style.visibility = "hidden";
+      document.getElementById("HiddenMotelName").style.visibility = "hidden";
+      document.getElementById("VisibleMotelName").style.visibility = "visible";
     }
    }
  }
@@ -154,9 +184,15 @@ function buyHouse100() {
      document.getElementById("HouseCost").innerHTML = HouseCost;
 
      if (House >= 5) {
-      document.getElementById("HiddenText_Motel").style.visibility = "visible";
       document.getElementById("VisibleText_Motel").style.visibility = "hidden";
-      document.getElementById("VisibleRequirement_Motel").style.visibility = "hidden";
+      document.getElementById("HiddenText_Motel").style.visibility = "visible";
+      document.getElementById("HiddenMotelName").style.visibility = "visible";
+      document.getElementById("VisibleMotelName").style.visibility = "hidden";
+    } else {
+      document.getElementById("VisibleText_Motel").style.visibility = "visible";
+      document.getElementById("HiddenText_Motel").style.visibility = "hidden";
+      document.getElementById("HiddenMotelName").style.visibility = "hidden";
+      document.getElementById("VisibleMotelName").style.visibility = "visible";
     }
    }
  }
@@ -169,10 +205,16 @@ function buyMotel() {
      document.getElementById("Motel").innerHTML = Motel;
      document.getElementById("MotelCost").innerHTML = MotelCost;
 
-     if (ApartmentComplex >= 5) {
-      document.getElementById("HiddenText_ApartmentComplex").style.visibility = "visible";
+     if (Motel >= 5) {
       document.getElementById("VisibleText_ApartmentComplex").style.visibility = "hidden";
-      document.getElementById("VisibleRequirement_ApartmentComplex").style.visibility = "hidden";
+      document.getElementById("HiddenText_ApartmentComplex").style.visibility = "visible";
+      document.getElementById("HiddenApartmentComplexName").style.visibility = "visible";
+      document.getElementById("VisibleApartmentComplexName").style.visibility = "hidden";
+    } else {
+      document.getElementById("VisibleText_ApartmentComplex").style.visibility = "visible";
+      document.getElementById("HiddenText_ApartmentComplex").style.visibility = "hidden";
+      document.getElementById("HiddenApartmentComplexName").style.visibility = "hidden";
+      document.getElementById("VisibleApartmentComplexName").style.visibility = "visible";
     }
    }
  }
@@ -185,10 +227,16 @@ function buyMotel10() {
      document.getElementById("Motel").innerHTML = Motel;
      document.getElementById("MotelCost").innerHTML = MotelCost;
 
-     if (ApartmentComplex >= 5) {
-      document.getElementById("HiddenText_ApartmentComplex").style.visibility = "visible";
+     if (Motel >= 5) {
       document.getElementById("VisibleText_ApartmentComplex").style.visibility = "hidden";
-      document.getElementById("VisibleRequirement_ApartmentComplex").style.visibility = "hidden";
+      document.getElementById("HiddenText_ApartmentComplex").style.visibility = "visible";
+      document.getElementById("HiddenApartmentComplexName").style.visibility = "visible";
+      document.getElementById("VisibleApartmentComplexName").style.visibility = "hidden";
+    } else {
+      document.getElementById("VisibleText_ApartmentComplex").style.visibility = "visible";
+      document.getElementById("HiddenText_ApartmentComplex").style.visibility = "hidden";
+      document.getElementById("HiddenApartmentComplexName").style.visibility = "hidden";
+      document.getElementById("VisibleApartmentComplexName").style.visibility = "visible";
     }
    }
  }
@@ -201,10 +249,16 @@ function buyMotel100() {
      document.getElementById("Motel").innerHTML = Motel;
      document.getElementById("MotelCost").innerHTML = MotelCost;
 
-     if (ApartmentComplex >= 5) {
-      document.getElementById("HiddenText_ApartmentComplex").style.visibility = "visible";
+     if (Motel >= 5) {
       document.getElementById("VisibleText_ApartmentComplex").style.visibility = "hidden";
-      document.getElementById("VisibleRequirement_ApartmentComplex").style.visibility = "hidden";
+      document.getElementById("HiddenText_ApartmentComplex").style.visibility = "visible";
+      document.getElementById("HiddenApartmentComplexName").style.visibility = "visible";
+      document.getElementById("VisibleApartmentComplexName").style.visibility = "hidden";
+    } else {
+      document.getElementById("VisibleText_ApartmentComplex").style.visibility = "visible";
+      document.getElementById("HiddenText_ApartmentComplex").style.visibility = "hidden";
+      document.getElementById("HiddenApartmentComplexName").style.visibility = "hidden";
+      document.getElementById("VisibleApartmentComplexName").style.visibility = "visible";
     }
    }
  }
@@ -219,13 +273,19 @@ function buyMotel100() {
       document.getElementById("ApartmentComplexCost").innerHTML = ApartmentComplexCost;
 
       if (ApartmentComplex >= 5) {
-        document.getElementById("HiddenText_Tower").style.visibility = "visible";
         document.getElementById("VisibleText_Tower").style.visibility = "hidden";
-        document.getElementById("VisibleRequirement_Tower").style.visibility = "hidden";
+        document.getElementById("HiddenText_Tower").style.visibility = "visible";
+        document.getElementById("HiddenTowerName").style.visibility = "visible";
+        document.getElementById("VisibleTowerName").style.visibility = "hidden";
+      } else {
+        document.getElementById("VisibleText_Tower").style.visibility = "visible";
+        document.getElementById("HiddenText_Tower").style.visibility = "hidden";
+        document.getElementById("HiddenTowerName").style.visibility = "hidden";
+        document.getElementById("VisibleTowerName").style.visibility = "visible";
       }
     }
   }
-function buyApartmentComplex10() {
+function buyTower10() {
    if (Cash >= 10 * ApartmentComplexCost) {
      Cash = Cash - (10 * ApartmentComplexCost);
      ApartmentComplex = ApartmentComplex + 10;
@@ -235,9 +295,15 @@ function buyApartmentComplex10() {
      document.getElementById("ApartmentComplexCost").innerHTML = ApartmentComplexCost;
 
      if (ApartmentComplex >= 5) {
-      document.getElementById("HiddenText_Tower").style.visibility = "visible";
       document.getElementById("VisibleText_Tower").style.visibility = "hidden";
-      document.getElementById("VisibleRequirement_Tower").style.visibility = "hidden";
+      document.getElementById("HiddenText_Tower").style.visibility = "visible";
+      document.getElementById("HiddenTowerName").style.visibility = "visible";
+      document.getElementById("VisibleTowerName").style.visibility = "hidden";
+    } else {
+      document.getElementById("VisibleText_Tower").style.visibility = "visible";
+      document.getElementById("HiddenText_Tower").style.visibility = "hidden";
+      document.getElementById("HiddenTowerName").style.visibility = "hidden";
+      document.getElementById("VisibleTowerName").style.visibility = "visible";
     }
    }
  }
@@ -251,9 +317,15 @@ function buyApartmentComplex100() {
      document.getElementById("ApartmentComplexCost").innerHTML = ApartmentComplexCost;
 
      if (ApartmentComplex >= 5) {
-      document.getElementById("HiddenText_Tower").style.visibility = "visible";
       document.getElementById("VisibleText_Tower").style.visibility = "hidden";
-      document.getElementById("VisibleRequirement_Tower").style.visibility = "hidden";
+      document.getElementById("HiddenText_Tower").style.visibility = "visible";
+      document.getElementById("HiddenTowerName").style.visibility = "visible";
+      document.getElementById("VisibleTowerName").style.visibility = "hidden";
+    } else {
+      document.getElementById("VisibleText_Tower").style.visibility = "visible";
+      document.getElementById("HiddenText_Tower").style.visibility = "hidden";
+      document.getElementById("HiddenTowerName").style.visibility = "hidden";
+      document.getElementById("VisibleTowerName").style.visibility = "visible";
     }
    }
  }
@@ -268,9 +340,15 @@ function buyTower() {
      document.getElementById("TowerCost").innerHTML = TowerCost;
 
      if (Tower >= 5) {
-      document.getElementById("HiddenText_Skyscraper").style.visibility = "visible";
       document.getElementById("VisibleText_Skyscraper").style.visibility = "hidden";
-      document.getElementById("VisibleRequirement_Skyscraper").style.visibility = "hidden";
+      document.getElementById("HiddenText_Skyscraper").style.visibility = "visible";
+      document.getElementById("HiddenSkyscraperName").style.visibility = "visible";
+      document.getElementById("VisibleSkyscraperName").style.visibility = "hidden";
+    } else {
+      document.getElementById("VisibleText_Skyscraper").style.visibility = "visible";
+      document.getElementById("HiddenText_Skyscraper").style.visibility = "hidden";
+      document.getElementById("HiddenSkyscraperName").style.visibility = "hidden";
+      document.getElementById("VisibleSkyscraperName").style.visibility = "visible";
     }
    }
  }
@@ -284,9 +362,15 @@ function buyTower10() {
      document.getElementById("TowerCost").innerHTML = TowerCost;
 
      if (Tower >= 5) {
-      document.getElementById("HiddenText_Skyscraper").style.visibility = "visible";
       document.getElementById("VisibleText_Skyscraper").style.visibility = "hidden";
-      document.getElementById("VisibleRequirement_Skyscraper").style.visibility = "hidden";
+      document.getElementById("HiddenText_Skyscraper").style.visibility = "visible";
+      document.getElementById("HiddenSkyscraperName").style.visibility = "visible";
+      document.getElementById("VisibleSkyscraperName").style.visibility = "hidden";
+    } else {
+      document.getElementById("VisibleText_Skyscraper").style.visibility = "visible";
+      document.getElementById("HiddenText_Skyscraper").style.visibility = "hidden";
+      document.getElementById("HiddenSkyscraperName").style.visibility = "hidden";
+      document.getElementById("VisibleSkyscraperName").style.visibility = "visible";
     }
    }
  }
@@ -300,9 +384,15 @@ function buyTower100() {
      document.getElementById("TowerCost").innerHTML = TowerCost;
 
      if (Tower >= 5) {
-      document.getElementById("HiddenText_Skyscraper").style.visibility = "visible";
       document.getElementById("VisibleText_Skyscraper").style.visibility = "hidden";
-      document.getElementById("VisibleRequirement_Skyscraper").style.visibility = "hidden";
+      document.getElementById("HiddenText_Skyscraper").style.visibility = "visible";
+      document.getElementById("HiddenSkyscraperName").style.visibility = "visible";
+      document.getElementById("VisibleSkyscraperName").style.visibility = "hidden";
+    } else {
+      document.getElementById("VisibleText_Skyscraper").style.visibility = "visible";
+      document.getElementById("HiddenText_Skyscraper").style.visibility = "hidden";
+      document.getElementById("HiddenSkyscraperName").style.visibility = "hidden";
+      document.getElementById("VisibleSkyscraperName").style.visibility = "visible";
     }
   }
  }
