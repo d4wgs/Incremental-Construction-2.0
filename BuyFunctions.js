@@ -25,6 +25,9 @@ function buyShack10() {
       if (Shack >= 5) {
         document.getElementById("HiddenText_Apartment").style.visibility = "visible";
         document.getElementById("VisibleText_Apartment").style.visibility = "hidden";
+      } else {
+        document.getElementById("HiddenText_Apartment").style.visibility = "hidden";
+        document.getElementById("VisibleText_Apartment").style.visibility = "visible";
       }
     }
   }
