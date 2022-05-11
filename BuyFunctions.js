@@ -10,7 +10,6 @@ function buyShack() {
       if (Shack >= 5) {
         document.getElementById("HiddenText_Apartment").style.visibility = "visible";
         document.getElementById("VisibleText_Apartment").style.visibility = "hidden";
-        document.getElementById("VisibleRequirement_Apartment").style.visibility = "hidden";
       }
     }
   }
@@ -26,7 +25,6 @@ function buyShack10() {
       if (Shack >= 5) {
         document.getElementById("HiddenText_Apartment").style.visibility = "visible";
         document.getElementById("VisibleText_Apartment").style.visibility = "hidden";
-        document.getElementById("VisibleRequirement_Apartment").style.visibility = "hidden";
       }
     }
   }
@@ -42,7 +40,6 @@ function buyShack100() {
      if (Shack >= 5) {
       document.getElementById("HiddenText_Apartment").style.visibility = "visible";
       document.getElementById("VisibleText_Apartment").style.visibility = "hidden";
-      document.getElementById("VisibleRequirement_Apartment").style.visibility = "hidden";
     }
    }
  }
