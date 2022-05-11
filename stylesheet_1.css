@@ -157,8 +157,11 @@ position: relative;
 position: fixed;
 }
 
-#VisibleApartmentName, #HiddenApartmentName {
-position: fixed;
+#VisibleApartmentName {
+position: relative;
+}
+#HiddenApartmentName {
+position: relative;
 }
 
 h1 {
