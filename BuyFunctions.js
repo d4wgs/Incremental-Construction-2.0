@@ -8,8 +8,15 @@ function buyShack() {
       document.getElementById("ShackCost").innerHTML = ShackCost;
 
       if (Shack >= 5) {
-        document.getElementById("HiddenText_Apartment").style.visibility = "visible";
         document.getElementById("VisibleText_Apartment").style.visibility = "hidden";
+        document.getElementById("HiddenText_Apartment").style.visibility = "visible";
+        document.getElementById("HiddenApartmentName").style.visibility = "visible";
+        document.getElementById("VisibleApartmentName").style.visibility = "hidden";
+      } else {
+        document.getElementById("VisibleText_Apartment").style.visibility = "visible";
+        document.getElementById("HiddenText_Apartment").style.visibility = "hidden";
+        document.getElementById("HiddenApartmentName").style.visibility = "hidden";
+        document.getElementById("VisibleApartmentName").style.visibility = "visible";
       }
     }
   }
@@ -23,13 +30,13 @@ function buyShack10() {
       document.getElementById("ShackCost").innerHTML = ShackCost;
 
       if (Shack >= 5) {
-        document.getElementById("HiddenText_Apartment").style.visibility = "visible";
         document.getElementById("VisibleText_Apartment").style.visibility = "hidden";
+        document.getElementById("HiddenText_Apartment").style.visibility = "visible";
         document.getElementById("HiddenApartmentName").style.visibility = "visible";
         document.getElementById("VisibleApartmentName").style.visibility = "hidden";
       } else {
-        document.getElementById("HiddenText_Apartment").style.visibility = "hidden";
         document.getElementById("VisibleText_Apartment").style.visibility = "visible";
+        document.getElementById("HiddenText_Apartment").style.visibility = "hidden";
         document.getElementById("HiddenApartmentName").style.visibility = "hidden";
         document.getElementById("VisibleApartmentName").style.visibility = "visible";
       }
@@ -45,8 +52,15 @@ function buyShack100() {
      document.getElementById("ShackCost").innerHTML = ShackCost;
 
      if (Shack >= 5) {
-      document.getElementById("HiddenText_Apartment").style.visibility = "visible";
       document.getElementById("VisibleText_Apartment").style.visibility = "hidden";
+      document.getElementById("HiddenText_Apartment").style.visibility = "visible";
+      document.getElementById("HiddenApartmentName").style.visibility = "visible";
+      document.getElementById("VisibleApartmentName").style.visibility = "hidden";
+    } else {
+      document.getElementById("VisibleText_Apartment").style.visibility = "visible";
+      document.getElementById("HiddenText_Apartment").style.visibility = "hidden";
+      document.getElementById("HiddenApartmentName").style.visibility = "hidden";
+      document.getElementById("VisibleApartmentName").style.visibility = "visible";
     }
    }
  }
