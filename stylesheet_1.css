@@ -141,25 +141,16 @@ color: #1e1e1e;
 visibility: hidden;
 }
 
-#HiddenApartmentName, #HiddenText_Apartment, #HiddenText_House, #HiddenText_Motel, #HiddenText_ApartmentComplex, #HiddenText_Tower, #HiddenText_Skyscraper {
-visibility: hidden;
-position: fixed;
-}
-
-#VisibleApartmentName, #VisibleText_Apartment, #VisibleText_House, #VisibleText_Motel, #VisibleText_ApartmentComplex, #VisibleText_Tower, #VisibleText_Skyscraper,
-#VisibleRequirement_Apartment, #VisibleRequirement_House, #VisibleRequirement_Motel, #VisibleRequirement_ApartmentComplex, #VisibleRequirement_Tower, #VisibleRequirement_Skyscraper {
+#VisibleApartmentName, #VisibleHouseName, #VisibleMotelName, #VisibleApartmentComplexName, #VisibleTowerName, #VisibleSkyscraperName
+#VisibleText_Apartment, #VisibleText_House, #VisibleText_Motel, #VisibleText_ApartmentComplex, #VisibleText_Tower, #VisibleText_Skyscraper {
+position: relative;
 visibility: visible;
-text-align: center;
-position: relative;
 }
 
-#VisibleText_Apartment, #HiddenText_Apartment {
+#HiddenApartmentName, #HiddenText_House, #HiddenText_Motel, #HiddenText_ApartmentComplex, #HiddenText_Tower, #HiddenText_Skyscraper,
+#HiddenText_Apartment, #HiddenText_House, #HiddenText_Motel, #HiddenText_ApartmentComplex, #HiddenText_Tower, #HiddenText_Skyscraper {
 position: fixed;
-}
-
-#VisibleApartmentName, #HiddenApartmentName {
-position: relative;
-text-align: center;
+visibility: hidden;
 }
 
 h1 {
