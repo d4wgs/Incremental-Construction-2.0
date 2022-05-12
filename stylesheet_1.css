@@ -167,7 +167,7 @@ color: #1e1e1e;
 visibility: hidden;
 }
 
-#VisibleText_Apartment, #VisibleText_House, #VisibleText_Motel, #VisibleText_ApartmentComplex, #VisibleText_Tower, #VisibleText_Skyscraper, #VisibleText_Reputation {
+#VisibleText_Apartment, #VisibleText_House, #VisibleText_Motel, #VisibleText_ApartmentComplex, #VisibleText_Tower, #VisibleText_Skyscraper {
 position: absolute;
 visibility: visible;
 }
@@ -190,7 +190,7 @@ visibility: hidden;
 }
 
 #ApartmentUpgrade, #HouseUpgrade, #MotelUpgrade, #ApartmentComplexUpgrade, #TowerUpgrade, #SkyscraperUpgrade,
-#BuyRep, #BuyGD, #BuyVS, #BuyOT, #BuyET, #BuyHC, #BuyMSA {
+#BuyGD, #BuyVS, #BuyOT, #BuyET, #BuyHC, #BuyMSA {
 visibility: hidden;
 }
 
