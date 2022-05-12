@@ -12,60 +12,30 @@ function buyReputation() {
     } else {
       document.getElementById("BuyGD").style.visibility = "hidden";
     }
-    if (GDRep >= 1) {
-      document.getElementById("GDTot").style.visibility = "visible";
-    } else {
-      document.getElementById("GDTot").style.visibility = "hidden";
-    }
     if (Reputation >= 3) {
       document.getElementById("BuyVS").style.visibility = "visible";
     } else {
       document.getElementById("BuyVS").style.visibility = "hidden";
-    }
-    if (VSRep >= 1) {
-      document.getElementById("VSTot").style.visibility = "visible";
-    } else {
-      document.getElementById("VSTot").style.visibility = "hidden";
     }
     if (Reputation >= 10) {
       document.getElementById("BuyOT").style.visibility = "visible";
     } else {
       document.getElementById("BuyOT").style.visibility = "hidden";
     }
-    if (OTRep >= 1) {
-      document.getElementById("OTTot").style.visibility = "visible";
-    } else {
-      document.getElementById("OTTot").style.visibility = "hidden";
-    }
     if (Reputation >= 25) {
       document.getElementById("BuyET").style.visibility = "visible";
     } else {
       document.getElementById("BuyET").style.visibility = "hidden";
-    }
-    if (ETRep >= 1) {
-      document.getElementById("ETTot").style.visibility = "visible";
-    } else {
-      document.getElementById("ETTot").style.visibility = "hidden";
     }
     if (Reputation >= 60) {
       document.getElementById("BuyHC").style.visibility = "visible";
     } else {
       document.getElementById("BuyHC").style.visibility = "hidden";
     }
-    if (HCRep >= 1) {
-      document.getElementById("HCTot").style.visibility = "visible";
-    } else {
-      document.getElementById("HCTot").style.visibility = "hidden";
-    }
     if (Reputation >= 125) {
       document.getElementById("BuyMSA").style.visibility = "visible";
     } else {
       document.getElementById("BuyMSA").style.visibility = "hidden";
-    }
-    if (MSARep >= 1) {
-      document.getElementById("MSATot").style.visibility = "visible";
-    } else {
-      document.getElementById("MSATot").style.visibility = "hidden";
     }
   }
 }
@@ -79,6 +49,12 @@ function buyGDRep() {
     document.getElementById("Reputation").innerHTML = Reputation;
     document.getElementById("GDRep").innerHTML = GDRep;
     document.getElementById("GDRepCost").innerHTML = GDRepCost;
+
+    if (GDRep >= 1) {
+      document.getElementById("GDTot").style.visibility = "visible";
+    } else {
+      document.getElementById("GDTot").style.visibility = "hidden";
+    }
   }
 }
 function buyVSRep() {
@@ -91,6 +67,12 @@ function buyVSRep() {
     document.getElementById("Reputation").innerHTML = Reputation;
     document.getElementById("VSRepCost").innerHTML = VSRepCost;
     document.getElementById("VSRep").innerHTML = VSRep;
+
+    if (VSRep >= 1) {
+      document.getElementById("VSTot").style.visibility = "visible";
+    } else {
+      document.getElementById("VSTot").style.visibility = "hidden";
+    }
   }
 }
 function buyOTRep() {
@@ -103,6 +85,12 @@ function buyOTRep() {
     document.getElementById("Reputation").innerHTML = Reputation;
     document.getElementById("OTRepCost").innerHTML = OTRepCost;
     document.getElementById("OTRep").innerHTML = OTRep;
+
+    if (OTRep >= 1) {
+      document.getElementById("OTTot").style.visibility = "visible";
+    } else {
+      document.getElementById("OTTot").style.visibility = "hidden";
+    }
   }
 }
 function buyETRep() {
@@ -115,6 +103,12 @@ function buyETRep() {
     document.getElementById("Reputation").innerHTML = Reputation;
     document.getElementById("ETRepCost").innerHTML = ETRepCost;
     document.getElementById("ETRep").innerHTML = ETRep;
+
+    if (ETRep >= 1) {
+      document.getElementById("ETTot").style.visibility = "visible";
+    } else {
+      document.getElementById("ETTot").style.visibility = "hidden";
+    }
   }
 }
 function buyHCRep() {
@@ -127,6 +121,12 @@ function buyHCRep() {
     document.getElementById("Reputation").innerHTML = Reputation;
     document.getElementById("HCRepCost").innerHTML = HCRepCost;
     document.getElementById("HCRep").innerHTML = HCRep;
+
+    if (HCRep >= 1) {
+      document.getElementById("HCTot").style.visibility = "visible";
+    } else {
+      document.getElementById("HCTot").style.visibility = "hidden";
+    }
   }
 }
 function buyMSARep() {
@@ -139,5 +139,11 @@ function buyMSARep() {
     document.getElementById("Reputation").innerHTML = Reputation;
     document.getElementById("MSARepCost").innerHTML = MSARepCost;
     document.getElementById("MSARep").innerHTML = MSARep;
+
+    if (MSARep >= 1) {
+      document.getElementById("MSATot").style.visibility = "visible";
+    } else {
+      document.getElementById("MSATot").style.visibility = "hidden";
+    }
   }
 }
