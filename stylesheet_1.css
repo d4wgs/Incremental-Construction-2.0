@@ -156,7 +156,8 @@ position: fixed;
 visibility: visible;
 }
 
-#HiddenApartmentName, #HiddenHouseName, #HiddenMotelName, #HiddenApartmentComplexName, #HiddenTowerName, #HiddenSkyscraperName {
+#HiddenApartmentName, #HiddenHouseName, #HiddenMotelName, #HiddenApartmentComplexName, #HiddenTowerName, #HiddenSkyscraperName,
+#HouseTot, #MotelTot, #ApartmentComplexTot, #TowerTot, #SkyscraperTot {
 position: fixed;
 visibility: hidden;
 }
