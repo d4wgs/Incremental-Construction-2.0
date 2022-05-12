@@ -6,12 +6,6 @@ function buyReputation() {
     document.getElementById("Skyscraper").innerHTML = Skyscraper;
     document.getElementById("Reputation").innerHTML = Reputation;
     document.getElementById("ReputationCost").innerHTML = ReputationCost;
-
-    if (Skyscraper >= 1) {
-      document.getElementById("BuyRep").style.visibility = "visible";
-    } else {
-      document.getElementById("BuyRep").style.visibility = "hidden";
-    }
   }
 }
 function buyGDRep() {
