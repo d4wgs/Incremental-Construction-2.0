@@ -352,6 +352,71 @@ window.onload = function() {
     document.getElementById("HiddenText_Reputation").style.visibility = "visible";
     document.getElementById("VisibleText_Reputation").style.visibility = "hidden";
   }
+  if (Skyscraper >= 1) {
+    document.getElementById("BuyRep").style.visibility = "visible";
+  } else {
+    document.getElementById("BuyRep").style.visibility = "hidden";
+  }
+  if (Reputation >= 1) {
+    document.getElementById("BuyGD").style.visibility = "visible";
+  } else {
+    document.getElementById("BuyGD").style.visibility = "hidden";
+  }
+  if (GDRep >= 1) {
+    document.getElementById("GDTot").style.visibility = "visible";
+  } else {
+    document.getElementById("GDTot").style.visibility = "hidden";
+  }
+  if (Reputation >= 3) {
+    document.getElementById("BuyVS").style.visibility = "visible";
+  } else {
+    document.getElementById("BuyVS").style.visibility = "hidden";
+  }
+  if (VSRep >= 1) {
+    document.getElementById("VSTot").style.visibility = "visible";
+  } else {
+    document.getElementById("VSTot").style.visibility = "hidden";
+  }
+  if (Reputation >= 10) {
+    document.getElementById("BuyOT").style.visibility = "visible";
+  } else {
+    document.getElementById("BuyOT").style.visibility = "hidden";
+  }
+  if (OTRep >= 1) {
+    document.getElementById("OTTot").style.visibility = "visible";
+  } else {
+    document.getElementById("OTTot").style.visibility = "hidden";
+  }
+  if (Reputation >= 25) {
+    document.getElementById("BuyET").style.visibility = "visible";
+  } else {
+    document.getElementById("BuyET").style.visibility = "hidden";
+  }
+  if (ETRep >= 1) {
+    document.getElementById("ETTot").style.visibility = "visible";
+  } else {
+    document.getElementById("ETTot").style.visibility = "hidden";
+  }
+  if (Reputation >= 60) {
+    document.getElementById("BuyHC").style.visibility = "visible";
+  } else {
+    document.getElementById("BuyHC").style.visibility = "hidden";
+  }
+  if (HCRep >= 1) {
+    document.getElementById("HCTot").style.visibility = "visible";
+  } else {
+    document.getElementById("HCTot").style.visibility = "hidden";
+  }
+  if (Reputation >= 125) {
+    document.getElementById("BuyMSA").style.visibility = "visible";
+  } else {
+    document.getElementById("BuyMSA").style.visibility = "hidden";
+  }
+  if (MSARep >= 1) {
+    document.getElementById("MSATot").style.visibility = "visible";
+  } else {
+    document.getElementById("MSATot").style.visibility = "hidden";
+  }
 };
 
 setInterval(function() {
