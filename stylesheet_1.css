@@ -189,7 +189,6 @@ visibility: hidden;
 }
 
 #ApartmentUpgrade, #HouseUpgrade, #MotelUpgrade, #ApartmentComplexUpgrade, #TowerUpgrade, #SkyscraperUpgrade,
-#ReputationName,
 #BuyRep, #BuyGD, #BuyVS, #BuyOT, #BuyET, #BuyHC, #BuyMSA {
 visibility: hidden;
 }
