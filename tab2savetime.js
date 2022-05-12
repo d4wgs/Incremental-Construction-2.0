@@ -340,9 +340,13 @@ window.onload = function() {
   if (Skyscraper >= 1) {
     document.getElementById("SkyscraperTot").style.visibility = "visible";
     document.getElementById("SkyscraperUpgrade").style.visibility = "visible";
+    document.getElementById("HiddenReputationName").style.visibility = "visible";
+    document.getElementById("VisibleReputationName").style.visibility = "hidden";
   } else {
     document.getElementById("SkyscraperTot").style.visibility = "hidden";
     document.getElementById("SkyscraperUpgrade").style.visibility = "hidden";
+    document.getElementById("HiddenReputationName").style.visibility = "hidden";
+    document.getElementById("VisibleReputationName").style.visibility = "visible";
   }
 };
 
