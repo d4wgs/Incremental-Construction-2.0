@@ -94,6 +94,11 @@ function loadGame() {
 
   if (typeof savedGame.SkyscraperOut !== undefined) SkyscraperOut = savedGame.SkyscraperOut;
   if (typeof savedGame.SkyscraperUpgradeCost !== undefined) SkyscraperUpgradeCost = savedGame.SkyscraperUpgradeCost;
+
+  if (typeof savedGame.VisibleText_Apartment !== undefined) VisibleText_Apartment = savedGame.VisibleText_Apartment;
+  if (typeof savedGame.HiddenText_Apartment !== undefined) HiddenText_Apartment = savedGame.HiddenText_Apartment;
+  if (typeof savedGame.HiddenApartmentName !== undefined) HiddenApartmentName = savedGame.HiddenApartmentName;
+  if (typeof savedGame.VisibleApartmentName !== undefined) VisibleApartmentName = savedGame.VisibleApartmentName;
 }
 
 function saveGame() {
@@ -163,7 +168,12 @@ function saveGame() {
     TowerUpgradeCost: TowerUpgradeCost,
 
     SkyscraperOut: SkyscraperOut,
-    SkyscraperUpgradeCost: SkyscraperUpgradeCost
+    SkyscraperUpgradeCost: SkyscraperUpgradeCost,
+
+    VisibleText_Apartment: document.getElementById("VisibleText_Apartment").style.visibility,
+    HiddenText_Apartment: document.getElementById("HiddenText_Apartment").style.visibility,
+    HiddenApartmentName: document.getElementById("HiddenApartmentName").style.visibility,
+    VisibleApartmentName: document.getElementById("VisibleApartmentName").style.visibility
   };
   localStorage.setItem("gameSave", JSON.stringify(gameSave));
 }
@@ -235,6 +245,11 @@ window.onload = function() {
 
   document.getElementById("SkyscraperOut").innerHTML = SkyscraperOut;
   document.getElementById("SkyscraperUpgradeCost").innerHTML = SkyscraperUpgradeCost;
+
+  document.getElementById("VisibleText_Apartment").style.visibility;
+  document.getElementById("HiddenText_Apartment").style.visibility;
+  document.getElementById("HiddenApartmentName").style.visibility;
+  document.getElementById("VisibleApartmentName").style.visibility;
 };
 
 setInterval(function() {
