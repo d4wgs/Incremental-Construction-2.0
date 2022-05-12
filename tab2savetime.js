@@ -302,6 +302,48 @@ window.onload = function() {
     document.getElementById("HiddenSkyscraperName").style.visibility = "hidden";
     document.getElementById("VisibleSkyscraperName").style.visibility = "visible";
   }
+  if (Apartment >= 1) {
+    document.getElementById("ApartmentTot").style.visibility = "visible";
+    document.getElementById("ApartmentUpgrade").style.visibility = "visible";
+  } else {
+    document.getElementById("ApartmentTot").style.visibility = "hidden";
+    document.getElementById("ApartmentUpgrade").style.visibility = "hidden";
+  }
+  if (House >= 1) {
+    document.getElementById("HouseTot").style.visibility = "visible";
+    document.getElementById("HouseUpgrade").style.visibility = "visible";
+  } else {
+    document.getElementById("HouseTot").style.visibility = "hidden";
+    document.getElementById("HouseUpgrade").style.visibility = "hidden";
+  }
+  if (Motel >= 1) {
+    document.getElementById("MotelTot").style.visibility = "visible";
+    document.getElementById("MotelUpgrade").style.visibility = "visible";
+  } else {
+    document.getElementById("MotelTot").style.visibility = "hidden";
+    document.getElementById("MotelUpgrade").style.visibility = "hidden";
+  }
+  if (ApartmentComplex >= 1) {
+    document.getElementById("ApartmentComplexTot").style.visibility = "visible";
+    document.getElementById("ApartmentComplexUpgrade").style.visibility = "visible";
+  } else {
+    document.getElementById("ApartmentComplexTot").style.visibility = "hidden";
+    document.getElementById("ApartmentComplexUpgrade").style.visibility = "hidden";
+  }
+  if (Tower >= 1) {
+    document.getElementById("TowerTot").style.visibility = "visible";
+    document.getElementById("TowerUpgrade").style.visibility = "visible";
+  } else {
+    document.getElementById("TowerTot").style.visibility = "hidden";
+    document.getElementById("TowerUpgrade").style.visibility = "hidden";
+  }
+  if (Skyscraper >= 1) {
+    document.getElementById("SkyscraperTot").style.visibility = "visible";
+    document.getElementById("SkyscraperUpgrade").style.visibility = "visible";
+  } else {
+    document.getElementById("SkyscraperTot").style.visibility = "hidden";
+    document.getElementById("SkyscraperUpgrade").style.visibility = "hidden";
+  }
 };
 
 setInterval(function() {
