@@ -12,31 +12,6 @@ function buyReputation() {
     } else {
       document.getElementById("BuyGD").style.visibility = "hidden";
     }
-    if (Reputation >= 3) {
-      document.getElementById("BuyVS").style.visibility = "visible";
-    } else {
-      document.getElementById("BuyVS").style.visibility = "hidden";
-    }
-    if (Reputation >= 10) {
-      document.getElementById("BuyOT").style.visibility = "visible";
-    } else {
-      document.getElementById("BuyOT").style.visibility = "hidden";
-    }
-    if (Reputation >= 25) {
-      document.getElementById("BuyET").style.visibility = "visible";
-    } else {
-      document.getElementById("BuyET").style.visibility = "hidden";
-    }
-    if (Reputation >= 60) {
-      document.getElementById("BuyHC").style.visibility = "visible";
-    } else {
-      document.getElementById("BuyHC").style.visibility = "hidden";
-    }
-    if (Reputation >= 125) {
-      document.getElementById("BuyMSA").style.visibility = "visible";
-    } else {
-      document.getElementById("BuyMSA").style.visibility = "hidden";
-    }
   }
 }
 function buyGDRep() {
