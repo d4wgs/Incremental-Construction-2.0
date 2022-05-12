@@ -86,8 +86,10 @@ function buyApartment() {
     }
     if (Apartment >= 1) {
       document.getElementById("ApartmentTot").style.visibility = "visible";
+      document.getElementById("ApartmentUpgrade").style.visibility = "visible";
     } else {
       document.getElementById("ApartmentTot").style.visibility = "hidden";
+      document.getElementById("ApartmentUpgrade").style.visibility = "hidden";
     }
    }
  }
@@ -113,8 +115,10 @@ function buyApartment10() {
     }
     if (Apartment >= 1) {
       document.getElementById("ApartmentTot").style.visibility = "visible";
+      document.getElementById("ApartmentUpgrade").style.visibility = "visible";
     } else {
       document.getElementById("ApartmentTot").style.visibility = "hidden";
+      document.getElementById("ApartmentUpgrade").style.visibility = "hidden";
     }
    }
  }
@@ -140,8 +144,10 @@ function buyApartment100() {
     }
     if (Apartment >= 1) {
       document.getElementById("ApartmentTot").style.visibility = "visible";
+      document.getElementById("ApartmentUpgrade").style.visibility = "visible";
     } else {
       document.getElementById("ApartmentTot").style.visibility = "hidden";
+      document.getElementById("ApartmentUpgrade").style.visibility = "hidden";
     }
    }
  }
@@ -167,8 +173,10 @@ function buyHouse() {
     }
     if (House >= 1) {
       document.getElementById("HouseTot").style.visibility = "visible";
+      document.getElementById("HouseUpgrade").style.visibility = "visible";
     } else {
       document.getElementById("HouseTot").style.visibility = "hidden";
+      document.getElementById("HouseUpgrade").style.visibility = "hidden";
     }
    }
  }
@@ -192,10 +200,12 @@ function buyHouse10() {
       document.getElementById("HiddenMotelName").style.visibility = "hidden";
       document.getElementById("VisibleMotelName").style.visibility = "visible";
     }
-    if (Apartment >= 1) {
-      document.getElementById("ApartmentTot").style.visibility = "visible";
+    if (House >= 1) {
+      document.getElementById("HouseTot").style.visibility = "visible";
+      document.getElementById("HouseUpgrade").style.visibility = "visible";
     } else {
-      document.getElementById("ApartmentTot").style.visibility = "hidden";
+      document.getElementById("HouseTot").style.visibility = "hidden";
+      document.getElementById("HouseUpgrade").style.visibility = "hidden";
     }
    }
  }
@@ -219,10 +229,12 @@ function buyHouse100() {
       document.getElementById("HiddenMotelName").style.visibility = "hidden";
       document.getElementById("VisibleMotelName").style.visibility = "visible";
     }
-    if (Apartment >= 1) {
-      document.getElementById("ApartmentTot").style.visibility = "visible";
+    if (House >= 1) {
+      document.getElementById("HouseTot").style.visibility = "visible";
+      document.getElementById("HouseUpgrade").style.visibility = "visible";
     } else {
-      document.getElementById("ApartmentTot").style.visibility = "hidden";
+      document.getElementById("HouseTot").style.visibility = "hidden";
+      document.getElementById("HouseUpgrade").style.visibility = "hidden";
     }
    }
  }
@@ -248,8 +260,10 @@ function buyMotel() {
     }
     if (Motel >= 1) {
       document.getElementById("MotelTot").style.visibility = "visible";
+      document.getElementById("MotelUpgrade").style.visibility = "visible";
     } else {
       document.getElementById("MotelTot").style.visibility = "hidden";
+      document.getElementById("MotelUpgrade").style.visibility = "hidden";
     }
    }
  }
@@ -275,8 +289,10 @@ function buyMotel10() {
     }
     if (Motel >= 1) {
       document.getElementById("MotelTot").style.visibility = "visible";
+      document.getElementById("MotelUpgrade").style.visibility = "visible";
     } else {
       document.getElementById("MotelTot").style.visibility = "hidden";
+      document.getElementById("MotelUpgrade").style.visibility = "hidden";
     }
    }
  }
@@ -302,8 +318,10 @@ function buyMotel100() {
     }
     if (Motel >= 1) {
       document.getElementById("MotelTot").style.visibility = "visible";
+      document.getElementById("MotelUpgrade").style.visibility = "visible";
     } else {
       document.getElementById("MotelTot").style.visibility = "hidden";
+      document.getElementById("MotelUpgrade").style.visibility = "hidden";
     }
    }
  }
@@ -330,8 +348,10 @@ function buyMotel100() {
       }
       if (ApartmentComplex >= 1) {
         document.getElementById("ApartmentComplexTot").style.visibility = "visible";
+        document.getElementById("ApartmentComplexUpgrade").style.visibility = "visible";
       } else {
         document.getElementById("ApartmentComplexTot").style.visibility = "hidden";
+        document.getElementById("ApartmentComplexUpgrade").style.visibility = "hidden";
       }
     }
   }
@@ -357,8 +377,10 @@ function buyApartmentComplex10() {
     }
     if (ApartmentComplex >= 1) {
       document.getElementById("ApartmentComplexTot").style.visibility = "visible";
+      document.getElementById("ApartmentComplexUpgrade").style.visibility = "visible";
     } else {
       document.getElementById("ApartmentComplexTot").style.visibility = "hidden";
+      document.getElementById("ApartmentComplexUpgrade").style.visibility = "hidden";
     }
    }
  }
@@ -384,8 +406,10 @@ function buyApartmentComplex100() {
     }
     if (ApartmentComplex >= 1) {
       document.getElementById("ApartmentComplexTot").style.visibility = "visible";
+      document.getElementById("ApartmentComplexUpgrade").style.visibility = "visible";
     } else {
       document.getElementById("ApartmentComplexTot").style.visibility = "hidden";
+      document.getElementById("ApartmentComplexUpgrade").style.visibility = "hidden";
     }
    }
  }
@@ -412,8 +436,10 @@ function buyTower() {
     }
     if (Tower >= 1) {
       document.getElementById("TowerTot").style.visibility = "visible";
+      document.getElementById("TowerUpgrade").style.visibility = "visible";
     } else {
       document.getElementById("TowerTot").style.visibility = "hidden";
+      document.getElementById("TowerUpgrade").style.visibility = "hidden";
     }
    }
  }
@@ -439,8 +465,10 @@ function buyTower10() {
     }
     if (Tower >= 1) {
       document.getElementById("TowerTot").style.visibility = "visible";
+      document.getElementById("TowerUpgrade").style.visibility = "visible";
     } else {
       document.getElementById("TowerTot").style.visibility = "hidden";
+      document.getElementById("TowerUpgrade").style.visibility = "hidden";
     }
    }
  }
@@ -466,8 +494,10 @@ function buyTower100() {
     }
     if (Tower >= 1) {
       document.getElementById("TowerTot").style.visibility = "visible";
+      document.getElementById("TowerUpgrade").style.visibility = "visible";
     } else {
       document.getElementById("TowerTot").style.visibility = "hidden";
+      document.getElementById("TowerUpgrade").style.visibility = "hidden";
     }
   }
  }
@@ -482,8 +512,10 @@ function buySkyscraper() {
 
      if (Skyscraper >= 1) {
       document.getElementById("SkyscraperTot").style.visibility = "visible";
+      document.getElementById("SkyscraperUpgrade").style.visibility = "visible";
     } else {
       document.getElementById("SkyscraperTot").style.visibility = "hidden";
+      document.getElementById("SkyscraperUpgrade").style.visibility = "hidden";
     }
    }
  }
@@ -498,8 +530,10 @@ function buySkyscraper10() {
 
      if (Skyscraper >= 1) {
       document.getElementById("SkyscraperTot").style.visibility = "visible";
+      document.getElementById("SkyscraperUpgrade").style.visibility = "visible";
     } else {
       document.getElementById("SkyscraperTot").style.visibility = "hidden";
+      document.getElementById("SkyscraperUpgrade").style.visibility = "hidden";
     }
    }
  }
@@ -514,8 +548,10 @@ function buySkyscraper100() {
 
      if (Skyscraper >= 1) {
       document.getElementById("SkyscraperTot").style.visibility = "visible";
+      document.getElementById("SkyscraperUpgrade").style.visibility = "visible";
     } else {
       document.getElementById("SkyscraperTot").style.visibility = "hidden";
+      document.getElementById("SkyscraperUpgrade").style.visibility = "hidden";
     }
    }
  }
