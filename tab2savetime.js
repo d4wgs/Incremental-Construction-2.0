@@ -236,10 +236,17 @@ window.onload = function() {
   document.getElementById("SkyscraperOut").innerHTML = SkyscraperOut;
   document.getElementById("SkyscraperUpgradeCost").innerHTML = SkyscraperUpgradeCost;
 
-  document.getElementById("VisibleText_Apartment").style.visibility;
-  document.getElementById("HiddenText_Apartment").style.visibility;
-  document.getElementById("HiddenApartmentName").style.visibility;
-  document.getElementById("VisibleApartmentName").style.visibility;
+  if (Shack >= 5) {
+    document.getElementById("VisibleText_Apartment").style.visibility = "hidden";
+    document.getElementById("HiddenText_Apartment").style.visibility = "visible";
+    document.getElementById("HiddenApartmentName").style.visibility = "visible";
+    document.getElementById("VisibleApartmentName").style.visibility = "hidden";
+  } else {
+    document.getElementById("VisibleText_Apartment").style.visibility = "visible";
+    document.getElementById("HiddenText_Apartment").style.visibility = "hidden";
+    document.getElementById("HiddenApartmentName").style.visibility = "hidden";
+    document.getElementById("VisibleApartmentName").style.visibility = "visible";
+  }
 };
 
 setInterval(function() {
