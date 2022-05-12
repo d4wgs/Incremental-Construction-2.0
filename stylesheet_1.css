@@ -147,8 +147,8 @@ visibility: visible;
 }
 
 #HiddenText_Apartment, #HiddenText_House, #HiddenText_Motel, #HiddenText_ApartmentComplex, #HiddenText_Tower, #HiddenText_Skyscraper {
-position: fixed;
-visibility: absolute;
+position: absolute;
+visibility: hidden;
 }
 
 #VisibleApartmentName, #VisibleHouseName, #VisibleMotelName, #VisibleApartmentComplexName, #VisibleTowerName, #VisibleSkyscraperName {
