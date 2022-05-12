@@ -515,11 +515,15 @@ function buySkyscraper() {
       document.getElementById("SkyscraperUpgrade").style.visibility = "visible";
       document.getElementById("HiddenReputationName").style.visibility = "visible";
       document.getElementById("VisibleReputationName").style.visibility = "hidden";
+      document.getElementById("HiddenText_Reputation").style.visibility = "visible";
+      document.getElementById("VisibleText_Reputation").style.visibility = "hidden";
     } else {
       document.getElementById("SkyscraperTot").style.visibility = "hidden";
       document.getElementById("SkyscraperUpgrade").style.visibility = "hidden";
       document.getElementById("HiddenReputationName").style.visibility = "hidden";
       document.getElementById("VisibleReputationName").style.visibility = "visible";
+      document.getElementById("HiddenText_Reputation").style.visibility = "visible";
+      document.getElementById("VisibleText_Reputation").style.visibility = "hidden";
     }
    }
  }
@@ -537,11 +541,15 @@ function buySkyscraper10() {
       document.getElementById("SkyscraperUpgrade").style.visibility = "visible";
       document.getElementById("HiddenReputationName").style.visibility = "visible";
       document.getElementById("VisibleReputationName").style.visibility = "hidden";
+      document.getElementById("HiddenText_Reputation").style.visibility = "visible";
+      document.getElementById("VisibleText_Reputation").style.visibility = "hidden";
     } else {
       document.getElementById("SkyscraperTot").style.visibility = "hidden";
       document.getElementById("SkyscraperUpgrade").style.visibility = "hidden";
       document.getElementById("HiddenReputationName").style.visibility = "hidden";
       document.getElementById("VisibleReputationName").style.visibility = "visible";
+      document.getElementById("HiddenText_Reputation").style.visibility = "visible";
+      document.getElementById("VisibleText_Reputation").style.visibility = "hidden";
     }
    }
  }
@@ -559,11 +567,15 @@ function buySkyscraper100() {
       document.getElementById("SkyscraperUpgrade").style.visibility = "visible";
       document.getElementById("HiddenReputationName").style.visibility = "visible";
       document.getElementById("VisibleReputationName").style.visibility = "hidden";
+      document.getElementById("HiddenText_Reputation").style.visibility = "visible";
+      document.getElementById("VisibleText_Reputation").style.visibility = "hidden";
     } else {
       document.getElementById("SkyscraperTot").style.visibility = "hidden";
       document.getElementById("SkyscraperUpgrade").style.visibility = "hidden";
       document.getElementById("HiddenReputationName").style.visibility = "hidden";
       document.getElementById("VisibleReputationName").style.visibility = "visible";
+      document.getElementById("HiddenText_Reputation").style.visibility = "visible";
+      document.getElementById("VisibleText_Reputation").style.visibility = "hidden";
     }
    }
  }
