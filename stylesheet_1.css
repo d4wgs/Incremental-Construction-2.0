@@ -122,6 +122,14 @@ right: 0.5vw;
 position: fixed;
 }
 
+#load_button1 {
+width: 5vw;
+height: 2vw;
+bottom: 1vw;
+right: 6vw;
+position: fixed;
+}
+
 .Bricks_bar {
 position: fixed;
 left: 42.9vw;
