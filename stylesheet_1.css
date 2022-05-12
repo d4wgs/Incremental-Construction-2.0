@@ -61,6 +61,18 @@ transition: 0.5s;
 background-color: #232423;
 }
 
+.reputationbuildings_button button {
+padding: 0.13vw 0.15vw;
+border: 0.05vw solid rgb(0, 0, 0);
+text-align: center;
+cursor: pointer;
+transition: 0.5s;
+}
+
+.reputationbuildings_button button:hover {
+background-color: #232423;
+}
+
 /* Building Cost Text */
 #building_cost_text {
 position: fixed;
@@ -91,6 +103,7 @@ left: 53.7vw;
 top: 14.7vw;
 color: #9a9a9c;
 font-size: 0.75vw;
+visibility: hidden;
 }
 
 /* Reputation Building Totals (ET4, HC5, MSA6) */
@@ -100,6 +113,7 @@ left: 65vw;
 top: 18.5vw;
 color: #9a9a9c;
 font-size: 0.75vw;
+visibility: hidden;
 }
 
 /* Reputation Building Information */
@@ -153,12 +167,12 @@ color: #1e1e1e;
 visibility: hidden;
 }
 
-#VisibleText_Apartment, #VisibleText_House, #VisibleText_Motel, #VisibleText_ApartmentComplex, #VisibleText_Tower, #VisibleText_Skyscraper {
+#VisibleText_Apartment, #VisibleText_House, #VisibleText_Motel, #VisibleText_ApartmentComplex, #VisibleText_Tower, #VisibleText_Skyscraper, #VisibleText_Reputation {
 position: absolute;
 visibility: visible;
 }
 
-#HiddenText_Apartment, #HiddenText_House, #HiddenText_Motel, #HiddenText_ApartmentComplex, #HiddenText_Tower, #HiddenText_Skyscraper {
+#HiddenText_Apartment, #HiddenText_House, #HiddenText_Motel, #HiddenText_ApartmentComplex, #HiddenText_Tower, #HiddenText_Skyscraper, #HiddenText_Reputation {
 position: absolute;
 visibility: hidden;
 }
@@ -175,7 +189,8 @@ visibility: hidden;
 }
 
 #ApartmentUpgrade, #HouseUpgrade, #MotelUpgrade, #ApartmentComplexUpgrade, #TowerUpgrade, #SkyscraperUpgrade,
-#ReputationName {
+#ReputationName,
+#BuyRep, #BuyGD, #BuyVS, #BuyOT, #BuyET, #BuyHC, #BuyMSA {
 visibility: hidden;
 }
 
