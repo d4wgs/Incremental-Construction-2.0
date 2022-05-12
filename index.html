@@ -80,7 +80,7 @@
 	<div id="HouseTab" class="tabcontent">
 		<div id="HiddenText_House">
 			<h3>House</h3>
-			<p>House is where things start to ramp up. Starts generating some real income.</p>
+			<p>House is where things start to ramp up. Starts generating some real<br>income.</p>
 			<div id="CPS_words"><small>CPS: <span id="HouseOut" style="color: #e67c2c">7</span></small></div>
 
 			<div class="building_purchase_button">
@@ -103,7 +103,7 @@
 	<div id="MotelTab" class="tabcontent">
 		<div id="HiddenText_Motel">
 			<h3>Motel</h3>
-			<p>Motels are good places for a short nap. Cheap in price and does what you need it to do.</p>
+			<p>Motels are good places for a short nap. Cheap in price and does what<br>you need it to do.</p>
 			<div id="CPS_words"><small>CPS: <span id="MotelOut" style="color: #e67c2c">10</span></small></div>
 
 			<div class="building_purchase_button">
@@ -126,7 +126,7 @@
 	<div id="Apartment ComplexTab" class="tabcontent">
 		<div id="HiddenText_ApartmentComplex">
 			<h3>Apartment Complex</h3>
-			<p>Buy some Apartment Complexes to house your tenants! Don't be an evil landlord.</p>
+			<p>Buy some Apartment Complexes to house your tenants! Don't be an<br>evil landlord.</p>
 			<div id="CPS_words"><small>CPS: <span id="ApartmentComplexOut" style="color: #e67c2c">12</span></small></div>
 
 			<div class="building_purchase_button">
@@ -172,7 +172,7 @@
 	<div id="SkyscraperTab" class="tabcontent">
 		<div id="HiddenText_Skyscraper">
 			<h3>Skyscraper</h3>
-			<p>Road to fame. Purchase some skyscrapers to start building your reputation!</p>
+			<p>Road to fame. Purchase some skyscrapers to start building your<br>reputation!</p>
 			<div id="CPS_words"><small>CPS: <span id="SkyscraperOut" style="color: #e67c2c">25</span></small></div>
 
 			<div class="building_purchase_button">
@@ -197,24 +197,24 @@
 			<button onclick="upgradeShack()" id="purchaseUpgrade" style="font-size:1vw; right:34vw; top:4.5vw">Shack</button>
 				<small id="purchaseUpgrade_text" style="top:4.75vw; left:66.5vw"> - It costs 
 					<span id="ShackUpgradeCost" style="color:#e67c2c">1000</span> Cash to purchase this.</small>
-			<button onclick="upgradeApartment()" id="purchaseUpgrade" style="font-size:1vw; right:34vw; top:6vw">Apartment</button>
+			<div id="ApartmentUpgrade"><button onclick="upgradeApartment()" id="purchaseUpgrade" style="font-size:1vw; right:34vw; top:6vw">Apartment</button>
 				<small id="purchaseUpgrade_text" style="top:6.25vw; left:66.5vw"> - It costs 
-					<span id="ApartmentUpgradeCost" style="color:#e67c2c">6000</span> Cash to purchase this.</small>
-			<button onclick="upgradeHouse()" id="purchaseUpgrade" style="font-size:1vw; right:34vw; top:7.5vw">House</button>
+					<span id="ApartmentUpgradeCost" style="color:#e67c2c">6000</span> Cash to purchase this.</div></small>
+			<div id="HouseUpgrade"><button onclick="upgradeHouse()" id="purchaseUpgrade" style="font-size:1vw; right:34vw; top:7.5vw">House</button>
 				<small id="purchaseUpgrade_text" style="top:7.75vw; left:66.5vw"> - It costs 
-					<span id="HouseUpgradeCost" style="color:#e67c2c">20000</span> Cash to purchase this.</small>
-			<button onclick="upgradeMotel()" id="purchaseUpgrade" style="font-size:1vw; right:34vw; top:9vw">Motel</button>
+					<span id="HouseUpgradeCost" style="color:#e67c2c">20000</span> Cash to purchase this.</div></small>
+			<div id="MotelUpgrade"><button onclick="upgradeMotel()" id="purchaseUpgrade" style="font-size:1vw; right:34vw; top:9vw">Motel</button>
 				<small id="purchaseUpgrade_text" style="top:9.25vw; left:66.5vw"> - It costs 
-					<span id="MotelUpgradeCost" style="color:#e67c2c">200000</span> Cash to purchase this.</small>
-			<button onclick="upgradeApartmentComplex()" id="purchaseUpgrade" style="font-size:1vw; right:34vw; top:10.5vw">Apartment Complex</button>
+					<span id="MotelUpgradeCost" style="color:#e67c2c">200000</span> Cash to purchase this.</div></small>
+			<div id="ApartmentComplexUpgrade"><button onclick="upgradeApartmentComplex()" id="purchaseUpgrade" style="font-size:1vw; right:34vw; top:10.5vw">Apartment Complex</button>
 				<small id="purchaseUpgrade_text" style="top:10.75vw; left:66.5vw"> - It costs 
-					<span id="ApartmentComplexUpgradeCost" style="color:#e67c2c">1000000</span> Cash to purchase this.</small>
-			<button onclick="upgradeTower()" id="purchaseUpgrade" style="font-size:1vw; right:34vw; top:12vw">Tower</button>
+					<span id="ApartmentComplexUpgradeCost" style="color:#e67c2c">1000000</span> Cash to purchase this.</div></small>
+			<div id="TowerUpgrade"><button onclick="upgradeTower()" id="purchaseUpgrade" style="font-size:1vw; right:34vw; top:12vw">Tower</button>
 				<small id="purchaseUpgrade_text" style="top:12.25vw; left:66.5vw"> - It costs 
-					<span id="TowerUpgradeCost" style="color:#e67c2c">6000000</span> Cash to purchase this.</small>
-			<button onclick="upgradeSkyscraper()" id="purchaseUpgrade" style="font-size:1vw; right:34vw; top:13.5vw">Skyscraper</button>
+					<span id="TowerUpgradeCost" style="color:#e67c2c">6000000</span> Cash to purchase this.</div></small>
+			<div id="SkyscraperUpgrade"><button onclick="upgradeSkyscraper()" id="purchaseUpgrade" style="font-size:1vw; right:34vw; top:13.5vw">Skyscraper</button>
 				<small id="purchaseUpgrade_text" style="top:13.75vw; left:66.5vw"> - It costs 
-					<span id="SkyscraperUpgradeCost" style="color:#e67c2c">20000000</span> Cash to purchase this.</small>
+					<span id="SkyscraperUpgradeCost" style="color:#e67c2c">20000000</span> Cash to purchase this.</div></small>
 
 		<div id="RepBuildings1">
 			<h3>Upgrade Information</h3>
