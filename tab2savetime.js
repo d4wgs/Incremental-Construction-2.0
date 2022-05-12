@@ -352,11 +352,6 @@ window.onload = function() {
     document.getElementById("HiddenText_Reputation").style.visibility = "visible";
     document.getElementById("VisibleText_Reputation").style.visibility = "hidden";
   }
-  if (Skyscraper >= 1) {
-    document.getElementById("BuyRep").style.visibility = "visible";
-  } else {
-    document.getElementById("BuyRep").style.visibility = "hidden";
-  }
   if (Reputation >= 1) {
     document.getElementById("BuyGD").style.visibility = "visible";
   } else {
