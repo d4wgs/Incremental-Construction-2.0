@@ -84,6 +84,11 @@ function buyApartment() {
       document.getElementById("HiddenHouseName").style.visibility = "hidden";
       document.getElementById("VisibleHouseName").style.visibility = "visible";
     }
+    if (Apartment >= 1) {
+      document.getElementById("ApartmentTot").style.visibility = "visible";
+    } else {
+      document.getElementById("ApartmentTot").style.visibility = "hidden";
+    }
    }
  }
 function buyApartment10() {
@@ -105,6 +110,11 @@ function buyApartment10() {
       document.getElementById("HiddenText_House").style.visibility = "hidden";
       document.getElementById("HiddenHouseName").style.visibility = "hidden";
       document.getElementById("VisibleHouseName").style.visibility = "visible";
+    }
+    if (Apartment >= 1) {
+      document.getElementById("ApartmentTot").style.visibility = "visible";
+    } else {
+      document.getElementById("ApartmentTot").style.visibility = "hidden";
     }
    }
  }
@@ -128,6 +138,11 @@ function buyApartment100() {
       document.getElementById("HiddenHouseName").style.visibility = "hidden";
       document.getElementById("VisibleHouseName").style.visibility = "visible";
     }
+    if (Apartment >= 1) {
+      document.getElementById("ApartmentTot").style.visibility = "visible";
+    } else {
+      document.getElementById("ApartmentTot").style.visibility = "hidden";
+    }
    }
  }
 function buyHouse() {
@@ -149,6 +164,11 @@ function buyHouse() {
       document.getElementById("HiddenText_Motel").style.visibility = "hidden";
       document.getElementById("HiddenMotelName").style.visibility = "hidden";
       document.getElementById("VisibleMotelName").style.visibility = "visible";
+    }
+    if (House >= 1) {
+      document.getElementById("HouseTot").style.visibility = "visible";
+    } else {
+      document.getElementById("HouseTot").style.visibility = "hidden";
     }
    }
  }
@@ -172,6 +192,11 @@ function buyHouse10() {
       document.getElementById("HiddenMotelName").style.visibility = "hidden";
       document.getElementById("VisibleMotelName").style.visibility = "visible";
     }
+    if (Apartment >= 1) {
+      document.getElementById("ApartmentTot").style.visibility = "visible";
+    } else {
+      document.getElementById("ApartmentTot").style.visibility = "hidden";
+    }
    }
  }
 function buyHouse100() {
@@ -193,6 +218,11 @@ function buyHouse100() {
       document.getElementById("HiddenText_Motel").style.visibility = "hidden";
       document.getElementById("HiddenMotelName").style.visibility = "hidden";
       document.getElementById("VisibleMotelName").style.visibility = "visible";
+    }
+    if (Apartment >= 1) {
+      document.getElementById("ApartmentTot").style.visibility = "visible";
+    } else {
+      document.getElementById("ApartmentTot").style.visibility = "hidden";
     }
    }
  }
@@ -216,6 +246,11 @@ function buyMotel() {
       document.getElementById("HiddenApartmentComplexName").style.visibility = "hidden";
       document.getElementById("VisibleApartmentComplexName").style.visibility = "visible";
     }
+    if (Motel >= 1) {
+      document.getElementById("MotelTot").style.visibility = "visible";
+    } else {
+      document.getElementById("MotelTot").style.visibility = "hidden";
+    }
    }
  }
 function buyMotel10() {
@@ -238,6 +273,11 @@ function buyMotel10() {
       document.getElementById("HiddenApartmentComplexName").style.visibility = "hidden";
       document.getElementById("VisibleApartmentComplexName").style.visibility = "visible";
     }
+    if (Motel >= 1) {
+      document.getElementById("MotelTot").style.visibility = "visible";
+    } else {
+      document.getElementById("MotelTot").style.visibility = "hidden";
+    }
    }
  }
 function buyMotel100() {
@@ -259,6 +299,11 @@ function buyMotel100() {
       document.getElementById("HiddenText_ApartmentComplex").style.visibility = "hidden";
       document.getElementById("HiddenApartmentComplexName").style.visibility = "hidden";
       document.getElementById("VisibleApartmentComplexName").style.visibility = "visible";
+    }
+    if (Motel >= 1) {
+      document.getElementById("MotelTot").style.visibility = "visible";
+    } else {
+      document.getElementById("MotelTot").style.visibility = "hidden";
     }
    }
  }
@@ -283,9 +328,14 @@ function buyMotel100() {
         document.getElementById("HiddenTowerName").style.visibility = "hidden";
         document.getElementById("VisibleTowerName").style.visibility = "visible";
       }
+      if (ApartmentComplex >= 1) {
+        document.getElementById("ApartmentComplexTot").style.visibility = "visible";
+      } else {
+        document.getElementById("ApartmentComplexTot").style.visibility = "hidden";
+      }
     }
   }
-function buyTower10() {
+function buyApartmentComplex10() {
    if (Cash >= 10 * ApartmentComplexCost) {
      Cash = Cash - (10 * ApartmentComplexCost);
      ApartmentComplex = ApartmentComplex + 10;
@@ -304,6 +354,11 @@ function buyTower10() {
       document.getElementById("HiddenText_Tower").style.visibility = "hidden";
       document.getElementById("HiddenTowerName").style.visibility = "hidden";
       document.getElementById("VisibleTowerName").style.visibility = "visible";
+    }
+    if (ApartmentComplex >= 1) {
+      document.getElementById("ApartmentComplexTot").style.visibility = "visible";
+    } else {
+      document.getElementById("ApartmentComplexTot").style.visibility = "hidden";
     }
    }
  }
@@ -326,6 +381,11 @@ function buyApartmentComplex100() {
       document.getElementById("HiddenText_Tower").style.visibility = "hidden";
       document.getElementById("HiddenTowerName").style.visibility = "hidden";
       document.getElementById("VisibleTowerName").style.visibility = "visible";
+    }
+    if (ApartmentComplex >= 1) {
+      document.getElementById("ApartmentComplexTot").style.visibility = "visible";
+    } else {
+      document.getElementById("ApartmentComplexTot").style.visibility = "hidden";
     }
    }
  }
@@ -350,6 +410,11 @@ function buyTower() {
       document.getElementById("HiddenSkyscraperName").style.visibility = "hidden";
       document.getElementById("VisibleSkyscraperName").style.visibility = "visible";
     }
+    if (Tower >= 1) {
+      document.getElementById("TowerTot").style.visibility = "visible";
+    } else {
+      document.getElementById("TowerTot").style.visibility = "hidden";
+    }
    }
  }
 function buyTower10() {
@@ -371,6 +436,11 @@ function buyTower10() {
       document.getElementById("HiddenText_Skyscraper").style.visibility = "hidden";
       document.getElementById("HiddenSkyscraperName").style.visibility = "hidden";
       document.getElementById("VisibleSkyscraperName").style.visibility = "visible";
+    }
+    if (Tower >= 1) {
+      document.getElementById("TowerTot").style.visibility = "visible";
+    } else {
+      document.getElementById("TowerTot").style.visibility = "hidden";
     }
    }
  }
@@ -394,6 +464,11 @@ function buyTower100() {
       document.getElementById("HiddenSkyscraperName").style.visibility = "hidden";
       document.getElementById("VisibleSkyscraperName").style.visibility = "visible";
     }
+    if (Tower >= 1) {
+      document.getElementById("TowerTot").style.visibility = "visible";
+    } else {
+      document.getElementById("TowerTot").style.visibility = "hidden";
+    }
   }
  }
 function buySkyscraper() {
@@ -401,10 +476,15 @@ function buySkyscraper() {
      Cash = Cash - SkyscraperCost;
      Skyscraper = Skyscraper + 1;
      SkyscraperCost = Math.round(SkyscraperCost * 1.05);
-
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Skyscraper").innerHTML = Skyscraper;
      document.getElementById("SkyscraperCost").innerHTML = SkyscraperCost;
+
+     if (Skyscraper >= 1) {
+      document.getElementById("SkyscraperTot").style.visibility = "visible";
+    } else {
+      document.getElementById("SkyscraperTot").style.visibility = "hidden";
+    }
    }
  }
 function buySkyscraper10() {
@@ -412,10 +492,15 @@ function buySkyscraper10() {
      Cash = Cash - (100 * SkyscraperCost);
      Skyscraper = Skyscraper + 10;
      SkyscraperCost = Math.round(0.96 * (SkyscraperCost * (1.05 ** 10)));
-
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Skyscraper").innerHTML = Skyscraper;
      document.getElementById("SkyscraperCost").innerHTML = SkyscraperCost;
+
+     if (Skyscraper >= 1) {
+      document.getElementById("SkyscraperTot").style.visibility = "visible";
+    } else {
+      document.getElementById("SkyscraperTot").style.visibility = "hidden";
+    }
    }
  }
 function buySkyscraper100() {
@@ -423,9 +508,14 @@ function buySkyscraper100() {
      Cash = Cash - (100 * SkyscraperCost);
      Skyscraper = Skyscraper + 100;
      SkyscraperCost = Math.round(0.9 * (SkyscraperCost * (1.05 ** 100)));
-
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Skyscraper").innerHTML = Skyscraper;
      document.getElementById("SkyscraperCost").innerHTML = SkyscraperCost;
+
+     if (Skyscraper >= 1) {
+      document.getElementById("SkyscraperTot").style.visibility = "visible";
+    } else {
+      document.getElementById("SkyscraperTot").style.visibility = "hidden";
+    }
    }
  }
