@@ -183,7 +183,8 @@ visibility: visible;
 }
 
 #HiddenApartmentName, #HiddenHouseName, #HiddenMotelName, #HiddenApartmentComplexName, #HiddenTowerName, #HiddenSkyscraperName, #HiddenReputationName,
-#ApartmentTot, #HouseTot, #MotelTot, #ApartmentComplexTot, #TowerTot, #SkyscraperTot {
+#ApartmentTot, #HouseTot, #MotelTot, #ApartmentComplexTot, #TowerTot, #SkyscraperTot,
+#GDTot, #VSTot, #OTTot, #ETTot, #HCTot, #MSATot {
 position: fixed;
 visibility: hidden;
 }
