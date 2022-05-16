@@ -502,56 +502,54 @@ function buyTower100() {
   }
  }
 function buySkyscraper() {
-   if (Cash >= SkyscraperCost) {
-     Cash = Cash - SkyscraperCost;
-     Skyscraper = Skyscraper + 1;
-     SkyscraperCost = Math.round(SkyscraperCost * 1.05);
-     document.getElementById("Cash").innerHTML = Cash;
-     document.getElementById("Skyscraper").innerHTML = Skyscraper;
-     document.getElementById("SkyscraperCost").innerHTML = SkyscraperCost;
-
-     if (Skyscraper >= 1) {
-      document.getElementById("SkyscraperTot").style.visibility = "visible";
-      document.getElementById("SkyscraperUpgrade").style.visibility = "visible";
-      document.getElementById("HiddenReputationName").style.visibility = "visible";
-      document.getElementById("VisibleReputationName").style.visibility = "hidden";
-      document.getElementById("HiddenText_Reputation").style.visibility = "visible";
-      document.getElementById("VisibleText_Reputation").style.visibility = "hidden";
-    } else {
-      document.getElementById("SkyscraperTot").style.visibility = "hidden";
-      document.getElementById("SkyscraperUpgrade").style.visibility = "hidden";
-      document.getElementById("HiddenReputationName").style.visibility = "hidden";
-      document.getElementById("VisibleReputationName").style.visibility = "visible";
-      document.getElementById("HiddenText_Reputation").style.visibility = "visible";
-      document.getElementById("VisibleText_Reputation").style.visibility = "hidden";
-    }
-   }
+  if (Cash >= SkyscraperCost) {
+    Cash = Cash - SkyscraperCost;
+    Skyscraper = Skyscraper + 1;
+    SkyscraperCost = Math.round(SkyscraperCost * 1.05);
+    document.getElementById("Cash").innerHTML = Cash;
+    document.getElementById("Skyscraper").innerHTML = Skyscraper;
+    document.getElementById("SkyscraperCost").innerHTML = SkyscraperCost;
+  }
+  else if (Skyscraper >= 1) {
+    document.getElementById("SkyscraperTot").style.visibility = "visible";
+    document.getElementById("SkyscraperUpgrade").style.visibility = "visible";
+    document.getElementById("HiddenReputationName").style.visibility = "visible";
+    document.getElementById("VisibleReputationName").style.visibility = "hidden";
+    document.getElementById("HiddenText_Reputation").style.visibility = "visible";
+    document.getElementById("VisibleText_Reputation").style.visibility = "hidden";
+  } else {
+    document.getElementById("SkyscraperTot").style.visibility = "hidden";
+    document.getElementById("SkyscraperUpgrade").style.visibility = "hidden";
+    document.getElementById("HiddenReputationName").style.visibility = "hidden";
+    document.getElementById("VisibleReputationName").style.visibility = "visible";
+    document.getElementById("HiddenText_Reputation").style.visibility = "visible";
+    document.getElementById("VisibleText_Reputation").style.visibility = "hidden";
+  }
  }
 function buySkyscraper10() {
-   if (Cash >= (10 * SkyscraperCost)) {
+   if (Cash >= 10 * SkyscraperCost) {
      Cash = Cash - (100 * SkyscraperCost);
      Skyscraper = Skyscraper + 10;
      SkyscraperCost = Math.round(0.96 * (SkyscraperCost * (1.05 ** 10)));
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Skyscraper").innerHTML = Skyscraper;
      document.getElementById("SkyscraperCost").innerHTML = SkyscraperCost;
-
-     if (Skyscraper >= 1) {
-      document.getElementById("SkyscraperTot").style.visibility = "visible";
-      document.getElementById("SkyscraperUpgrade").style.visibility = "visible";
-      document.getElementById("HiddenReputationName").style.visibility = "visible";
-      document.getElementById("VisibleReputationName").style.visibility = "hidden";
-      document.getElementById("HiddenText_Reputation").style.visibility = "visible";
-      document.getElementById("VisibleText_Reputation").style.visibility = "hidden";
-    } else {
-      document.getElementById("SkyscraperTot").style.visibility = "hidden";
-      document.getElementById("SkyscraperUpgrade").style.visibility = "hidden";
-      document.getElementById("HiddenReputationName").style.visibility = "hidden";
-      document.getElementById("VisibleReputationName").style.visibility = "visible";
-      document.getElementById("HiddenText_Reputation").style.visibility = "visible";
-      document.getElementById("VisibleText_Reputation").style.visibility = "hidden";
-    }
    }
+   else if (Skyscraper >= 1) {
+    document.getElementById("SkyscraperTot").style.visibility = "visible";
+    document.getElementById("SkyscraperUpgrade").style.visibility = "visible";
+    document.getElementById("HiddenReputationName").style.visibility = "visible";
+    document.getElementById("VisibleReputationName").style.visibility = "hidden";
+    document.getElementById("HiddenText_Reputation").style.visibility = "visible";
+    document.getElementById("VisibleText_Reputation").style.visibility = "hidden";
+  } else {
+    document.getElementById("SkyscraperTot").style.visibility = "hidden";
+    document.getElementById("SkyscraperUpgrade").style.visibility = "hidden";
+    document.getElementById("HiddenReputationName").style.visibility = "hidden";
+    document.getElementById("VisibleReputationName").style.visibility = "visible";
+    document.getElementById("HiddenText_Reputation").style.visibility = "visible";
+    document.getElementById("VisibleText_Reputation").style.visibility = "hidden";
+  }
  }
 function buySkyscraper100() {
    if (Cash >= 100 * SkyscraperCost) {
@@ -561,21 +559,20 @@ function buySkyscraper100() {
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Skyscraper").innerHTML = Skyscraper;
      document.getElementById("SkyscraperCost").innerHTML = SkyscraperCost;
-
-     if (Skyscraper >= 1) {
-      document.getElementById("SkyscraperTot").style.visibility = "visible";
-      document.getElementById("SkyscraperUpgrade").style.visibility = "visible";
-      document.getElementById("HiddenReputationName").style.visibility = "visible";
-      document.getElementById("VisibleReputationName").style.visibility = "hidden";
-      document.getElementById("HiddenText_Reputation").style.visibility = "visible";
-      document.getElementById("VisibleText_Reputation").style.visibility = "hidden";
-    } else {
-      document.getElementById("SkyscraperTot").style.visibility = "hidden";
-      document.getElementById("SkyscraperUpgrade").style.visibility = "hidden";
-      document.getElementById("HiddenReputationName").style.visibility = "hidden";
-      document.getElementById("VisibleReputationName").style.visibility = "visible";
-      document.getElementById("HiddenText_Reputation").style.visibility = "visible";
-      document.getElementById("VisibleText_Reputation").style.visibility = "hidden";
-    }
    }
+   else if (Skyscraper >= 1) {
+    document.getElementById("SkyscraperTot").style.visibility = "visible";
+    document.getElementById("SkyscraperUpgrade").style.visibility = "visible";
+    document.getElementById("HiddenReputationName").style.visibility = "visible";
+    document.getElementById("VisibleReputationName").style.visibility = "hidden";
+    document.getElementById("HiddenText_Reputation").style.visibility = "visible";
+    document.getElementById("VisibleText_Reputation").style.visibility = "hidden";
+  } else {
+    document.getElementById("SkyscraperTot").style.visibility = "hidden";
+    document.getElementById("SkyscraperUpgrade").style.visibility = "hidden";
+    document.getElementById("HiddenReputationName").style.visibility = "hidden";
+    document.getElementById("VisibleReputationName").style.visibility = "visible";
+    document.getElementById("HiddenText_Reputation").style.visibility = "visible";
+    document.getElementById("VisibleText_Reputation").style.visibility = "hidden";
+  }
  }
