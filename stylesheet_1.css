@@ -148,6 +148,13 @@ right: 0.5vw;
 position: fixed;
 }
 
+/* save information */
+#SaveInfo {
+position: absolute;
+right: 6vw;
+bottom: 0.3vw;
+}
+
 .Bricks_bar {
 position: fixed;
 left: 42.9vw;
