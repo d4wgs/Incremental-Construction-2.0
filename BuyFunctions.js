@@ -528,7 +528,7 @@ function buySkyscraper() {
    }
  }
 function buySkyscraper10() {
-   if (Cash >= 10 * SkyscraperCost) {
+   if (Cash >= (10 * SkyscraperCost)) {
      Cash = Cash - (100 * SkyscraperCost);
      Skyscraper = Skyscraper + 10;
      SkyscraperCost = Math.round(0.96 * (SkyscraperCost * (1.05 ** 10)));
