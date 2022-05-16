@@ -510,7 +510,7 @@ function buySkyscraper() {
     document.getElementById("Skyscraper").innerHTML = Skyscraper;
     document.getElementById("SkyscraperCost").innerHTML = SkyscraperCost;
   }
-  else if (Skyscraper >= 1) {
+  if (Skyscraper >= 1) {
     document.getElementById("SkyscraperTot").style.visibility = "visible";
     document.getElementById("SkyscraperUpgrade").style.visibility = "visible";
     document.getElementById("HiddenReputationName").style.visibility = "visible";
@@ -535,7 +535,7 @@ function buySkyscraper10() {
      document.getElementById("Skyscraper").innerHTML = Skyscraper;
      document.getElementById("SkyscraperCost").innerHTML = SkyscraperCost;
    }
-   else if (Skyscraper >= 1) {
+   if (Skyscraper >= 1) {
     document.getElementById("SkyscraperTot").style.visibility = "visible";
     document.getElementById("SkyscraperUpgrade").style.visibility = "visible";
     document.getElementById("HiddenReputationName").style.visibility = "visible";
@@ -552,14 +552,7 @@ function buySkyscraper10() {
   }
  }
 function buySkyscraper100() {
-   if (Skyscraper >= 1) {
-    document.getElementById("SkyscraperTot").style.visibility = "visible";
-    document.getElementById("SkyscraperUpgrade").style.visibility = "visible";
-    document.getElementById("HiddenReputationName").style.visibility = "visible";
-    document.getElementById("VisibleReputationName").style.visibility = "hidden";
-    document.getElementById("HiddenText_Reputation").style.visibility = "visible";
-    document.getElementById("VisibleText_Reputation").style.visibility = "hidden";
-  } else if (Cash >= 100 * SkyscraperCost) {
+  if (Cash >= 100 * SkyscraperCost) {
     Cash = Cash - (100 * SkyscraperCost);
     Skyscraper = Skyscraper + 100;
     SkyscraperCost = Math.round(0.9 * (SkyscraperCost * (1.05 ** 100)));
@@ -567,7 +560,14 @@ function buySkyscraper100() {
     document.getElementById("Skyscraper").innerHTML = Skyscraper;
     document.getElementById("SkyscraperCost").innerHTML = SkyscraperCost;
   }
-  else {
+  if (Skyscraper >= 1) {
+    document.getElementById("SkyscraperTot").style.visibility = "visible";
+    document.getElementById("SkyscraperUpgrade").style.visibility = "visible";
+    document.getElementById("HiddenReputationName").style.visibility = "visible";
+    document.getElementById("VisibleReputationName").style.visibility = "hidden";
+    document.getElementById("HiddenText_Reputation").style.visibility = "visible";
+    document.getElementById("VisibleText_Reputation").style.visibility = "hidden";
+  } else {
     document.getElementById("SkyscraperTot").style.visibility = "hidden";
     document.getElementById("SkyscraperUpgrade").style.visibility = "hidden";
     document.getElementById("HiddenReputationName").style.visibility = "hidden";
