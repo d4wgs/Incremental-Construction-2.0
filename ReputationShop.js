@@ -1,8 +1,7 @@
 function buyReputation() {
   if (Skyscraper >= ReputationCost) {
-    Skyscraper = Skyscraper - 3;
+    Skyscraper = Skyscraper - ReputationCost;
     Reputation = Reputation + 1;
-    Reputation = Reputation;
     document.getElementById("Skyscraper").innerHTML = Skyscraper;
     document.getElementById("Reputation").innerHTML = Reputation;
 
