@@ -87,7 +87,7 @@ function loadGame() {
   if (typeof savedGame.MotelUpgradeCost !== undefined) MotelUpgradeCost = savedGame.MotelUpgradeCost;
 
   if (typeof savedGame.ApartmentComplexOut !== undefined) ApartmentComplexOut = savedGame.ApartmentComplexOut;
-  if (typeof savedGame.ApartmentComplexUpgradeCost !== undefined) ApartmentComplexCost = savedGame.ApartmentComplexUpgradeCost;
+  if (typeof savedGame.ApartmentComplexUpgradeCost !== undefined) ApartmentComplexUpgradeCost = savedGame.ApartmentComplexUpgradeCost;
 
   if (typeof savedGame.TowerOut !== undefined) TowerOut = savedGame.TowerOut;
   if (typeof savedGame.TowerUpgradeCost !== undefined) TowerUpgradeCost = savedGame.TowerUpgradeCost;
@@ -157,7 +157,7 @@ function saveGame() {
     MotelUpgradeCost: MotelUpgradeCost,
 
     ApartmentComplexOut: ApartmentComplexOut,
-    ApartmentComplexUpgradeCost: ApartmentComplexCost,
+    ApartmentComplexUpgradeCost: ApartmentComplexUpgradeCost,
 
     TowerOut: TowerOut,
     TowerUpgradeCost: TowerUpgradeCost,
