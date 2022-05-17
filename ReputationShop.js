@@ -16,7 +16,7 @@ function buyGDRep() {
   if (Reputation >= GDRepCost) {
     Reputation = Reputation - GDRepCost;
     GDRep = GDRep + 1;
-    GDRepCost = Math.round(GDRepCost * 3.5);
+    GDRepCost = Math.round(GDRepCost * 1.5);
     GDRepCost = GDRepCost;
     GDRep = GDRep;
     document.getElementById("Reputation").innerHTML = Reputation;
@@ -34,7 +34,7 @@ function buyVSRep() {
   if (Reputation >= VSRepCost) {
     Reputation = Reputation - VSRepCost;
     VSRep = VSRep + 1;
-    VSRepCost = Math.round(VSRepCost * 3.5);
+    VSRepCost = Math.round(VSRepCost * 1.5);
     VSRep = VSRep;
     VSRepCost = VSRepCost;
     document.getElementById("Reputation").innerHTML = Reputation;
@@ -52,7 +52,7 @@ function buyOTRep() {
   if (Reputation >= OTRepCost) {
     Reputation = Reputation - OTRepCost;
     OTRep = OTRep + 1;
-    OTRepCost = Math.round(OTRepCost * 3.5);
+    OTRepCost = Math.round(OTRepCost * 1.5);
     OTRep = OTRep;
     OTRepCost = OTRepCost;
     document.getElementById("Reputation").innerHTML = Reputation;
@@ -70,7 +70,7 @@ function buyETRep() {
   if (Reputation >= ETRepCost) {
     Reputation = Reputation - ETRepCost;
     ETRep = ETRep + 1;
-    ETRepCost = Math.round(ETRepCost * 3.5);
+    ETRepCost = Math.round(ETRepCost * 1.5);
     ETRep = ETRep;
     ETRepCost = ETRepCost;
     document.getElementById("Reputation").innerHTML = Reputation;
@@ -88,7 +88,7 @@ function buyHCRep() {
   if (Reputation >= HCRepCost) {
     Reputation = Reputation - HCRepCost;
     HCRep = HCRep + 1;
-    HCRepCost = Math.round(HCRepCost * 3.5);
+    HCRepCost = Math.round(HCRepCost * 1.5);
     HCRep = HCRep;
     HCRepCost = HCRepCost;
     document.getElementById("Reputation").innerHTML = Reputation;
@@ -106,7 +106,7 @@ function buyMSARep() {
   if (Reputation >= MSARepCost) {
     Reputation = Reputation - MSARepCost;
     MSARep = MSARep + 1;
-    MSARepCost = Math.round(MSARepCost * 3.5);
+    MSARepCost = Math.round(MSARepCost * 1.5);
     MSARep = MSARep;
     MSARepCost = MSARepCost;
     document.getElementById("Reputation").innerHTML = Reputation;
