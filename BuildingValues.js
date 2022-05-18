@@ -27,6 +27,7 @@ var ReputationCost = 3;
 
 var GDRepCost = 3;
 var GDRep = 0;
+var GDOut = 1000;
 
 var VSRepCost = 10;
 var VSRep = 0;
@@ -51,7 +52,7 @@ setInterval(function() {
   Cash = Cash + ApartmentComplex * ApartmentComplexOut;
   Cash = Cash + Tower * TowerOut;
   Cash = Cash + Skyscraper * SkyscraperOut;
-  Cash = Cash + GDRep * 1000;
+  Cash = Cash + GDRep * GDOut;
   document.getElementById("Cash").innerHTML = Cash;
 }, 250);
 
