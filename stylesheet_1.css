@@ -201,6 +201,14 @@ visibility: hidden;
 visibility: hidden;
 }
 
+#RepBuildings {
+position: fixed;
+left: 53.7vw;
+top: 14.7vw;
+color: #9a9a9c;
+font-size: 0.75vw;
+}
+
 h1 {
 font-size: 2.5vw;
 font-family: 'Monaco';
