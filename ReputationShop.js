@@ -17,7 +17,7 @@ function buyGDRep() {
     Reputation = Reputation - GDRepCost;
     GDRep = GDRep + 1;
     GDRepCost = Math.round(GDRepCost * 1.5);
-    CPS = (Shack * ShackOut) + (Apartment * ApartmentOut) + (House * HouseOut) + (Motel * MotelOut) + (ApartmentComplex * ApartmentComplexOut) + (Tower * TowerOut) + (Skyscraper * SkyscraperOut) + (GDRep * 1000) + (GDRep * 1000) + (GDRep * 1000) + (GDRep * 1000) + (GDRep * 1000) + (GDRep * 1000) + (GDRep * 1000) + (GDRep * 1000);
+    CPS = (Shack * ShackOut) + (Apartment * ApartmentOut) + (House * HouseOut) + (Motel * MotelOut) + (ApartmentComplex * ApartmentComplexOut) + (Tower * TowerOut) + (Skyscraper * SkyscraperOut) + (GDRep * GDOut);
     document.getElementById("Reputation").innerHTML = Reputation;
     document.getElementById("GDRep").innerHTML = GDRep;
     document.getElementById("GDRepCost").innerHTML = GDRepCost;
