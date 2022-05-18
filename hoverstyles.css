@@ -1,0 +1,59 @@
+.building_purchase_button button {
+padding: 0.13vw 0.15vw;
+border: 0.05vw solid rgb(0, 0, 0);
+text-align: center;
+cursor: pointer;
+transition: 0.5s;
+}
+
+.building_purchase_button button:hover {
+background-color: #232423;
+}
+
+.settings_button button {
+padding: 0.13vw 0.15vw;
+border: 0.05vw solid rgb(0, 0, 0);
+text-align: center;
+cursor: pointer;
+transition: 0.5s;
+}
+
+.settings_button button:hover {
+background-color: #232423;
+}
+
+.upgrades_button button {
+padding: 0.13vw 0.15vw;
+border: 0.05vw solid rgb(0, 0, 0);
+text-align: center;
+cursor: pointer;
+transition: 0.5s;
+}
+
+.upgrades_button button:hover {
+background-color: #232423;
+}
+
+.reputationbuildings_button button {
+padding: 0.13vw 0.15vw;
+border: 0.05vw solid rgb(0, 0, 0);
+text-align: center;
+cursor: pointer;
+transition: 0.5s;
+}
+
+.reputationbuildings_button button:hover {
+background-color: #232423;
+}
+
+.bricks_button button {
+padding: 0.13vw 0.15vw;
+border: 0.05vw solid rgb(0, 0, 0);
+text-align: center;
+cursor: pointer;
+transition: 0.5s;
+}
+
+.bricks_button button:hover {
+background-color: #E11D1D;
+}
