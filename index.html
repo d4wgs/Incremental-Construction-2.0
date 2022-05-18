@@ -5,11 +5,13 @@
 	<script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
 	<link rel="stylesheet" href="stylesheet_1.css">
 	<link rel="stylesheet" href="stylesheet_2.css">
+	<link rel="stylesheet" href="hoverstyles.css">
 	<script type="text/javascript" src="BuildingValues.js"></script>
 	<script type="text/javascript" src="BuyFunctions.js"></script>
 	<script type="text/javascript" src="tab2savetime.js"></script>
 	<script type="text/javascript" src="UpgradeFunctions.js"></script>
 	<script type="text/javascript" src="ReputationShop.js"></script>
+	<script type="'text/javascript" src="mathscript.js"></script>
 	<link rel="icon" href="https://i.imgur.com/1CgRaKG.png">
 </head>
 
@@ -217,7 +219,7 @@
 				<small id="purchaseUpgrade_text" style="top:13.75vw; left:66.5vw"> - It costs 
 					<span id="SkyscraperUpgradeCost" style="color:#e67c2c">20000000</span> Cash to purchase this.</div></small>
 
-		<div id="UpgradeInfo">
+		<div id="RepBuildings1">
 			<h3>Upgrade Information</h3>
 				<small>Cash Per Second (CPS) Increase: <span style="color:#e67c2c">50% [1.5x]</span> - <span style="color:#ff4747">ROUNDED</span><br><br>
 				Upgrade Price Increase: <span style="color:#e67c2c">350% [3.5x]</span> - <span style="color:#ff4747">ROUNDED</span></small>
@@ -264,10 +266,12 @@
 		</div>
 	</div>
 
+	<h3 id="CPS_total">Total CPS: <span id="CPS" style="color: #e67c2c">0</span></h3>
+
 	<h1>Cash: <span id="Cash">75</span></h1>
 
-	<div class="Bricks_bar">
-		<h3 id="Bricks_progress">Bricks: <span id="Bricks">0</span> (WIP)</h3>
+	<div class="bricks_button">
+		<button id="Bricks_progress">Bricks: <span id="Bricks">0</span></button>
 	</div>
 
 	<div id="totalbuildings">
@@ -281,6 +285,15 @@
 		<div id="bottomtext2" style="color: #5975ff">
 			Reputation: <span id="Reputation">0</span></small>
 		</div>
+    </div>
+
+
+	<div id="math">
+        <p id="message001"></p>
+        <p id="message002"></p>
+        <p id="show001"></p>
+        <p id="message003"></p>
+        <p id="message004"></p>
     </div>
 
 <script>
