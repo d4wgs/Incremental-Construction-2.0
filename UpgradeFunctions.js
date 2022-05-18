@@ -3,7 +3,7 @@ function upgradeShack() {
       Cash = Cash - ShackUpgradeCost;
       ShackOut = Math.round(ShackOut * 1.5);
       ShackUpgradeCost = Math.round(ShackUpgradeCost * 3.5);
-      CPS = (Shack * ShackOut);
+      CPS = (Shack * ShackOut) + (Apartment * ApartmentOut) + (House * HouseOut) + (Motel * MotelOut) + (ApartmentComplex * ApartmentComplexOut) + (Tower * TowerOut) + (Skyscraper * SkyscraperOut);
 
       document.getElementById("Cash").innerHTML = Cash;
       document.getElementById("ShackOut").innerHTML = ShackOut;
@@ -16,12 +16,12 @@ function upgradeApartment() {
       Cash = Cash - ApartmentUpgradeCost;
       ApartmentOut = Math.round(ApartmentOut * 1.5);
       ApartmentUpgradeCost = Math.round(ApartmentUpgradeCost * 3.5);
-      ApartmentUpgradeCost = ApartmentUpgradeCost;
-      ApartmentOut = ApartmentOut;
+      CPS = (Shack * ShackOut) + (Apartment * ApartmentOut) + (House * HouseOut) + (Motel * MotelOut) + (ApartmentComplex * ApartmentComplexOut) + (Tower * TowerOut) + (Skyscraper * SkyscraperOut);
 
       document.getElementById("Cash").innerHTML = Cash;
       document.getElementById("ApartmentOut").innerHTML = ApartmentOut;
       document.getElementById("ApartmentUpgradeCost").innerHTML = ApartmentUpgradeCost;
+      document.getElementById("CPS").innerHTML = CPS;
     }
   }
 function upgradeHouse() {
@@ -29,12 +29,12 @@ function upgradeHouse() {
       Cash = Cash - HouseUpgradeCost;
       HouseOut = Math.round(HouseOut * 1.5);
       HouseUpgradeCost = Math.round(HouseUpgradeCost * 3.5);
-      HouseUpgradeCost = HouseUpgradeCost;
-      HouseOut = HouseOut;
+      CPS = (Shack * ShackOut) + (Apartment * ApartmentOut) + (House * HouseOut) + (Motel * MotelOut) + (ApartmentComplex * ApartmentComplexOut) + (Tower * TowerOut) + (Skyscraper * SkyscraperOut);
 
       document.getElementById("Cash").innerHTML = Cash;
       document.getElementById("HouseOut").innerHTML = HouseOut;
       document.getElementById("HouseUpgradeCost").innerHTML = HouseUpgradeCost;
+      document.getElementById("CPS").innerHTML = CPS;
     }
   }
 function upgradeMotel() {
@@ -42,12 +42,12 @@ function upgradeMotel() {
       Cash = Cash - MotelUpgradeCost;
       MotelOut = Math.round(MotelOut * 1.5);
       MotelUpgradeCost = Math.round(MotelUpgradeCost * 3.5);
-      MotelUpgradeCost = MotelUpgradeCost;
-      MotelOut = MotelOut;
+      CPS = (Shack * ShackOut) + (Apartment * ApartmentOut) + (House * HouseOut) + (Motel * MotelOut) + (ApartmentComplex * ApartmentComplexOut) + (Tower * TowerOut) + (Skyscraper * SkyscraperOut);
 
       document.getElementById("Cash").innerHTML = Cash;
       document.getElementById("MotelOut").innerHTML = MotelOut;
       document.getElementById("MotelUpgradeCost").innerHTML = MotelUpgradeCost;
+      document.getElementById("CPS").innerHTML = CPS;
     }
   }
 function upgradeApartmentComplex() {
@@ -55,12 +55,12 @@ function upgradeApartmentComplex() {
       Cash = Cash - ApartmentComplexUpgradeCost;
       ApartmentComplexOut = Math.round(ApartmentComplexOut * 1.5);
       ApartmentComplexUpgradeCost = Math.round(ApartmentComplexUpgradeCost * 3.5);
-      ApartmentComplexOut = ApartmentComplexOut;
-      ApartmentOut = ApartmentOut;
+      CPS = (Shack * ShackOut) + (Apartment * ApartmentOut) + (House * HouseOut) + (Motel * MotelOut) + (ApartmentComplex * ApartmentComplexOut) + (Tower * TowerOut) + (Skyscraper * SkyscraperOut);
 
       document.getElementById("Cash").innerHTML = Cash;
       document.getElementById("ApartmentComplexOut").innerHTML = ApartmentComplexOut;
       document.getElementById("ApartmentComplexUpgradeCost").innerHTML = ApartmentComplexUpgradeCost;
+      document.getElementById("CPS").innerHTML = CPS;
     }
   }
 function upgradeTower() {
@@ -68,12 +68,12 @@ function upgradeTower() {
       Cash = Cash - TowerUpgradeCost;
       TowerOut = Math.round(TowerOut * 1.5);
       TowerUpgradeCost = Math.round(TowerUpgradeCost * 3.5);
-      TowerUpgradeCost = TowerUpgradeCost;
-      TowerOut = TowerOut;
+      CPS = (Shack * ShackOut) + (Apartment * ApartmentOut) + (House * HouseOut) + (Motel * MotelOut) + (ApartmentComplex * ApartmentComplexOut) + (Tower * TowerOut) + (Skyscraper * SkyscraperOut);
 
       document.getElementById("Cash").innerHTML = Cash;
       document.getElementById("TowerOut").innerHTML = TowerOut;
       document.getElementById("TowerUpgradeCost").innerHTML = TowerUpgradeCost;
+      document.getElementById("CPS").innerHTML = CPS;
     }
   }
 function upgradeSkyscraper() {
@@ -81,11 +81,11 @@ function upgradeSkyscraper() {
       Cash = Cash - SkyscraperUpgradeCost;
       SkyscraperOut = Math.round(SkyscraperOut * 1.5);
       SkyscraperUpgradeCost = Math.round(SkyscraperUpgradeCost * 3.5);
-      SkyscraperUpgradeCost = SkyscraperUpgradeCost;
-      SkyscraperOut = SkyscraperOut;
+      CPS = (Shack * ShackOut) + (Apartment * ApartmentOut) + (House * HouseOut) + (Motel * MotelOut) + (ApartmentComplex * ApartmentComplexOut) + (Tower * TowerOut) + (Skyscraper * SkyscraperOut);
 
       document.getElementById("Cash").innerHTML = Cash;
       document.getElementById("SkyscraperOut").innerHTML = SkyscraperOut;
       document.getElementById("SkyscraperUpgradeCost").innerHTML = SkyscraperUpgradeCost;
+      document.getElementById("CPS").innerHTML = CPS;
     }
   }
