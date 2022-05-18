@@ -3,7 +3,7 @@ function buyShack() {
       Cash = Cash - ShackCost;
       Shack = Shack + 1;
       ShackCost = Math.round(ShackCost * 1.05);
-      CPS = CPS + (1 * ShackOut);
+      CPS = (Shack * ShackOut);
       document.getElementById("Cash").innerHTML = Cash;
       document.getElementById("Shack").innerHTML = Shack;
       document.getElementById("ShackCost").innerHTML = ShackCost;
@@ -27,7 +27,7 @@ function buyShack10() {
       Cash = Cash - (10 * ShackCost);
       Shack = Shack + 10;
       ShackCost = Math.round(0.96 * (ShackCost * (1.05 ** 10)));
-      CPS = CPS + (10 * ShackOut);
+      CPS = (Shack * ShackOut);
       document.getElementById("Cash").innerHTML = Cash;
       document.getElementById("Shack").innerHTML = Shack;
       document.getElementById("ShackCost").innerHTML = ShackCost;
@@ -51,7 +51,7 @@ function buyShack100() {
      Cash = Cash - (100 * ShackCost);
      Shack = Shack + 100;
      ShackCost = Math.round(0.9 * (ShackCost * (1.05 ** 100)));
-     CPS = CPS + (100 * ShackOut);
+     CPS = (Shack * ShackOut);
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Shack").innerHTML = Shack;
      document.getElementById("ShackCost").innerHTML = ShackCost;
