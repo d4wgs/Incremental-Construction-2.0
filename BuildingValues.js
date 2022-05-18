@@ -1,5 +1,5 @@
 var Cash = 75000000;
-var CPS = Shack * ShackOut;
+var CPS = 0;
 
 var ShackCost = 50;
 var Shack = 0;
