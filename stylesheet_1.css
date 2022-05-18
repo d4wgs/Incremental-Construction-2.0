@@ -25,54 +25,6 @@ left:7vw;
 top:11.3vw;
 }
 
-.building_purchase_button button {
-padding: 0.13vw 0.15vw;
-border: 0.05vw solid rgb(0, 0, 0);
-text-align: center;
-cursor: pointer;
-transition: 0.5s;
-}
-
-.building_purchase_button button:hover {
-background-color: #232423;
-}
-
-.settings_button button {
-padding: 0.13vw 0.15vw;
-border: 0.05vw solid rgb(0, 0, 0);
-text-align: center;
-cursor: pointer;
-transition: 0.5s;
-}
-
-.settings_button button:hover {
-background-color: #232423;
-}
-
-.upgrades_button button {
-padding: 0.13vw 0.15vw;
-border: 0.05vw solid rgb(0, 0, 0);
-text-align: center;
-cursor: pointer;
-transition: 0.5s;
-}
-
-.upgrades_button button:hover {
-background-color: #232423;
-}
-
-.reputationbuildings_button button {
-padding: 0.13vw 0.15vw;
-border: 0.05vw solid rgb(0, 0, 0);
-text-align: center;
-cursor: pointer;
-transition: 0.5s;
-}
-
-.reputationbuildings_button button:hover {
-background-color: #232423;
-}
-
 /* Building Cost Text */
 #building_cost_text {
 position: fixed;
@@ -85,6 +37,14 @@ left: 11vw;
 position: fixed;
 top: 11.5vw;
 right: 69vw;
+}
+
+/* "CPS:" in the building menus */
+#CPS_total {
+position: absolute;
+top: 23.5vw;
+left: 43vw;
+color: #ff4747;
 }
 
 /* Total buildings (bottom left) */
@@ -155,23 +115,16 @@ right: 6vw;
 bottom: 0.3vw;
 }
 
-.Bricks_bar {
+#Bricks_progress {
 position: fixed;
+text-align: center;
+color: #1e1e1e;
+visibility: visible;
+background-color: #ff4747;
 left: 42.9vw;
 bottom: 44%;
 width: 10vw;
 height: 2vw;
-background-color: #ff4747;
-color: #1e1e1e;
-visibility: hidden;
-}
-
-#Bricks_progress {
-position: relative;
-text-align: center;
-bottom: 0.85vw;
-color: #1e1e1e;
-visibility: hidden;
 }
 
 #VisibleText_Apartment, #VisibleText_House, #VisibleText_Motel, #VisibleText_ApartmentComplex, #VisibleText_Tower, #VisibleText_Skyscraper {
@@ -201,12 +154,19 @@ visibility: hidden;
 visibility: hidden;
 }
 
-#UpgradeInfo {
+#math {
 position: fixed;
-left: 53.7vw;
-top: 14.7vw;
-color: #9a9a9c;
-font-size: 0.75vw;
+width: 10vw;
+height: 1vw;
+top: 100vw;
+}
+
+#message001, #message002, #show001, #message003 {
+display: inline-block;
+}
+
+#input001 {
+width: 1vw;
 }
 
 h1 {
