@@ -29,6 +29,7 @@ function openCity2(evt, cityName) {
 function loadGame() {
   var savedGame = JSON.parse(localStorage.getItem("gameSave"));
   if (typeof savedGame.Cash !== undefined) Cash = savedGame.Cash;
+  if (typeof savedGame.CPS !== undefined) CPS = savedGame.Cash;
 
   if (typeof savedGame.ShackCost !== undefined) ShackCost = savedGame.ShackCost;
   if (typeof savedGame.Shack !== undefined) Shack = savedGame.Shack;
@@ -99,6 +100,7 @@ function loadGame() {
 function saveGame() {
   var gameSave = {
     Cash: Cash,
+    CPS: CPS,
 
     ShackCost: ShackCost,
     Shack: Shack,
@@ -171,6 +173,7 @@ function saveGame() {
 window.onload = function() {
   loadGame();
   document.getElementById("Cash").innerHTML = Cash;
+  document.getElementById("CPS").innerHTML = CPS;
   
   document.getElementById("ShackCost").innerHTML = ShackCost;
   document.getElementById("Shack").innerHTML = Shack;
