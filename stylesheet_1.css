@@ -56,6 +56,15 @@ color: #ff4747;
 font-size: 0.75vw;
 }
 
+/* Visible Upgrade Information */
+#UpgradeInfo {
+position: fixed;
+left: 53.7vw;
+top: 14.7vw;
+color: #9a9a9c;
+font-size: 0.75vw;
+}
+
 /* Reputation Building Totals (GD1, VS2, OT3) */
 #RepBuildings1 {
 position: fixed;
