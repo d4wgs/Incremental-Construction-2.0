@@ -6,13 +6,38 @@ function buyReputation() {
     document.getElementById("Skyscraper").innerHTML = Skyscraper;
     document.getElementById("Reputation").innerHTML = Reputation;
     document.getElementById("CPS").innerHTML = CPS;
+    }
 
     if (Reputation >= 1) {
       document.getElementById("BuyGD").style.visibility = "visible";
     } else {
       document.getElementById("BuyGD").style.visibility = "hidden";
     }
-  }
+    if (Reputation >= 2) {
+      document.getElementById("BuyVS").style.visibility = "visible";
+    } else {
+      document.getElementById("BuyVS").style.visibility = "hidden";
+    }
+    if (Reputation >= 5) {
+      document.getElementById("BuyOT").style.visibility = "visible";
+    } else {
+      document.getElementById("BuyOT").style.visibility = "hidden";
+    }
+    if (Reputation >= 7) {
+      document.getElementById("BuyET").style.visibility = "visible";
+    } else {
+      document.getElementById("BuyET").style.visibility = "hidden";
+    }
+    if (Reputation >= 10) {
+      document.getElementById("BuyHC").style.visibility = "visible";
+    } else {
+      document.getElementById("BuyHC").style.visibility = "hidden";
+    }
+    if (Reputation >= 11) {
+      document.getElementById("BuyMSA").style.visibility = "visible";
+    } else {
+      document.getElementById("BuyMSA").style.visibility = "hidden";
+    }
 }
 function buyGDRep() {
   if (Reputation >= GDRepCost) {
