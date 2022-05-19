@@ -43,7 +43,7 @@ function buyGDRep() {
   if (Reputation >= GDRepCost) {
     Reputation = Reputation - GDRepCost;
     GDRep = GDRep + 1;
-    GDRepCost = Math.round(GDRepCost * 1.5);
+    GDRepCost = Math.round(GDRepCost * 1.2);
     CPS = (Shack * ShackOut) + (Apartment * ApartmentOut) + (House * HouseOut) + (Motel * MotelOut) + (ApartmentComplex * ApartmentComplexOut) + (Tower * TowerOut) + (Skyscraper * SkyscraperOut) + (GDRep * GDOut);
     document.getElementById("Reputation").innerHTML = Reputation;
     document.getElementById("GDRep").innerHTML = GDRep;
@@ -61,7 +61,7 @@ function buyVSRep() {
   if (Reputation >= VSRepCost) {
     Reputation = Reputation - VSRepCost;
     VSRep = VSRep + 1;
-    VSRepCost = Math.round(VSRepCost * 1.5);
+    VSRepCost = Math.round(VSRepCost * 1.2);
     document.getElementById("Reputation").innerHTML = Reputation;
     document.getElementById("VSRepCost").innerHTML = VSRepCost;
     document.getElementById("VSRep").innerHTML = VSRep;
@@ -77,7 +77,7 @@ function buyOTRep() {
   if (Reputation >= OTRepCost) {
     Reputation = Reputation - OTRepCost;
     OTRep = OTRep + 1;
-    OTRepCost = Math.round(OTRepCost * 1.5);
+    OTRepCost = Math.round(OTRepCost * 1.2);
     document.getElementById("Reputation").innerHTML = Reputation;
     document.getElementById("OTRepCost").innerHTML = OTRepCost;
     document.getElementById("OTRep").innerHTML = OTRep;
@@ -93,7 +93,7 @@ function buyETRep() {
   if (Reputation >= ETRepCost) {
     Reputation = Reputation - ETRepCost;
     ETRep = ETRep + 1;
-    ETRepCost = Math.round(ETRepCost * 1.5);
+    ETRepCost = Math.round(ETRepCost * 1.2);
     document.getElementById("Reputation").innerHTML = Reputation;
     document.getElementById("ETRepCost").innerHTML = ETRepCost;
     document.getElementById("ETRep").innerHTML = ETRep;
@@ -109,7 +109,7 @@ function buyHCRep() {
   if (Reputation >= HCRepCost) {
     Reputation = Reputation - HCRepCost;
     HCRep = HCRep + 1;
-    HCRepCost = Math.round(HCRepCost * 1.5);
+    HCRepCost = Math.round(HCRepCost * 1.2);
     document.getElementById("Reputation").innerHTML = Reputation;
     document.getElementById("HCRepCost").innerHTML = HCRepCost;
     document.getElementById("HCRep").innerHTML = HCRep;
@@ -125,7 +125,7 @@ function buyMSARep() {
   if (Reputation >= MSARepCost) {
     Reputation = Reputation - MSARepCost;
     MSARep = MSARep + 1;
-    MSARepCost = Math.round(MSARepCost * 1.5);
+    MSARepCost = Math.round(MSARepCost * 1.2);
     document.getElementById("Reputation").innerHTML = Reputation;
     document.getElementById("MSARepCost").innerHTML = MSARepCost;
     document.getElementById("MSARep").innerHTML = MSARep;
