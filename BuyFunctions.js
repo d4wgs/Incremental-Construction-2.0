@@ -539,7 +539,7 @@ function buySkyscraper() {
   if (Cash >= SkyscraperCost) {
     Cash = Cash - SkyscraperCost;
     Skyscraper = Skyscraper + 1;
-    SkyscraperCost = Math.round(SkyscraperCost * 1.05);
+    SkyscraperCost = Math.round(SkyscraperCost * 1.015);
     CPS = (Shack * ShackOut) + (Apartment * ApartmentOut) + (House * HouseOut) + (Motel * MotelOut) + (ApartmentComplex * ApartmentComplexOut) + (Tower * TowerOut) + (Skyscraper * SkyscraperOut) + (GDRep * GDOut);;
     document.getElementById("Cash").innerHTML = Cash;
     document.getElementById("Skyscraper").innerHTML = Skyscraper;
@@ -562,7 +562,7 @@ function buySkyscraper10() {
    if (Cash >= 10 * SkyscraperCost) {
      Cash = Cash - (10 * SkyscraperCost);
      Skyscraper = Skyscraper + 10;
-     SkyscraperCost = Math.round(0.96 * (SkyscraperCost * (1.05 ** 10)));
+     SkyscraperCost = Math.round(0.96 * (SkyscraperCost * (1.015 ** 10)));
      CPS = (Shack * ShackOut) + (Apartment * ApartmentOut) + (House * HouseOut) + (Motel * MotelOut) + (ApartmentComplex * ApartmentComplexOut) + (Tower * TowerOut) + (Skyscraper * SkyscraperOut) + (GDRep * GDOut);
      document.getElementById("Cash").innerHTML = Cash;
      document.getElementById("Skyscraper").innerHTML = Skyscraper;
@@ -585,7 +585,7 @@ function buySkyscraper100() {
   if (Cash >= 100 * SkyscraperCost) {
     Cash = Cash - (100 * SkyscraperCost);
     Skyscraper = Skyscraper + 100;
-    SkyscraperCost = Math.round(0.9 * (SkyscraperCost * (1.05 ** 100)));
+    SkyscraperCost = Math.round(0.9 * (SkyscraperCost * (1.015 ** 100)));
     CPS = (Shack * ShackOut) + (Apartment * ApartmentOut) + (House * HouseOut) + (Motel * MotelOut) + (ApartmentComplex * ApartmentComplexOut) + (Tower * TowerOut) + (Skyscraper * SkyscraperOut) + (GDRep * GDOut);
     document.getElementById("Cash").innerHTML = Cash;
     document.getElementById("Skyscraper").innerHTML = Skyscraper;
