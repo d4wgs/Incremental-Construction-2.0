@@ -29,7 +29,6 @@ function openCity2(evt, cityName) {
 function loadGame() {
   var savedGame = JSON.parse(localStorage.getItem("gameSave"));
   if (typeof savedGame.Cash !== undefined) Cash = savedGame.Cash;
-  if (typeof savedGame.CPS !== undefined) CPS = savedGame.Cash;
 
   if (typeof savedGame.ShackCost !== undefined) ShackCost = savedGame.ShackCost;
   if (typeof savedGame.Shack !== undefined) Shack = savedGame.Shack;
@@ -95,12 +94,12 @@ function loadGame() {
 
   if (typeof savedGame.SkyscraperOut !== undefined) SkyscraperOut = savedGame.SkyscraperOut;
   if (typeof savedGame.SkyscraperUpgradeCost !== undefined) SkyscraperUpgradeCost = savedGame.SkyscraperUpgradeCost;
+  if (typeof savedGame.CPS !== undefined) CPS = savedGame.Cash;
 }
 
 function saveGame() {
   var gameSave = {
     Cash: Cash,
-    CPS: CPS,
 
     ShackCost: ShackCost,
     Shack: Shack,
@@ -165,7 +164,8 @@ function saveGame() {
     TowerUpgradeCost: TowerUpgradeCost,
 
     SkyscraperOut: SkyscraperOut,
-    SkyscraperUpgradeCost: SkyscraperUpgradeCost
+    SkyscraperUpgradeCost: SkyscraperUpgradeCost,
+    CPS: CPS
   };
   localStorage.setItem("gameSave", JSON.stringify(gameSave));
 }
@@ -173,7 +173,6 @@ function saveGame() {
 window.onload = function() {
   loadGame();
   document.getElementById("Cash").innerHTML = Cash;
-  document.getElementById("CPS").innerHTML = CPS;
   
   document.getElementById("ShackCost").innerHTML = ShackCost;
   document.getElementById("Shack").innerHTML = Shack;
@@ -238,6 +237,8 @@ window.onload = function() {
 
   document.getElementById("SkyscraperOut").innerHTML = SkyscraperOut;
   document.getElementById("SkyscraperUpgradeCost").innerHTML = SkyscraperUpgradeCost;
+  
+  document.getElementById("CPS").innerHTML = CPS;
 
   if (Shack >= 5) {
     document.getElementById("VisibleText_Apartment").style.visibility = "hidden";
@@ -423,3 +424,13 @@ document.addEventListener("keydown", function(event) {
       saveGame();
   }
 }, false);
+
+var i=0;
+setInterval(function(){
+    var titles=['Incremental Construction 2.0', 'come back!', 'Incremental Construction 2.0', '[!] Hazardous Materials [!]', 'Incremental Construction 2.0', 'Hardhat Required'];
+    if(i===titles.length) {
+        i=0;
+    }
+    document.title = titles[i];
+    i++;
+}, 3000);
