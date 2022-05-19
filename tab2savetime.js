@@ -29,6 +29,7 @@ function openCity2(evt, cityName) {
 function loadGame() {
   var savedGame = JSON.parse(localStorage.getItem("gameSave"));
   if (typeof savedGame.Cash !== undefined) Cash = savedGame.Cash;
+  if (typeof savedGame.CPS !== undefined) CPS = savedGame.CPS;
 
   if (typeof savedGame.ShackCost !== undefined) ShackCost = savedGame.ShackCost;
   if (typeof savedGame.Shack !== undefined) Shack = savedGame.Shack;
@@ -94,12 +95,12 @@ function loadGame() {
 
   if (typeof savedGame.SkyscraperOut !== undefined) SkyscraperOut = savedGame.SkyscraperOut;
   if (typeof savedGame.SkyscraperUpgradeCost !== undefined) SkyscraperUpgradeCost = savedGame.SkyscraperUpgradeCost;
-  if (typeof savedGame.CPS !== undefined) CPS = savedGame.Cash;
 }
 
 function saveGame() {
   var gameSave = {
     Cash: Cash,
+    CPS: CPS,
 
     ShackCost: ShackCost,
     Shack: Shack,
@@ -164,8 +165,7 @@ function saveGame() {
     TowerUpgradeCost: TowerUpgradeCost,
 
     SkyscraperOut: SkyscraperOut,
-    SkyscraperUpgradeCost: SkyscraperUpgradeCost,
-    CPS: CPS
+    SkyscraperUpgradeCost: SkyscraperUpgradeCost
   };
   localStorage.setItem("gameSave", JSON.stringify(gameSave));
 }
@@ -173,6 +173,7 @@ function saveGame() {
 window.onload = function() {
   loadGame();
   document.getElementById("Cash").innerHTML = Cash;
+  document.getElementById("CPS").innerHTML = CPS;
   
   document.getElementById("ShackCost").innerHTML = ShackCost;
   document.getElementById("Shack").innerHTML = Shack;
@@ -237,8 +238,6 @@ window.onload = function() {
 
   document.getElementById("SkyscraperOut").innerHTML = SkyscraperOut;
   document.getElementById("SkyscraperUpgradeCost").innerHTML = SkyscraperUpgradeCost;
-  
-  document.getElementById("CPS").innerHTML = CPS;
 
   if (Shack >= 5) {
     document.getElementById("VisibleText_Apartment").style.visibility = "hidden";
