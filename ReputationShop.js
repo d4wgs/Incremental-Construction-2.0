@@ -2,8 +2,10 @@ function buyReputation() {
   if (Skyscraper >= ReputationCost) {
     Skyscraper = Skyscraper - ReputationCost;
     Reputation = Reputation + 1;
+    CPS = CPS - (SkyscraperOut * 3);
     document.getElementById("Skyscraper").innerHTML = Skyscraper;
     document.getElementById("Reputation").innerHTML = Reputation;
+    document.getElementById("CPS").innerHTML = CPS;
 
     if (Reputation >= 1) {
       document.getElementById("BuyGD").style.visibility = "visible";
