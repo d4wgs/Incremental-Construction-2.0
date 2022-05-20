@@ -411,6 +411,10 @@ window.onload = function() {
   } else {
     document.getElementById("MSATot").style.visibility = "hidden";
   }
+  window.onload = function begin001() {
+    message001.innerHTML = a001 + " + " + a002 + " =";
+    message002.innerHTML = "<input type=text id=input001 /> <button onclick=check001() class=mathcheck>Check</button>";
+}
 };
 
 setInterval(function() {
