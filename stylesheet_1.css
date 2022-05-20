@@ -98,9 +98,9 @@ position: absolute;
 width: 12vw;
 height: 1.5vw;
 text-align: center;
-font-size:1vw;
-right:34vw;
-top:4.5vw;
+font-size: 1vw;
+right: 34vw;
+top: 4.5vw;
 font-family: 'Times New Roman', serif;
 }
 
@@ -163,19 +163,24 @@ visibility: hidden;
 visibility: hidden;
 }
 
-#math {
-position: fixed;
-width: 10vw;
-height: 1vw;
-top: 100vw;
-}
-
-#message001, #message002, #show001, #message003 {
+#message001, #message002, #show001, #message003, #message004 {
 display: inline-block;
 }
 
+#message004 {
+border-width: 5vw;
+}
+
 #input001 {
-width: 1vw;
+width: 2vw;
+border-color: #9a9a9c;
+border-width: 0.01vw;
+}
+
+#math {
+position: absolute;
+top: 27vw;
+left: 3vw;
 }
 
 h1 {
