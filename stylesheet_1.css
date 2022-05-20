@@ -42,9 +42,9 @@ right: 69vw;
 /* "CPS:" total */
 #CPS_total {
 position: relative;
-float: left;
+left: 0.5vw;
 color: #ff4747;
-top: 13vw;
+top: 11.5vw;
 }
 
 /* Total buildings (bottom left) */
