@@ -19,16 +19,6 @@
 	
 <marquee scrollamount="10" id="marquee_scroll">Incremental Construction 2.0 - d4wgs | <a href="https://discord.gg/azbcnX9NgV">https://discord.gg/azbcnX9NgV</a></marquee>
 
-<div id="math">
-	<p id="message001"></p>
-	<p id="message002" class="mathcheck"></p>
-	<p id="show001"></p>
-	<p id="message003"></p>
-	<p id="message004" class="mathcheck"></p>
-	<p>If correct: 1 minute worth of CPS</p>
-	<p>If incorrect: -15sec worth of CPS</p>
-</div>
-
 	<div class="tab">
 		<button class="tablinks" onclick="openCity(event, 'ShackTab')" id="defaultOpen">Shack</button>
 		<button class="tablinks" onclick="openCity(event, 'ApartmentTab')" style="width: 6vw; height: 1.5vw"><div id="VisibleApartmentName" style="top: 2.5vw; left: 1vw">???</div><div id="HiddenApartmentName" style="top: 2.5vw; left: 1vw">Apartment</div></button>
@@ -296,36 +286,6 @@
 			Reputation: <span id="Reputation">0</span></small>
 		</div>
     </div>
-
-<script>
-document.getElementById("defaultOpen").click();
-document.getElementById("defaultOpen2").click();
-
-var a001 = Math.floor(Math.random() * 10);
-        var a002 = Math.floor(Math.random() * 10);
-        var a003 = a001 + a002;
-
-        function check001() {
-            var answer001 = input001.value;
-            show001.innerHTML = answer001;
-            if (answer001 == a003) {
-                message003.innerHTML = "✓";
-                message002.innerHTML = "";
-                message004.innerHTML = "<button onclick=repeat001() class=mathcheck>Next</button>";
-				Cash = Cash + (60 * CPS);
-            }
-            else {
-                message003.innerHTML = "✘";
-                message002.innerHTML = "";
-                message004.innerHTML = "<button onclick=repeat001() class=mathcheck>Next</button>";
-				Cash = Cash - (15 * CPS);
-            }
-        }
-
-        function repeat001() {
-            location.reload();
-        }
-</script>
 
 </body>
 </HTML>
