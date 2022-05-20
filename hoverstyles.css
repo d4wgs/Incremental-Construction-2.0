@@ -57,3 +57,15 @@ transition: 0.5s;
 .bricks_button button:hover {
 background-color: #E11D1D;
 }
+
+.mathcheck button {
+padding: 0.13vw 0.15vw;
+border: 0.05vw solid rgb(0, 0, 0);
+text-align: center;
+cursor: pointer;
+transition: 0.5s;
+}
+
+.mathcheck button:hover {
+background-color: #E11D1D;
+}
