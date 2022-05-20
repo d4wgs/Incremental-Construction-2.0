@@ -25,6 +25,8 @@
 	<p id="show001"></p>
 	<p id="message003"></p>
 	<p id="message004" class="mathcheck"></p>
+	<p>If correct: 1 minute worth of CPS</p>
+	<p>If incorrect: -15sec worth of CPS</p>
 </div>
 
 	<div class="tab">
@@ -321,6 +323,7 @@ var a001 = Math.floor(Math.random() * 10);
                 message003.innerHTML = "✘";
                 message002.innerHTML = "";
                 message004.innerHTML = "<button onclick=repeat001() class=mathcheck>Next</button>";
+				Cash = Cash - (15 * CPS);
             }
         }
 
